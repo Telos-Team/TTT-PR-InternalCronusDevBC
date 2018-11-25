@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<PermissionSets>
+    <PermissionSet RoleID="TTTPRTranslation" RoleName="TTTPR Translation">
+        <Permission>
+            <ObjectType>TableData</ObjectType>
+            <ObjectID>50002</ObjectID>
+            <ReadPermission>Yes</ReadPermission>
+            <InsertPermission>Yes</InsertPermission>
+            <ModifyPermission>Yes</ModifyPermission>
+            <DeletePermission>Yes</DeletePermission>
+            <ExecutePermission>No</ExecutePermission>
+            <SecurityFilter />
+        </Permission>
+        <Permission>
+            <ObjectType>TableData</ObjectType>
+            <ObjectID>50003</ObjectID>
+            <ReadPermission>Yes</ReadPermission>
+            <InsertPermission>Yes</InsertPermission>
+            <ModifyPermission>Yes</ModifyPermission>
+            <DeletePermission>Yes</DeletePermission>
+            <ExecutePermission>No</ExecutePermission>
+            <SecurityFilter />
+        </Permission>
+        <Permission>
+            <ObjectType>TableData</ObjectType>
+            <ObjectID>50004</ObjectID>
+            <ReadPermission>Yes</ReadPermission>
+            <InsertPermission>Yes</InsertPermission>
+            <ModifyPermission>Yes</ModifyPermission>
+            <DeletePermission>Yes</DeletePermission>
+            <ExecutePermission>No</ExecutePermission>
+            <SecurityFilter />
+        </Permission>
+    </PermissionSet>
+</PermissionSets>

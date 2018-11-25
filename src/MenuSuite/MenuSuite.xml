@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<PermissionSets>
+    <PermissionSet RoleID="TTTPRMenuSuite" RoleName="TTTPR MenuSuite">
+        <Permission>
+            <ObjectType>TableData</ObjectType>
+            <ObjectID>50008</ObjectID>
+            <ReadPermission>Yes</ReadPermission>
+            <InsertPermission>Yes</InsertPermission>
+            <ModifyPermission>Yes</ModifyPermission>
+            <DeletePermission>Yes</DeletePermission>
+            <ExecutePermission>No</ExecutePermission>
+            <SecurityFilter />
+        </Permission>
+        <Permission>
+            <ObjectType>TableData</ObjectType>
+            <ObjectID>50009</ObjectID>
+            <ReadPermission>Yes</ReadPermission>
+            <InsertPermission>Yes</InsertPermission>
+            <ModifyPermission>Yes</ModifyPermission>
+            <DeletePermission>Yes</DeletePermission>
+            <ExecutePermission>No</ExecutePermission>
+            <SecurityFilter />
+        </Permission>
+        <Permission>
+            <ObjectType>TableData</ObjectType>
+            <ObjectID>50010</ObjectID>
+            <ReadPermission>Yes</ReadPermission>
+            <InsertPermission>Yes</InsertPermission>
+            <ModifyPermission>Yes</ModifyPermission>
+            <DeletePermission>Yes</DeletePermission>
+            <ExecutePermission>No</ExecutePermission>
+            <SecurityFilter />
+        </Permission>
+        <Permission>
+            <ObjectType>TableData</ObjectType>
+            <ObjectID>50011</ObjectID>
+            <ReadPermission>Yes</ReadPermission>
+            <InsertPermission>Yes</InsertPermission>
+            <ModifyPermission>Yes</ModifyPermission>
+            <DeletePermission>Yes</DeletePermission>
+            <ExecutePermission>No</ExecutePermission>
+            <SecurityFilter />
+        </Permission>
+    </PermissionSet>
+</PermissionSets>
