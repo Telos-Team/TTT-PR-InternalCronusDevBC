@@ -1,4 +1,4 @@
-codeunit 50004 TTTPRFileMgtTest
+codeunit 50004 TTTPRileMgtTest
 {
     Description = 'TTTPR';
     Subtype = Normal;

@@ -1,55 +1,55 @@
-table 50008 TTTPRMenuSuite
+table 50008 "TTTPR MenuSuite"
 {
     Caption = 'TTTPR Menu Suite';
     DataClassification = SystemMetadata;
 
     fields
     {
-        field(1; Code; Code[20])
+        field(1; "TTTPR Code"; Code[20])
         {
             Caption = 'Code';
             DataClassification = SystemMetadata;
-            TableRelation = TTTPRMenuSuite.Code;
+            TableRelation = "TTTPR MenuSuite"."TTTPR Code";
             ValidateTableRelation = true;
         }
 
-        field(2; Name; Text[50])
+        field(2; "TTTPR Name"; Text[50])
         {
             Caption = 'Name';
             DataClassification = SystemMetadata;
         }
 
-        field(3; Description; Text[50])
+        field(3; "TTTPR Description"; Text[50])
         {
             Caption = 'Description';
             DataClassification = SystemMetadata;
         }
 
-        field(4; Content; Blob)
+        field(4; "TTTPR Content"; Blob)
         {
             Caption = 'Content';
             DataClassification = SystemMetadata;
         }
 
-        field(5; Id; Integer)
+        field(5; "TTTPR Id"; Integer)
         {
             Caption = 'Id';
             DataClassification = SystemMetadata;
         }
 
-        field(6; Date; Blob)
+        field(6; "TTTPR Date"; Blob)
         {
             Caption = 'Date';
             DataClassification = SystemMetadata;
         }
 
-        field(7; Time; Blob)
+        field(7; "TTTPR Time"; Blob)
         {
             Caption = 'Time';
             DataClassification = SystemMetadata;
         }
 
-        field(8; VersionList; Blob)
+        field(8; "TTTPR VersionList"; Blob)
         {
             Caption = 'Version List';
             DataClassification = SystemMetadata;
@@ -58,7 +58,7 @@ table 50008 TTTPRMenuSuite
 
     keys
     {
-        key(PK; Code)
+        key(PK; "TTTPR Code")
         {
             Clustered = true;
         }

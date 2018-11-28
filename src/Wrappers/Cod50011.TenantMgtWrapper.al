@@ -1,4 +1,4 @@
-codeunit 50011 TTTCoreTenantMgtWrapper
+codeunit 50011 "TTTPR CoreTenantMgtWrapper"
 {
     // <TTT001>
     //   Created.

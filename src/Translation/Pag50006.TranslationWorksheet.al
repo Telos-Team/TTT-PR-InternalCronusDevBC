@@ -2,10 +2,10 @@ page 50006 TTTPRTranslationWorksheet
 {
     Caption = 'TTTPR Translation Worksheet';
     PageType = List;
-    SourceTable = TTTPRTranslationLine;
+    SourceTable = "TTTPR TranslationLine";
     UsageCategory = Administration;
     ApplicationArea = All;
-    DataCaptionFields = TranslationCode, SourceContent;
+    DataCaptionFields = "TTTPR TranslationCode", "TTTPR SourceContent";
     InsertAllowed = false;
     DeleteAllowed = false;
     Editable = true;
@@ -14,29 +14,29 @@ page 50006 TTTPRTranslationWorksheet
     {
         area(content)
         {
-            group(General)
+            group("TTTPR General")
             {
-                field(TargetLanguageFilter; TargetLanguageFilter)
+                field("TTTPR TargetLanguageFilter"; "TTTPR TargetLanguageFilter")
                 {
                     ApplicationArea = All;
                 }
             }
-            repeater(Group)
+            repeater("TTTPR Group")
             {
-                field(TranslationCode; TranslationCode)
+                field("TTTPR TranslationCode"; "TTTPR TranslationCode")
                 {
                     Visible = false;
                     ApplicationArea = All;
                 }
-                field(SourceContentString; txtSourceContentString)
+                field("TTTPR SourceContentString"; txtSourceContentString)
                 {
                     ApplicationArea = All;
                 }
-                field(TargetContentString; txtTargetContentString)
+                field("TTTPR TargetContentString"; txtTargetContentString)
                 {
                     ApplicationArea = All;
                 }
-                field(TargetTranslationFound; TargetTranslationFound)
+                field("TTTPR TargetTranslationFound"; "TTTPR TargetTranslationFound")
                 {
                     ApplicationArea = All;
                 }
@@ -52,7 +52,7 @@ page 50006 TTTPRTranslationWorksheet
     {
         area(processing)
         {
-            action(ActionName)
+            action("TTTPR ActionName")
             {
                 Image = SuggestNumber;
                 trigger OnAction();

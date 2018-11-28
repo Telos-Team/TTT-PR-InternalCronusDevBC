@@ -13,9 +13,9 @@ page 50001 "TTTPRObjectRunnerList"
     {
         area(content)
         {
-            group(General)
+            group("TTTPR General")
             {
-                field(ObjectTypeSelector; optObjectTypeSelector)
+                field("TTTPR ObjectTypeSelector"; optObjectTypeSelector)
                 {
                     ApplicationArea = All;
                     AssistEdit = true;
@@ -26,25 +26,25 @@ page 50001 "TTTPRObjectRunnerList"
                     end;
                 }
             }
-            repeater(Group)
+            repeater("TTTPR Group")
             {
-                field(ObjectTypeName; ObjectTypeName)
+                field("TTTPR ObjectTypeName"; "TTTPR ObjectTypeName")
                 {
                     ApplicationArea = All;
                 }
-                field(ObjectID; ObjectID)
+                field("TTTPR ObjectID"; "TTTPR ObjectID")
                 {
                     ApplicationArea = All;
                 }
-                field(ObjectName; ObjectName)
+                field("TTTPR ObjectName"; "TTTPR ObjectName")
                 {
                     ApplicationArea = All;
                 }
-                field(ObjectCaption; ObjectCaption)
+                field("TTTPR ObjectCaption"; "TTTPR ObjectCaption")
                 {
                     ApplicationArea = All;
                 }
-                field(ObjectSubType; ObjectSubType)
+                field("TTTPR ObjectSubType"; "TTTPR ObjectSubType")
                 {
                     ApplicationArea = All;
                 }
@@ -59,7 +59,7 @@ page 50001 "TTTPRObjectRunnerList"
     {
         area(processing)
         {
-            action(RunObject)
+            action("TTTPR RunObject")
             {
                 Caption = 'Run Object';
                 ToolTip = 'Run the selected object';
@@ -73,7 +73,7 @@ page 50001 "TTTPRObjectRunnerList"
                     RunObject();
                 end;
             }
-            action(ShowFieldList)
+            action("TTTPR ShowFieldList")
             {
                 Caption = 'Show Field List';
                 ToolTip = 'Show the Field List for selected table';
@@ -87,11 +87,11 @@ page 50001 "TTTPRObjectRunnerList"
                     ShowFieldList();
                 end;
             }
-            group(FilterActions)
+            group("TTTPR FilterActions")
             {
                 Caption = 'Filter Objects';
                 ToolTip = 'Set filters on objects';
-                action(SetFilterNormal)
+                action("TTTPR SetFilterNormal")
                 {
                     Caption = 'Normal Objects';
                     ToolTip = 'Show only normal objects';
@@ -105,7 +105,7 @@ page 50001 "TTTPRObjectRunnerList"
                         SetFilterNormal();
                     end;
                 }
-                action(SetFilterDev)
+                action("TTTPR SetFilterDev")
                 {
                     Caption = 'Dev Objects';
                     ToolTip = 'Show only dev objects';
@@ -119,7 +119,7 @@ page 50001 "TTTPRObjectRunnerList"
                         SetFilterDev();
                     end;
                 }
-                action(SetFilterSysVirt)
+                action("TTTPR SetFilterSysVirt")
                 {
                     Caption = 'System/Virtual Objects';
                     ToolTip = 'Show only system/virtual objects';
@@ -133,7 +133,7 @@ page 50001 "TTTPRObjectRunnerList"
                         SetFilterSysVirt();
                     end;
                 }
-                action(actConstructGetSystemVirtualTableVariantAL)
+                action("TTTPR actConstructGetSystemVirtualTableVariantAL")
                 {
                     Caption = 'Create GetSystemVirtualTableVariant AL';
                     ToolTip = 'Create AL for GetSystemVirtualTableVariant()';
@@ -166,9 +166,9 @@ page 50001 "TTTPRObjectRunnerList"
     var
     begin
         if optObjectTypeSelector <> optObjectTypeSelector::" " then
-            rec.SetRange(ObjectType, optObjectTypeSelector - 1)
+            rec.SetRange("TTTPR ObjectType", optObjectTypeSelector - 1)
         else
-            rec.setrange(ObjectType);
+            rec.setrange("TTTPR ObjectType");
         FillTable(rec);
     end;
 }

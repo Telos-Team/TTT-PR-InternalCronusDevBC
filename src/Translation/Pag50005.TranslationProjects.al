@@ -2,22 +2,22 @@ page 50005 TTTPRTranslationProjects
 {
     Caption = 'TTTPR Translation Projects';
     PageType = List;
-    SourceTable = TTTPRTranslationProject;
+    SourceTable = "TTTPR TranslationProject";
     UsageCategory = Administration;
     ApplicationArea = All;
-    DataCaptionFields = Code, Description;
+    DataCaptionFields = "TTTPR Code", "TTTPR Description";
 
     layout
     {
         area(content)
         {
-            repeater(Group)
+            repeater("TTTPR Group")
             {
-                field(Code; Code)
+                field("TTTPR Code"; "TTTPR Code")
                 {
                     ApplicationArea = All;
                 }
-                field(Description; Description)
+                field("TTTPR Description"; "TTTPR Description")
                 {
                     ApplicationArea = All;
                 }
@@ -32,7 +32,7 @@ page 50005 TTTPRTranslationProjects
     {
         area(processing)
         {
-            action(ActionName)
+            action("TTTPR ActionName")
             {
                 Image = SuggestNumber;
                 trigger OnAction();

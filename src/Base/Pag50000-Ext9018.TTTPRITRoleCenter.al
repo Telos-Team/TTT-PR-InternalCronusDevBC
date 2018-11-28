@@ -9,7 +9,7 @@ pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
     {
         addlast(Embedding)
         {
-            action("TTTPRObjectRunnerEmbedding")
+            action("TTTPR ObjectRunnerEmbedding")
             {
                 ApplicationArea = All;
                 Caption = 'Show Object Runner';
@@ -21,24 +21,24 @@ pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
 
         addfirst(Processing)
         {
-            group(TTTPRMainGroupProcessing)
+            group("TTTPR MainGroupProcessing")
             {
                 Caption = 'TTTPR', Comment = 'Dont translate this!', Locked = true;
                 ToolTip = 'TTTPR functionality';
 
-                group(TTTPRGroupProcessing)
+                group("TTTPR GroupProcessing")
                 {
                     Caption = 'TTTPR', Comment = 'Dont translate this!', Locked = true;
                     ToolTip = 'TTTPR functionality';
                     Image = WorkCenter;
 
-                    group(ObjectsGroupProcessing)
+                    group("TTTPR ObjectsGroupProcessing")
                     {
                         Caption = 'Objects';
                         ToolTip = 'Object functionality';
                         Image = SuggestTables;
 
-                        action("ObjectRunnerProcessing")
+                        action("TTTPR ObjectRunnerProcessing")
                         {
                             Caption = 'Show Object Runner';
                             ToolTip = 'Show the Object Runner List';
@@ -47,13 +47,13 @@ pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
                             RunObject = page "TTTPRObjectRunnerList";
                         }
                     }
-                    group(TableFilterGroupProcessing)
+                    group("TTTPR TableFilterGroupProcessing")
                     {
                         Caption = 'Table Filter';
                         ToolTip = 'Table Filter functionality';
                         Image = SuggestTables;
 
-                        action("TableFilterSimpleProcessing")
+                        action("TTTPR TableFilterSimpleProcessing")
                         {
                             Caption = 'Table Filter Simple';
                             ToolTip = 'Show Simple Table Filter';
@@ -62,7 +62,7 @@ pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
                             RunObject = page TTTPRTableFilterExampleSimple;
                             RunPageMode = Edit;
                         }
-                        action("TableFilterRecRefProcessing")
+                        action("TTTPR TableFilterRecRefProcessing")
                         {
                             Caption = 'Table Filter RecRef';
                             ToolTip = 'Show RecRef Table Filter';
@@ -73,13 +73,13 @@ pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
                         }
                     }
 
-                    group(Translation)
+                    group("TTTPR Translation")
                     {
                         Caption = 'Translation';
                         ToolTip = 'Translation functionality';
                         Image = SuggestTables;
 
-                        action("TranslationWorksheetProcessing")
+                        action("TTTPR TranslationWorksheetProcessing")
                         {
                             Caption = 'Show Translation Worksheet';
                             ToolTip = 'Show the Translation Worksheet';
@@ -95,12 +95,12 @@ pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
 
         addfirst(Sections)
         {
-            group(TTTPRGroupSections)
+            group("TTTPR GroupSections")
             {
                 Caption = 'TTTPR';
                 ToolTip = 'TTTPR Elements';
                 Image = Dimensions;
-                action("ObjectRunnerSections")
+                action("TTTPR ObjectRunnerSections")
                 {
                     Caption = 'Show Object Runner';
                     ToolTip = 'Show the Object Runner List';
@@ -109,7 +109,7 @@ pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
                     RunObject = page "TTTPRObjectRunnerList";
                 }
 
-                action("TableFilterExampleSimpleSections")
+                action("TTTPR TableFilterExampleSimpleSections")
                 {
                     Caption = 'Show Table Filter (Simple)';
                     ToolTip = 'Show the simple Table Filter example';
@@ -118,7 +118,7 @@ pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
                     RunObject = page "TTTPRTableFilterExampleSimple";
                     RunPageMode = Edit;
                 }
-                action("TableFilterExampleRecRefSections")
+                action("TTTPR TableFilterExampleRecRefSections")
                 {
                     Caption = 'Show Table Filter (RecRef)';
                     ToolTip = 'Show the RecordRef Table Filter example';
@@ -128,7 +128,7 @@ pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
                     RunPageMode = Edit;
                 }
 
-                action("TranslationSections")
+                action("TTTPR TranslationSections")
                 {
                     Caption = 'Show Translation Worksheet';
                     ToolTip = 'Show the Translation Worksheet';

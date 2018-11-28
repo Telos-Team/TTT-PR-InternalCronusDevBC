@@ -1,4 +1,4 @@
-codeunit 50012 TTTCoreLicenseStateWrapper
+codeunit 50012 "TTTPR CoreLicenseStateWrapper"
 {
     // <TTT001>
     //   Created.

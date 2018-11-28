@@ -1,4 +1,4 @@
-codeunit 50013 TTTPRMenuSuiteMgt
+codeunit 50013 "TTTPR MenuSuiteMgt"
 {
     Description = 'Menu Suite Management';
 
@@ -9,9 +9,9 @@ codeunit 50013 TTTPRMenuSuiteMgt
     procedure StartImportObjectTextFile()
     var
         loctmprecTempBlob: Record TempBlob temporary;
-        loctmprecMenuSuite: Record TTTPRMenuSuite temporary;
-        loctmprecMenuNodes: Record TTTPRMenuNode temporary;
-        loctmprecMenuNodeTranslations: Record TTTPRMenuNodeTranslation temporary;
+        loctmprecMenuSuite: Record "TTTPR MenuSuite" temporary;
+        loctmprecMenuNodes: Record "TTTPR MenuNode" temporary;
+        loctmprecMenuNodeTranslations: Record "TTTPR MenuNodeTranslation" temporary;
     begin
         ImportFile2Blob(loctmprecTempBlob);
         DecodeObjectBlob(loctmprecTempBlob, loctmprecMenuSuite, loctmprecMenuNodes, loctmprecMenuNodeTranslations);
@@ -33,7 +33,7 @@ codeunit 50013 TTTPRMenuSuiteMgt
         UploadIntoStream(lblReadTextLbl, '', '', loctxtClientFilename, parvarstrmIn);
     end;
 
-    local procedure DecodeObjectBlob(parvartmprecBlob: Record TempBlob temporary; parvartmprecMenuSuites: Record TTTPRMenuSuite temporary; parvartmprecMenuNodes: Record TTTPRMenuNode temporary; parvartmprecMenuNodeTranslations: Record TTTPRMenuNodeTranslation temporary)
+    local procedure DecodeObjectBlob(parvartmprecBlob: Record TempBlob temporary; parvartmprecMenuSuites: Record "TTTPR MenuSuite" temporary; parvartmprecMenuNodes: Record "TTTPR MenuNode" temporary; parvartmprecMenuNodeTranslations: Record "TTTPR MenuNodeTranslation" temporary)
     var
         locstrmIn: InStream;
         loctxtIn: Text;
@@ -59,10 +59,10 @@ codeunit 50013 TTTPRMenuSuiteMgt
                         loctxtId := CopyStr(loctxtTemp, 1, locintPos - 1);
                         loctxtName := CopyStr(loctxtTemp, locintPos + 1);
 
-                        parvartmprecMenuSuites.Code := CopyStr(loctxtName, 1, MaxStrLen(parvartmprecMenuSuites.Code));
-                        parvartmprecMenuSuites.Name := CopyStr(loctxtName, 1, MaxStrLen(parvartmprecMenuSuites.Name));
-                        parvartmprecMenuSuites.Description := CopyStr(loctxtName, 1, MaxStrLen(parvartmprecMenuSuites.Description));
-                        Evaluate(parvartmprecMenuSuites.Id, loctxtId);
+                        parvartmprecMenuSuites."TTTPR Code" := CopyStr(loctxtName, 1, MaxStrLen(parvartmprecMenuSuites."TTTPR Code"));
+                        parvartmprecMenuSuites."TTTPR Name" := CopyStr(loctxtName, 1, MaxStrLen(parvartmprecMenuSuites."TTTPR Name"));
+                        parvartmprecMenuSuites."TTTPR Description" := CopyStr(loctxtName, 1, MaxStrLen(parvartmprecMenuSuites."TTTPR Description"));
+                        Evaluate(parvartmprecMenuSuites."TTTPR Id", loctxtId);
 
                     end;
             end;
