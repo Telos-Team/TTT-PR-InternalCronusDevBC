@@ -4,6 +4,8 @@ table 50011 "TTTPR Nav2BcData"
     Caption = 'Nav2BC Data';
     DataCaptionFields = "TTTPR Company", "TTTPR TableNo", "TTTPR RecordNo", "TTTPR FieldNo";
     DataClassification = CustomerContent;
+    LookupPageId = "TTTPR Nav2BcData";
+    DrillDownPageId = "TTTPR Nav2BcData";
 
     fields
     {

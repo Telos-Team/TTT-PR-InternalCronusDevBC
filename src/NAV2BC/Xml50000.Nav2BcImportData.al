@@ -86,7 +86,7 @@ xmlport 50000 "TTTPR Nav2BcImportData"
         dtStart: DateTime;
         dtFinish: DateTime;
         durTime: Duration;
-        lblPostMessageLbl: Label 'Count %1\Time %2';
+        lblPostMessageLbl: Label 'Import count: %1\Time: %2';
 
     procedure SetTemplateCode(parcodTemplateCode: Text)
     begin

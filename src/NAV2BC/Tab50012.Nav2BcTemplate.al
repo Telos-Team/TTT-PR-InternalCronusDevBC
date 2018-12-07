@@ -4,6 +4,8 @@ table 50012 "TTTPR Nav2BcTemplate"
     Caption = 'Nav2Bc Template';
     DataCaptionFields = "TTTPR Code", "TTTPR Description";
     DataClassification = CustomerContent;
+    LookupPageId = "TTTPR Nav2BcTemplates";
+    DrillDownPageId = "TTTPR Nav2BcTemplates";
 
     fields
     {
@@ -17,6 +19,14 @@ table 50012 "TTTPR Nav2BcTemplate"
         {
             Caption = 'Description';
             DataClassification = CustomerContent;
+        }
+        field(3; "TTTPR DataLines"; Integer)
+        {
+            Caption = 'Data Lines';
+            FieldClass = FlowField;
+            CalcFormula = Count ("TTTPR Nav2BcData" where ("TTTPR TemplateCode" = field ("TTTPR Code")));
+            Editable = false;
+            BlankZero = true;
         }
     }
 
@@ -52,6 +62,13 @@ table 50012 "TTTPR Nav2BcTemplate"
         loccuMgt: Codeunit "TTTPR Nav2BcManagement";
     begin
         loccuMgt.SplitData(Rec);
+    end;
+
+    procedure InsertData()
+    var
+        loccuMgt: Codeunit "TTTPR Nav2BcManagement";
+    begin
+        loccuMgt.InsertData(Rec);
     end;
 }
 

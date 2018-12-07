@@ -223,6 +223,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TTTPR Nav2BcTemplate - Field TTTPR Description - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 68585040 - Field 1827167197 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Data Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPR Nav2BcTemplate - Field TTTPR DataLines - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 1294314477 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Object Runner</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -408,6 +413,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTTPR MenuSuiteMgt - Method DecodeObjectBlob - NamedType loclblObjectHeadlineSearchLbl</note>
         </trans-unit>
+        <trans-unit id="Codeunit 3321558313 - Method 15074807 - NamedType 4156592218" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Action: #1############################\Action: #2############################</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTTPR Nav2BcManagement - Method ImportData - NamedType loclblActionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3321558313 - Method 15074807 - NamedType 2557421589" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Uploading data...</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTTPR Nav2BcManagement - Method ImportData - NamedType loclblUploadingLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3321558313 - Method 15074807 - NamedType 3977008351" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Importing data...</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTTPR Nav2BcManagement - Method ImportData - NamedType loclblImportingLbl</note>
+        </trans-unit>
         <trans-unit id="Codeunit 1916651574 - Method 190711088 - NamedType 3268322187" size-unit="char" translate="yes" xml:space="preserve">
           <source>%1 (%2)</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -437,6 +457,11 @@
           <source>Split Data</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR Nav2BcTemplates - Action TTTPR SplitData - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2171418609 - Action 1006960075 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Insert Data</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR Nav2BcTemplates - Action TTTPR InsertData - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2171418609 - Action 4179760247 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Show Data</source>
@@ -619,7 +644,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort TTTPR Nav2BcImportData - Property Caption</note>
         </trans-unit>
         <trans-unit id="XmlPort 3296606499 - NamedType 3578568365" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Count %1\Time %2</source>
+          <source>Import count: %1\Time: %2</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort TTTPR Nav2BcImportData - NamedType lblPostMessageLbl</note>
         </trans-unit>

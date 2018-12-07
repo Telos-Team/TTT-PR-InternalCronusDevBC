@@ -21,6 +21,10 @@ page 50007 "TTTPR Nav2BcTemplates"
                 {
                     ApplicationArea = All;
                 }
+                field("TTTPR DataLines"; "TTTPR DataLines")
+                {
+                    ApplicationArea = All;
+                }
             }
         }
         area(Factboxes)
@@ -41,7 +45,7 @@ page 50007 "TTTPR Nav2BcTemplates"
                 PromotedIsBig = true;
                 PromotedOnly = true;
                 PromotedCategory = Process;
-                Image = Action;
+                Image = Import;
 
                 trigger OnAction();
                 begin
@@ -56,11 +60,26 @@ page 50007 "TTTPR Nav2BcTemplates"
                 PromotedIsBig = true;
                 PromotedOnly = true;
                 PromotedCategory = Process;
-                Image = Action;
+                Image = Split;
 
                 trigger OnAction();
                 begin
                     SplitData();
+                end;
+            }
+            action("TTTPR InsertData")
+            {
+                Caption = 'Insert Data';
+                ApplicationArea = All;
+                Promoted = true;
+                PromotedIsBig = true;
+                PromotedOnly = true;
+                PromotedCategory = Process;
+                Image = Save;
+
+                trigger OnAction();
+                begin
+                    InsertData();
                 end;
             }
         }
@@ -74,7 +93,7 @@ page 50007 "TTTPR Nav2BcTemplates"
                 PromotedIsBig = True;
                 PromotedOnly = True;
                 PromotedCategory = Process;
-                Image = Action;
+                Image = ShowList;
                 RunObject = page "TTTPR Nav2BcData";
                 RunPageLink = "TTTPR TemplateCode" = FIELD ("TTTPR Code");
             }
