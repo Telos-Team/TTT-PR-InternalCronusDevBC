@@ -658,6 +658,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTPR IT Role Center - Action TTTPR ObjectRunnerEmbedding - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 780518952 - Action 3293244607 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TTTPR Testor</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTPR IT Role Center - Action TTTPR Testor - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 780518952 - Action 3293244607 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TTTPR Testor</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTPR IT Role Center - Action TTTPR Testor - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 780518952 - Action 85210707 - Property 2879900210" size-unit="char" translate="no" xml:space="preserve">
           <source>TTTPR</source>
           <note from="Developer" annotates="general" priority="2">Dont translate this!</note>

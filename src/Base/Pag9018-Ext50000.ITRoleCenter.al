@@ -21,6 +21,14 @@ pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
 
         addfirst(Processing)
         {
+            action("TTTPR Testor")
+            {
+                Caption = 'TTTPR Testor';
+                ToolTip = 'TTTPR Testor';
+                ApplicationArea = All;
+                Image = "Table";
+                RunObject = codeunit "TTTPR GraphTests";
+            }
             group("TTTPR MainGroupProcessing")
             {
                 Caption = 'TTTPR', Comment = 'Dont translate this!', Locked = true;
