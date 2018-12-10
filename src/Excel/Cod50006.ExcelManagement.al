@@ -1,6 +1,6 @@
-codeunit 50006 TTTPRExcelManagement
+codeunit 50006 "TTTPR ExcelManagement"
 {
-    Description = 'TTTPR';
+    Description = 'TTTPR Excel Management';
     Subtype = Normal;
 
     trigger OnRun();

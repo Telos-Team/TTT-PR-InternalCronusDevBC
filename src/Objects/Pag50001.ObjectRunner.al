@@ -2,7 +2,7 @@ page 50001 "TTTPRObjectRunnerList"
 {
     Caption = 'Object Runner';
     PageType = List;
-    SourceTable = TTTPRObjectRunner;
+    SourceTable = "TTTPR ObjectRunner";
     SourceTableTemporary = true;
     Editable = true;
     UsageCategory = Administration;
@@ -144,7 +144,7 @@ page 50001 "TTTPRObjectRunnerList"
                     Image = ShowSelected;
                     trigger OnAction();
                     var
-                        loccuObjMgt: Codeunit TTTPRObjectManagement;
+                        loccuObjMgt: Codeunit "TTTPR ObjectManagement";
                     begin
                         loccuObjMgt.ConstructGetSystemVirtualTableVariantAL();
                     end;

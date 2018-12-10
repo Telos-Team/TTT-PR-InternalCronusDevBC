@@ -59,7 +59,7 @@ pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
                             ToolTip = 'Show Simple Table Filter';
                             ApplicationArea = All;
                             Image = "Table";
-                            RunObject = page TTTPRTableFilterExampleSimple;
+                            RunObject = page "TTTPR TableFilterExampleSimple";
                             RunPageMode = Edit;
                         }
                         action("TTTPR TableFilterRecRefProcessing")
@@ -68,7 +68,7 @@ pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
                             ToolTip = 'Show RecRef Table Filter';
                             ApplicationArea = All;
                             Image = "Table";
-                            RunObject = page TTTPRTableFilterExampleRecRef;
+                            RunObject = page "TTTPR TableFilterExampleRecRef";
                             RunPageMode = Edit;
                         }
                     }
@@ -85,7 +85,7 @@ pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
                             ToolTip = 'Show the Translation Worksheet';
                             ApplicationArea = All;
                             Image = "Table";
-                            RunObject = page TTTPRTranslationWorksheet;
+                            RunObject = page "TTTPR TranslationWorksheet";
                             RunPageMode = Edit;
                         }
                     }
@@ -115,7 +115,7 @@ pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
                     ToolTip = 'Show the simple Table Filter example';
                     ApplicationArea = All;
                     Image = "Table";
-                    RunObject = page "TTTPRTableFilterExampleSimple";
+                    RunObject = page "TTTPR TableFilterExampleSimple";
                     RunPageMode = Edit;
                 }
                 action("TTTPR TableFilterExampleRecRefSections")
@@ -124,7 +124,7 @@ pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
                     ToolTip = 'Show the RecordRef Table Filter example';
                     ApplicationArea = All;
                     Image = "Table";
-                    RunObject = page "TTTPRTableFilterExampleRecRef";
+                    RunObject = page "TTTPR TableFilterExampleRecRef";
                     RunPageMode = Edit;
                 }
 
@@ -134,7 +134,7 @@ pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
                     ToolTip = 'Show the Translation Worksheet';
                     ApplicationArea = All;
                     Image = "Table";
-                    RunObject = page TTTPRTranslationWorksheet;
+                    RunObject = page "TTTPR TranslationWorksheet";
                     RunPageMode = Edit;
                 }
 

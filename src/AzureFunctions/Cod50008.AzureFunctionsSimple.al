@@ -1,6 +1,6 @@
-codeunit 50008 TTTPRAzureFunctionsSimple
+codeunit 50008 "TTTPR AzureFunctionsSimple"
 {
-    Description = 'TTTPR';
+    Description = 'TTTPR Azure Functions Simple';
     Subtype = Normal;
 
     // https://tttpr-functionapp.azurewebsites.net 

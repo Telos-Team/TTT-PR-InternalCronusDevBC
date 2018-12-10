@@ -1,4 +1,4 @@
-page 50002 "TTTPRSysVirtTblInspector"
+page 50002 "TTTPR SysVirtTblInspector"
 {
     PageType = List;
     SourceTable = Integer;

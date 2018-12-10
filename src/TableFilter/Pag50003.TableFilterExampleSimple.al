@@ -1,9 +1,9 @@
-page 50003 "TTTPRTableFilterExampleSimple"
+page 50003 "TTTPR TableFilterExampleSimple"
 {
     Caption = 'Table Filter Example, Simple';
     InstructionalText = 'Just a simple example - easy to copy from!';
     PageType = List;
-    SourceTable = TTTPRTableFilterExample1;
+    SourceTable = "TTTPR TableFilterExample1";
 
     layout
     {

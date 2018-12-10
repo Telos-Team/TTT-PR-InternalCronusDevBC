@@ -1,4 +1,4 @@
-table 50000 "TTTPRObjectRunner"
+table 50000 "TTTPR ObjectRunner"
 {
     Caption = 'Object Runner';
     DataClassification = CustomerContent;
@@ -64,7 +64,7 @@ table 50000 "TTTPRObjectRunner"
     begin
     end;
 
-    procedure FillTable(var parvarrecObject: Record TTTPRObjectRunner);
+    procedure FillTable(var parvarrecObject: Record "TTTPR ObjectRunner");
     var
         locrecAllObjWithCaption: Record AllObjWithCaption;
     begin
@@ -96,7 +96,7 @@ table 50000 "TTTPRObjectRunner"
         locrecAllObjWithCaption: Record AllObjWithCaption;
         loctmprecAllObjWithCaption: Record AllObjWithCaption temporary;
         locrecPageMetaData: Record "Page Metadata";
-        locpagInspector: Page TTTPRSysVirtTblInspector;
+        locpagInspector: Page "TTTPR SysVirtTblInspector";
     begin
         case "TTTPR ObjectType" of
             locrecAllObjWithCaption."Object Type"::Codeunit:
@@ -114,7 +114,7 @@ table 50000 "TTTPRObjectRunner"
                     locrecPageMetaData.SetRange(SourceTable, "TTTPR ObjectID");
                     if locrecPageMetaData.IsEmpty then begin
                         loctmprecAllObjWithCaption."Object Type" := loctmprecAllObjWithCaption."Object Type"::Page;
-                        loctmprecAllObjWithCaption."Object ID" := page::TTTPRSysVirtTblInspector;
+                        loctmprecAllObjWithCaption."Object ID" := page::"TTTPR SysVirtTblInspector";
                     end else begin
                         locrecPageMetaData.findset;
                         repeat
@@ -124,7 +124,7 @@ table 50000 "TTTPRObjectRunner"
                             end;
                         until locrecPageMetaData.Next = 0;
                         loctmprecAllObjWithCaption."Object Type" := loctmprecAllObjWithCaption."Object Type"::Page;
-                        loctmprecAllObjWithCaption."Object ID" := page::TTTPRSysVirtTblInspector;
+                        loctmprecAllObjWithCaption."Object ID" := page::"TTTPR SysVirtTblInspector";
                         loctmprecAllObjWithCaption."Object Name" := 'TTTPR Table Inspector';
                         loctmprecAllObjWithCaption."Object Caption" := loctmprecAllObjWithCaption."Object Name";
                         if loctmprecAllObjWithCaption.Insert(false) then;
@@ -133,7 +133,7 @@ table 50000 "TTTPRObjectRunner"
                         if loctmprecAllObjWithCaption.count > 1 then
                             if page.RunModal(page::Objects, loctmprecAllObjWithCaption) = "Action"::LookupOK then;
                     end;
-                    if loctmprecAllObjWithCaption."Object ID" = page::TTTPRSysVirtTblInspector then begin
+                    if loctmprecAllObjWithCaption."Object ID" = page::"TTTPR SysVirtTblInspector" then begin
                         locpagInspector.PrepareTable("TTTPR ObjectID");
                         locpagInspector.Run();
                     end else

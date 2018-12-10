@@ -1,9 +1,9 @@
-page 50004 "TTTPRTableFilterExampleRecRef"
+page 50004 "TTTPR TableFilterExampleRecRef"
 {
     Caption = 'Table Filter Example, RecRef';
     InstructionalText = 'Here I want to try to use a TableFilter field using RecRef - if possible!';
     PageType = List;
-    SourceTable = TTTPRTableFilterExample1;
+    SourceTable = "TTTPR TableFilterExample1";
     UsageCategory = Administration;
     ApplicationArea = All;
     DataCaptionFields = "TTTPR ObjectID", "TTTPR ObjectName";

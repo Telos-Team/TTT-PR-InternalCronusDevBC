@@ -1,6 +1,6 @@
-codeunit 50004 TTTPRileMgtTest
+codeunit 50004 "TTTPR FileMgtTest"
 {
-    Description = 'TTTPR';
+    Description = 'TTTPR File Management Test';
     Subtype = Normal;
 
     trigger OnRun();

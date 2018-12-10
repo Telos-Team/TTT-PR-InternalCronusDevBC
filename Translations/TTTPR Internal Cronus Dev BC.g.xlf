@@ -228,65 +228,65 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TTTPR Nav2BcTemplate - Field TTTPR DataLines - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1294314477 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2415504581 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Object Runner</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPRObjectRunner - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPR ObjectRunner - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1294314477 - Field 1528521381 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2415504581 - Field 1528521381 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Object Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPRObjectRunner - Field TTTPR ObjectType - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPR ObjectRunner - Field TTTPR ObjectType - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1294314477 - Field 2804304626 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2415504581 - Field 2804304626 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Object ID</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPRObjectRunner - Field TTTPR ObjectID - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPR ObjectRunner - Field TTTPR ObjectID - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1294314477 - Field 2933720488 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2415504581 - Field 2933720488 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Object Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPRObjectRunner - Field TTTPR ObjectName - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPR ObjectRunner - Field TTTPR ObjectName - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1294314477 - Field 1552077903 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2415504581 - Field 1552077903 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Object Caption</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPRObjectRunner - Field TTTPR ObjectCaption - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPR ObjectRunner - Field TTTPR ObjectCaption - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1294314477 - Field 3750922176 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2415504581 - Field 3750922176 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Object Type Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPRObjectRunner - Field TTTPR ObjectTypeName - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPR ObjectRunner - Field TTTPR ObjectTypeName - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1294314477 - Field 2273722377 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2415504581 - Field 2273722377 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Object Sub Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPRObjectRunner - Field TTTPR ObjectSubType - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPR ObjectRunner - Field TTTPR ObjectSubType - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2515964403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2576592043 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Table Filter Example 1</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPRTableFilterExample1 - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPR TableFilterExample1 - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2515964403 - Field 833828099 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2576592043 - Field 833828099 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Line No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPRTableFilterExample1 - Field TTTPR LineNo - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPR TableFilterExample1 - Field TTTPR LineNo - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2515964403 - Field 2804304626 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2576592043 - Field 2804304626 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Object ID</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPRTableFilterExample1 - Field TTTPR ObjectID - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPR TableFilterExample1 - Field TTTPR ObjectID - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2515964403 - Field 2933720488 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2576592043 - Field 2933720488 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Object Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPRTableFilterExample1 - Field TTTPR ObjectName - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPR TableFilterExample1 - Field TTTPR ObjectName - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2515964403 - Field 1047036397 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2576592043 - Field 1047036397 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Table Filter</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPRTableFilterExample1 - Field TTTPR FilterString - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTTPR TableFilterExample1 - Field TTTPR FilterString - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3870298724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Translation Project</source>
@@ -398,10 +398,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TTTPR TranslatedLine - Field TTTPR TargetText - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Codeunit 446327484 - Method 775907828 - NamedType 2663951413" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 2432134164 - Method 775907828 - NamedType 2663951413" size-unit="char" translate="yes" xml:space="preserve">
           <source>https://tttpr-functionapp.azurewebsites.net/api/HelloWorld</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTTPRAzureFunctionsSimple - Method TestSimpleHelloWorld - NamedType loclblUrlLbl</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTTPR AzureFunctionsSimple - Method TestSimpleHelloWorld - NamedType loclblUrlLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 2515135823 - Method 453759119 - NamedType 751081105" size-unit="char" translate="yes" xml:space="preserve">
           <source>Select a file to upload</source>
@@ -433,15 +433,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTTPR CoreLicenseStateWrapper - Method GetLicenseStateDescription - NamedType loclblDescLbl</note>
         </trans-unit>
-        <trans-unit id="Codeunit 1455871752 - Method 2756137458 - NamedType 2245926172" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 2829978224 - Method 2756137458 - NamedType 2245926172" size-unit="char" translate="yes" xml:space="preserve">
           <source>Please select XML file</source>
           <note from="Developer" annotates="general" priority="2">This is the title shown on the upload dialog</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTTPRXmlManagement - Method LoadClientXml - NamedType loclblDialogTitleLbl</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTTPR XmlManagement - Method LoadClientXml - NamedType loclblDialogTitleLbl</note>
         </trans-unit>
-        <trans-unit id="Codeunit 1455871752 - Method 2756137458 - NamedType 4238599010" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 2829978224 - Method 2756137458 - NamedType 4238599010" size-unit="char" translate="yes" xml:space="preserve">
           <source></source>
           <note from="Developer" annotates="general" priority="2">This is the filter used when selecting file to upload</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTTPRXmlManagement - Method LoadClientXml - NamedType loclblFromFilterLbl</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTTPR XmlManagement - Method LoadClientXml - NamedType loclblFromFilterLbl</note>
         </trans-unit>
         <trans-unit id="Page 2171418609 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Nav2Bc Templates</source>
@@ -548,95 +548,95 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRObjectRunnerList - Action TTTPR actConstructGetSystemVirtualTableVariantAL - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 2121763985 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 991411529 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>System/Virtual Table Inspector</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRSysVirtTblInspector - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR SysVirtTblInspector - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2121763985 - Control 2670358292 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 991411529 - Control 2670358292 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>General</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRSysVirtTblInspector - Control TTTPR General - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR SysVirtTblInspector - Control TTTPR General - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2121763985 - Control 955787779 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 991411529 - Control 955787779 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Table No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRSysVirtTblInspector - Control TTTPR TableNo - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR SysVirtTblInspector - Control TTTPR TableNo - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2121763985 - Control 2888210923 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 991411529 - Control 2888210923 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Record Count</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRSysVirtTblInspector - Control TTTPR RecCount - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR SysVirtTblInspector - Control TTTPR RecCount - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2121763985 - Control 1030678297 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 991411529 - Control 1030678297 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Table Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRSysVirtTblInspector - Control TTTPR TableName - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR SysVirtTblInspector - Control TTTPR TableName - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2121763985 - Control 565375642 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 991411529 - Control 565375642 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Table Caption</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRSysVirtTblInspector - Control TTTPR TableCaption - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR SysVirtTblInspector - Control TTTPR TableCaption - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2121763985 - Control 3772263859 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 991411529 - Control 3772263859 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Lines</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRSysVirtTblInspector - Control TTTPR Group - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR SysVirtTblInspector - Control TTTPR Group - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2121763985 - Control 833828099 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 991411529 - Control 833828099 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Line No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRSysVirtTblInspector - Control TTTPR LineNo - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR SysVirtTblInspector - Control TTTPR LineNo - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2121763985 - Action 2595721570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 991411529 - Action 2595721570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Select Table</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRSysVirtTblInspector - Action TTTPR actSelectTable - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR SysVirtTblInspector - Action TTTPR actSelectTable - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2121763985 - Action 2595721570 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 991411529 - Action 2595721570 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Select another table to show</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRSysVirtTblInspector - Action TTTPR actSelectTable - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR SysVirtTblInspector - Action TTTPR actSelectTable - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 2121763985 - Action 789807142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 991411529 - Action 789807142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Use Caption/Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRSysVirtTblInspector - Action TTTPR actUseCaptionName - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR SysVirtTblInspector - Action TTTPR actUseCaptionName - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2121763985 - Action 789807142 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 991411529 - Action 789807142 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Change header to show caption or name</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRSysVirtTblInspector - Action TTTPR actUseCaptionName - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR SysVirtTblInspector - Action TTTPR actUseCaptionName - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3898037786 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 3735270338 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Table Filter Example, Simple</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRTableFilterExampleSimple - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR TableFilterExampleSimple - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 3898037786 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 3735270338 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
           <source>Just a simple example - easy to copy from!</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRTableFilterExampleSimple - Property InstructionalText</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR TableFilterExampleSimple - Property InstructionalText</note>
         </trans-unit>
-        <trans-unit id="Page 663899639 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 3297920335 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Table Filter Example, RecRef</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRTableFilterExampleRecRef - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR TableFilterExampleRecRef - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 663899639 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 3297920335 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
           <source>Here I want to try to use a TableFilter field using RecRef - if possible!</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRTableFilterExampleRecRef - Property InstructionalText</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR TableFilterExampleRecRef - Property InstructionalText</note>
         </trans-unit>
-        <trans-unit id="Page 2354391325 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 4009879301 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>TTTPR Translation Projects</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRTranslationProjects - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR TranslationProjects - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 3085532397 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 1240396197 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>TTTPR Translation Worksheet</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRTranslationWorksheet - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR TranslationWorksheet - Property Caption</note>
         </trans-unit>
         <trans-unit id="XmlPort 3296606499 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Nav2Bc Import Data</source>

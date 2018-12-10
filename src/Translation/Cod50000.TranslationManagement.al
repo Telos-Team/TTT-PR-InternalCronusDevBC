@@ -1,4 +1,4 @@
-codeunit 50000 TTTPRTranslationManagement
+codeunit 50000 "TTTPR TranslationManagement"
 {
     Description = 'TTTPR';
     Subtype = Normal;

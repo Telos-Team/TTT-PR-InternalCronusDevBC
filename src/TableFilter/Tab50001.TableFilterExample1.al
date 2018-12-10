@@ -1,4 +1,4 @@
-table 50001 TTTPRTableFilterExample1
+table 50001 "TTTPR TableFilterExample1"
 {
     Caption = 'Table Filter Example 1';
     DataClassification = ToBeClassified;

@@ -1,4 +1,4 @@
-codeunit 50007 "TTTPRObjectManagement"
+codeunit 50007 "TTTPR ObjectManagement"
 {
     Description = 'TTTPR';
     Subtype = Normal;

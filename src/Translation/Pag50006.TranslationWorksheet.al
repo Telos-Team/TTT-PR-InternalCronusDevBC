@@ -1,4 +1,4 @@
-page 50006 TTTPRTranslationWorksheet
+page 50006 "TTTPR TranslationWorksheet"
 {
     Caption = 'TTTPR Translation Worksheet';
     PageType = List;

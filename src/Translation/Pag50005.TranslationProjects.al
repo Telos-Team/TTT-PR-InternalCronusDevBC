@@ -1,4 +1,4 @@
-page 50005 TTTPRTranslationProjects
+page 50005 "TTTPR TranslationProjects"
 {
     Caption = 'TTTPR Translation Projects';
     PageType = List;

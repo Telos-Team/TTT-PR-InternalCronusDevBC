@@ -1,6 +1,6 @@
-codeunit 50002 TTTPRJsonManagement
+codeunit 50002 "TTTPR JsonManagement"
 {
-    Description = 'TTTPR';
+    Description = 'TTTPR Json Management';
     Subtype = Normal;
 
     trigger OnRun();
