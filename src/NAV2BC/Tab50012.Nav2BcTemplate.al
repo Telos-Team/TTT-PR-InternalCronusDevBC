@@ -24,9 +24,16 @@ table 50012 "TTTPR Nav2BcTemplate"
         {
             Caption = 'Data Lines';
             FieldClass = FlowField;
-            CalcFormula = Count ("TTTPR Nav2BcData" where ("TTTPR TemplateCode" = field ("TTTPR Code")));
+            CalcFormula = Count ("TTTPR Nav2BcData" where (
+                "TTTPR TemplateCode" = field ("TTTPR Code"),
+                "TTTPR Company" = field ("TTTPR CompanyFilter")));
             Editable = false;
             BlankZero = true;
+        }
+        field(4; "TTTPR CompanyFilter"; Text[30])
+        {
+            Caption = 'Company Filter';
+            FieldClass = FlowFilter;
         }
     }
 
@@ -70,5 +77,11 @@ table 50012 "TTTPR Nav2BcTemplate"
     begin
         loccuMgt.InsertData(Rec);
     end;
-}
 
+    procedure ShowRecords()
+    var
+        loccuMgt: Codeunit "TTTPR Nav2BcManagement";
+    begin
+        loccuMgt.ShowData(rec);
+    end;
+}

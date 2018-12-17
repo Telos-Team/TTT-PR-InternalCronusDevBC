@@ -97,6 +97,21 @@ page 50007 "TTTPR Nav2BcTemplates"
                 RunObject = page "TTTPR Nav2BcData";
                 RunPageLink = "TTTPR TemplateCode" = FIELD ("TTTPR Code");
             }
+            action("TTTPR ShowRecords")
+            {
+                Caption = 'Show Records';
+                ApplicationArea = All;
+                Promoted = True;
+                PromotedIsBig = True;
+                PromotedOnly = True;
+                PromotedCategory = Process;
+                Image = ShowList;
+
+                trigger OnAction()
+                begin
+                    ShowRecords();
+                end;
+            }
         }
     }
 }
