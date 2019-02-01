@@ -693,6 +693,101 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTTPR TranslationWorksheet - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 2535489166 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Change</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2535489166 - Control 698539839 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - Control Settings - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2535489166 - Control 103915345 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - Control TableNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2535489166 - Control 730832363 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - Control TableName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2535489166 - Control 1548211826 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - Control TableFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2535489166 - Control 1548211826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table Filter example: Where(No. = Filter(10000..20000))</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - Control TableFilter - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 2535489166 - Control 2547700717 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - Control FieldNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2535489166 - Control 166597695 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - Control FieldName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2535489166 - Control 1717495343 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Action</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - Control UseAction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2535489166 - Control 1717495343 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Action "ModifyValidate" is used for validating the current field content and/or just running the OnModify.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - Control UseAction - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 2535489166 - Control 1648763025 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - Control NewValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2535489166 - Control 695386742 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use OnModify</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - Control UseOnModify - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2535489166 - Control 4293120472 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use OnValidate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - Control UseOnValidate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2535489166 - Control 1891272477 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use COMMIT per no. of records</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - Control UseCommitPerRecords - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2535489166 - Control 2111348490 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use COMMIT per no. of seconds</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - Control UseCommitPerSeconds - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2535489166 - Control 1791202911 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use Test</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - Control UseTest - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2535489166 - NamedType 2701808700" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Current record:\#1################################################</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - NamedType textProgressDialogTxt</note>
+        </trans-unit>
+        <trans-unit id="Report 2535489166 - NamedType 2255681367" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 records\%2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - NamedType textFinishMessageTxt</note>
+        </trans-unit>
+        <trans-unit id="Report 2535489166 - NamedType 2671366136" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Selecting TEST cancelled the COMMIT of all changes!</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTPR FieldChange - NamedType textTestCancellationTxt</note>
+        </trans-unit>
         <trans-unit id="XmlPort 3296606499 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Nav2Bc Import Data</source>
           <note from="Developer" annotates="general" priority="2"></note>
