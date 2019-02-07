@@ -149,6 +149,23 @@ page 50001 "TTTPRObjectRunnerList"
                         loccuObjMgt.ConstructGetSystemVirtualTableVariantAL();
                     end;
                 }
+
+                action("TTTPR actConstructRepeaterFieldListAL")
+                {
+                    Caption = 'Create Repeater Field list AL';
+                    ToolTip = 'Create AL for Repeater Field list';
+                    Promoted = true;
+                    PromotedIsBig = true;
+                    PromotedOnly = true;
+                    PromotedCategory = Process;
+                    Image = ShowSelected;
+                    trigger OnAction();
+                    var
+                        loccuObjMgt: Codeunit "TTTPR ObjectManagement";
+                    begin
+                        loccuObjMgt.ConstructRepeaterFieldListAL(rec."TTTPR ObjectID");
+                    end;
+                }
             }
         }
     }

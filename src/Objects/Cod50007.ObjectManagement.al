@@ -523,4 +523,24 @@ codeunit 50007 "TTTPR ObjectManagement"
         exit(parvarvarTable.IsRecord());
     end;
 
+    procedure ConstructRepeaterFieldListAL(parintTableNo: Integer);
+    var
+        locrecField: Record Field;
+        loctbResult: TextBuilder;
+    begin
+        locrecField.SetRange(TableNo, parintTableNo);
+        locrecField.FindSet();
+        repeat
+            loctbResult.AppendLine(
+                strsubstno('                field("%1"; "%2")', DELCHR(locrecField.FieldName, '=', ' .'), locrecField.FieldName));
+            loctbResult.AppendLine(
+                '                {');
+            loctbResult.AppendLine(
+                '                    ApplicationArea = All;');
+            loctbResult.AppendLine(
+                '                }');
+        until locrecField.Next() = 0;
+        Message('%1', loctbResult.ToText());
+    end;
+
 }

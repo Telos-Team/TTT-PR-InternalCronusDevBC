@@ -603,6 +603,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRObjectRunnerList - Action TTTPR actConstructGetSystemVirtualTableVariantAL - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 3796474163 - Action 3561335460 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create Repeater Field list AL</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRObjectRunnerList - Action TTTPR actConstructRepeaterFieldListAL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3796474163 - Action 3561335460 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create AL for Repeater Field list</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTPRObjectRunnerList - Action TTTPR actConstructRepeaterFieldListAL - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 991411529 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>System/Virtual Table Inspector</source>
           <note from="Developer" annotates="general" priority="2"></note>
