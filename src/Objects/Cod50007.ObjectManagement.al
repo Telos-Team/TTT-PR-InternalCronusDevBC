@@ -526,7 +526,11 @@ codeunit 50007 "TTTPR ObjectManagement"
     procedure ConstructRepeaterFieldListAL(parintTableNo: Integer);
     var
         locrecField: Record Field;
+        locrecTempBlob: Record TempBlob temporary;
         loctbResult: TextBuilder;
+        loctxtClientFilename: Text;
+        locstrmIn: InStream;
+        locstrmOut: OutStream;
     begin
         locrecField.SetRange(TableNo, parintTableNo);
         locrecField.FindSet();
@@ -541,6 +545,10 @@ codeunit 50007 "TTTPR ObjectManagement"
                 '                }');
         until locrecField.Next() = 0;
         Message('%1', loctbResult.ToText());
-    end;
 
+        locrecTempBlob.Blob.CreateOutStream(locstrmOut);
+        locstrmOut.Write(loctbResult.ToText());
+        locrecTempBlob.Blob.CreateInStream(locstrmIn);
+        DownloadFromStream(locstrmIn, 'Select a file', '', '', loctxtClientFilename);
+    end;
 }
