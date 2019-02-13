@@ -1,4 +1,4 @@
-codeunit 50014 "TTTPR CoreUpgrade"
+codeunit 50014 "TTT-PR CoreUpgrade"
 {
     // <TTT001>
     //   Created.
@@ -10,5 +10,5 @@ codeunit 50014 "TTTPR CoreUpgrade"
     // CHECK -> UPGRADE -> VALIDATE
 
     var
-        cuModuleInfoWrapper: Codeunit "TTTPR CoreModuleInfoWrapper";
+        cuModuleInfoWrapper: Codeunit "TTT-PR CoreModuleInfoWrapper";
 }

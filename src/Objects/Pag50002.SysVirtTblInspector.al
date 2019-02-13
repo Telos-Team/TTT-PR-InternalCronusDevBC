@@ -1,4 +1,4 @@
-page 50002 "TTTPR SysVirtTblInspector"
+page 50002 "TTT-PR SysVirtTblInspector"
 {
     PageType = List;
     SourceTable = Integer;
@@ -10,231 +10,231 @@ page 50002 "TTTPR SysVirtTblInspector"
     {
         area(content)
         {
-            group("TTTPR General")
+            group("TTT-PR General")
             {
                 Caption = 'General';
-                field("TTTPR TableNo"; intTableNo)
+                field("TTT-PR TableNo"; intTableNo)
                 {
                     Caption = 'Table No.';
                     ApplicationArea = All;
                 }
-                field("TTTPR RecCount"; intRecCount)
+                field("TTT-PR RecCount"; intRecCount)
                 {
                     Caption = 'Record Count';
                     ApplicationArea = All;
                 }
-                field("TTTPR TableName"; txtTableName)
+                field("TTT-PR TableName"; txtTableName)
                 {
                     Caption = 'Table Name';
                     Editable = false;
                     ApplicationArea = All;
                 }
-                field("TTTPR TableCaption"; txtTableCaption)
+                field("TTT-PR TableCaption"; txtTableCaption)
                 {
                     Caption = 'Table Caption';
                     Editable = false;
                     ApplicationArea = All;
                 }
             }
-            repeater("TTTPR Group")
+            repeater("TTT-PR Group")
             {
                 Caption = 'Lines';
-                field("TTTPR LineNo"; Number)
+                field("TTT-PR LineNo"; Number)
                 {
                     Caption = 'Line No.';
                     ApplicationArea = All;
                 }
-                field("TTTPR Field1"; GetFieldValue(intTableNo, 1, Number))
+                field("TTT-PR Field1"; GetFieldValue(intTableNo, 1, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 1);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field2"; GetFieldValue(intTableNo, 2, Number))
+                field("TTT-PR Field2"; GetFieldValue(intTableNo, 2, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 2);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field3"; GetFieldValue(intTableNo, 3, Number))
+                field("TTT-PR Field3"; GetFieldValue(intTableNo, 3, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 3);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field4"; GetFieldValue(intTableNo, 4, Number))
+                field("TTT-PR Field4"; GetFieldValue(intTableNo, 4, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 4);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field5"; GetFieldValue(intTableNo, 5, Number))
+                field("TTT-PR Field5"; GetFieldValue(intTableNo, 5, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 5);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field6"; GetFieldValue(intTableNo, 6, Number))
+                field("TTT-PR Field6"; GetFieldValue(intTableNo, 6, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 6);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field7"; GetFieldValue(intTableNo, 7, Number))
+                field("TTT-PR Field7"; GetFieldValue(intTableNo, 7, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 7);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field8"; GetFieldValue(intTableNo, 8, Number))
+                field("TTT-PR Field8"; GetFieldValue(intTableNo, 8, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 8);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field9"; GetFieldValue(intTableNo, 9, Number))
+                field("TTT-PR Field9"; GetFieldValue(intTableNo, 9, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 9);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field10"; GetFieldValue(intTableNo, 10, Number))
+                field("TTT-PR Field10"; GetFieldValue(intTableNo, 10, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 10);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field11"; GetFieldValue(intTableNo, 11, Number))
+                field("TTT-PR Field11"; GetFieldValue(intTableNo, 11, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 11);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field12"; GetFieldValue(intTableNo, 12, Number))
+                field("TTT-PR Field12"; GetFieldValue(intTableNo, 12, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 12);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field13"; GetFieldValue(intTableNo, 13, Number))
+                field("TTT-PR Field13"; GetFieldValue(intTableNo, 13, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 13);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field14"; GetFieldValue(intTableNo, 14, Number))
+                field("TTT-PR Field14"; GetFieldValue(intTableNo, 14, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 14);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field15"; GetFieldValue(intTableNo, 15, Number))
+                field("TTT-PR Field15"; GetFieldValue(intTableNo, 15, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 15);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field16"; GetFieldValue(intTableNo, 16, Number))
+                field("TTT-PR Field16"; GetFieldValue(intTableNo, 16, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 16);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field17"; GetFieldValue(intTableNo, 17, Number))
+                field("TTT-PR Field17"; GetFieldValue(intTableNo, 17, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 17);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field18"; GetFieldValue(intTableNo, 18, Number))
+                field("TTT-PR Field18"; GetFieldValue(intTableNo, 18, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 18);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field19"; GetFieldValue(intTableNo, 19, Number))
+                field("TTT-PR Field19"; GetFieldValue(intTableNo, 19, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 19);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field20"; GetFieldValue(intTableNo, 20, Number))
+                field("TTT-PR Field20"; GetFieldValue(intTableNo, 20, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 20);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field21"; GetFieldValue(intTableNo, 21, Number))
+                field("TTT-PR Field21"; GetFieldValue(intTableNo, 21, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 21);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field22"; GetFieldValue(intTableNo, 22, Number))
+                field("TTT-PR Field22"; GetFieldValue(intTableNo, 22, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 22);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field23"; GetFieldValue(intTableNo, 23, Number))
+                field("TTT-PR Field23"; GetFieldValue(intTableNo, 23, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 23);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field24"; GetFieldValue(intTableNo, 24, Number))
+                field("TTT-PR Field24"; GetFieldValue(intTableNo, 24, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 24);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field25"; GetFieldValue(intTableNo, 25, Number))
+                field("TTT-PR Field25"; GetFieldValue(intTableNo, 25, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 25);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field26"; GetFieldValue(intTableNo, 26, Number))
+                field("TTT-PR Field26"; GetFieldValue(intTableNo, 26, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 26);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field27"; GetFieldValue(intTableNo, 27, Number))
+                field("TTT-PR Field27"; GetFieldValue(intTableNo, 27, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 27);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field28"; GetFieldValue(intTableNo, 28, Number))
+                field("TTT-PR Field28"; GetFieldValue(intTableNo, 28, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 28);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field29"; GetFieldValue(intTableNo, 29, Number))
+                field("TTT-PR Field29"; GetFieldValue(intTableNo, 29, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 29);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field30"; GetFieldValue(intTableNo, 30, Number))
+                field("TTT-PR Field30"; GetFieldValue(intTableNo, 30, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 30);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field31"; GetFieldValue(intTableNo, 31, Number))
+                field("TTT-PR Field31"; GetFieldValue(intTableNo, 31, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 31);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field32"; GetFieldValue(intTableNo, 32, Number))
+                field("TTT-PR Field32"; GetFieldValue(intTableNo, 32, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 32);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field33"; GetFieldValue(intTableNo, 33, Number))
+                field("TTT-PR Field33"; GetFieldValue(intTableNo, 33, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 33);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field34"; GetFieldValue(intTableNo, 34, Number))
+                field("TTT-PR Field34"; GetFieldValue(intTableNo, 34, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 34);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field35"; GetFieldValue(intTableNo, 35, Number))
+                field("TTT-PR Field35"; GetFieldValue(intTableNo, 35, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 35);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field36"; GetFieldValue(intTableNo, 36, Number))
+                field("TTT-PR Field36"; GetFieldValue(intTableNo, 36, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 36);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field37"; GetFieldValue(intTableNo, 37, Number))
+                field("TTT-PR Field37"; GetFieldValue(intTableNo, 37, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 37);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field38"; GetFieldValue(intTableNo, 38, Number))
+                field("TTT-PR Field38"; GetFieldValue(intTableNo, 38, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 38);
                     ApplicationArea = All;
                 }
-                field("TTTPR Field39"; GetFieldValue(intTableNo, 39, Number))
+                field("TTT-PR Field39"; GetFieldValue(intTableNo, 39, Number))
                 {
                     CaptionClass = GetFieldHeader(intTableNo, 39);
                     ApplicationArea = All;
@@ -247,7 +247,7 @@ page 50002 "TTTPR SysVirtTblInspector"
     {
         area(processing)
         {
-            action("TTTPR actSelectTable")
+            action("TTT-PR actSelectTable")
             {
                 Caption = 'Select Table';
                 ToolTip = 'Select another table to show';
@@ -261,7 +261,7 @@ page 50002 "TTTPR SysVirtTblInspector"
                     SelectTable();
                 end;
             }
-            action("TTTPR actUseCaptionName")
+            action("TTT-PR actUseCaptionName")
             {
                 Caption = 'Use Caption/Name';
                 ToolTip = 'Change header to show caption or name';

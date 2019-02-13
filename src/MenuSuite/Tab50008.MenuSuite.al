@@ -1,55 +1,55 @@
-table 50008 "TTTPR MenuSuite"
+table 50008 "TTT-PR MenuSuite"
 {
     Caption = 'TTTPR Menu Suite';
     DataClassification = SystemMetadata;
 
     fields
     {
-        field(1; "TTTPR Code"; Code[20])
+        field(1; "TTT-PR Code"; Code[20])
         {
             Caption = 'Code';
             DataClassification = SystemMetadata;
-            TableRelation = "TTTPR MenuSuite"."TTTPR Code";
+            TableRelation = "TTT-PR MenuSuite"."TTT-PR Code";
             ValidateTableRelation = true;
         }
 
-        field(2; "TTTPR Name"; Text[50])
+        field(2; "TTT-PR Name"; Text[50])
         {
             Caption = 'Name';
             DataClassification = SystemMetadata;
         }
 
-        field(3; "TTTPR Description"; Text[50])
+        field(3; "TTT-PR Description"; Text[50])
         {
             Caption = 'Description';
             DataClassification = SystemMetadata;
         }
 
-        field(4; "TTTPR Content"; Blob)
+        field(4; "TTT-PR Content"; Blob)
         {
             Caption = 'Content';
             DataClassification = SystemMetadata;
         }
 
-        field(5; "TTTPR Id"; Integer)
+        field(5; "TTT-PR Id"; Integer)
         {
             Caption = 'Id';
             DataClassification = SystemMetadata;
         }
 
-        field(6; "TTTPR Date"; Blob)
+        field(6; "TTT-PR Date"; Blob)
         {
             Caption = 'Date';
             DataClassification = SystemMetadata;
         }
 
-        field(7; "TTTPR Time"; Blob)
+        field(7; "TTT-PR Time"; Blob)
         {
             Caption = 'Time';
             DataClassification = SystemMetadata;
         }
 
-        field(8; "TTTPR VersionList"; Blob)
+        field(8; "TTT-PR VersionList"; Blob)
         {
             Caption = 'Version List';
             DataClassification = SystemMetadata;
@@ -58,7 +58,7 @@ table 50008 "TTTPR MenuSuite"
 
     keys
     {
-        key(PK; "TTTPR Code")
+        key(PK; "TTT-PR Code")
         {
             Clustered = true;
         }

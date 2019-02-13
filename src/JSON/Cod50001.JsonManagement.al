@@ -1,4 +1,4 @@
-codeunit 50002 "TTTPR JsonManagement"
+codeunit 50002 "TTT-PR JsonManagement"
 {
     Description = 'TTTPR Json Management';
     Subtype = Normal;

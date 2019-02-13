@@ -1,4 +1,4 @@
-codeunit 50020 "TTTPR Nav2BcTiming"
+codeunit 50020 "TTT-PR Nav2BcTiming"
 {
     trigger OnRun()
     begin

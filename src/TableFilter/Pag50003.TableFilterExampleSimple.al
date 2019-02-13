@@ -1,35 +1,35 @@
-page 50003 "TTTPR TableFilterExampleSimple"
+page 50003 "TTT-PR TableFilterExSimple"
 {
     Caption = 'Table Filter Example, Simple';
     InstructionalText = 'Just a simple example - easy to copy from!';
     PageType = List;
-    SourceTable = "TTTPR TableFilterExample1";
+    SourceTable = "TTT-PR TableFilterExample1";
 
     layout
     {
         area(content)
         {
-            repeater("TTTPR Group")
+            repeater("TTT-PR Group")
             {
-                field("TTTPR LineNo"; "TTTPR LineNo")
+                field("TTT-PR LineNo"; "TTT-PR LineNo")
                 {
                     Visible = false;
                     ApplicationArea = All;
                 }
-                field("TTTPR ObjectID"; "TTTPR ObjectID")
+                field("TTT-PR ObjectID"; "TTT-PR ObjectID")
                 {
                     ApplicationArea = All;
                     LookupPageId = "All Objects with Caption";
                     trigger OnValidate();
                     begin
-                        CalcFields("TTTPR ObjectName");
+                        CalcFields("TTT-PR ObjectName");
                     end;
                 }
-                field("TTTPR ObjectName"; "TTTPR ObjectName")
+                field("TTT-PR ObjectName"; "TTT-PR ObjectName")
                 {
                     ApplicationArea = All;
                 }
-                field("TTTPR FilterString"; "TTTPR FilterString")
+                field("TTT-PR FilterString"; "TTT-PR FilterString")
                 {
                     ApplicationArea = All;
                     AssistEdit = true;
@@ -38,15 +38,15 @@ page 50003 "TTTPR TableFilterExampleSimple"
                         locrecTableFilter: Record "Table Filter";
                         locpagTableFilter: Page "Table Filter";
                     begin
-                        TestField("TTTPR ObjectID");
-                        CalcFields("TTTPR ObjectName");
+                        TestField("TTT-PR ObjectID");
+                        CalcFields("TTT-PR ObjectName");
                         locrecTableFilter.FilterGroup(2);
-                        locrecTableFilter.SetRange("Table Number", "TTTPR ObjectID");
+                        locrecTableFilter.SetRange("Table Number", "TTT-PR ObjectID");
                         locrecTableFilter.FilterGroup(0);
                         locpagTableFilter.SetTableView(locrecTableFilter);
-                        locpagTableFilter.SetSourceTable(Format("TTTPR FilterString"), "TTTPR ObjectID", "TTTPR ObjectName");
+                        locpagTableFilter.SetSourceTable(Format("TTT-PR FilterString"), "TTT-PR ObjectID", "TTT-PR ObjectName");
                         if locpagTableFilter.RunModal() = Action::OK then
-                            Evaluate("TTTPR FilterString", locpagTableFilter.CreateTextTableFilter(false));
+                            Evaluate("TTT-PR FilterString", locpagTableFilter.CreateTextTableFilter(false));
                     end;
                 }
             }
@@ -60,7 +60,7 @@ page 50003 "TTTPR TableFilterExampleSimple"
     {
         area(processing)
         {
-            action("TTTPR ActionName")
+            action("TTT-PR ActionName")
             {
                 Image = SuggestNumber;
                 trigger OnAction();

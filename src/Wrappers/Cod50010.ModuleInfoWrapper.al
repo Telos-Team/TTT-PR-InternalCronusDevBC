@@ -1,4 +1,4 @@
-codeunit 50010 "TTTPR CoreModuleInfoWrapper"
+codeunit 50010 "TTT-PR CoreModuleInfoWrapper"
 {
     // <TTT001>
     //   Created.

@@ -1,4 +1,4 @@
-codeunit 50019 "TTTPR GraphTests"
+codeunit 50019 "TTT-PR GraphTests"
 {
     trigger OnRun()
     begin

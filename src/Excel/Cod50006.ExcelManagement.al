@@ -1,4 +1,4 @@
-codeunit 50006 "TTTPR ExcelManagement"
+codeunit 50006 "TTT-PR ExcelManagement"
 {
     Description = 'TTTPR Excel Management';
     Subtype = Normal;

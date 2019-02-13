@@ -1,36 +1,36 @@
-table 50000 "TTTPR ObjectRunner"
+table 50000 "TTT-PR ObjectRunner"
 {
     Caption = 'Object Runner';
     DataClassification = CustomerContent;
 
     fields
     {
-        field(1; "TTTPR ObjectType"; Integer)
+        field(1; "TTT-PR ObjectType"; Integer)
         {
             Caption = 'Object Type';
             DataClassification = CustomerContent;
         }
-        field(2; "TTTPR ObjectID"; Integer)
+        field(2; "TTT-PR ObjectID"; Integer)
         {
             Caption = 'Object ID';
             DataClassification = CustomerContent;
         }
-        field(3; "TTTPR ObjectName"; Text[50])
+        field(3; "TTT-PR ObjectName"; Text[50])
         {
             Caption = 'Object Name';
             DataClassification = CustomerContent;
         }
-        field(4; "TTTPR ObjectCaption"; Text[249])
+        field(4; "TTT-PR ObjectCaption"; Text[249])
         {
             Caption = 'Object Caption';
             DataClassification = CustomerContent;
         }
-        field(5; "TTTPR ObjectTypeName"; Text[50])
+        field(5; "TTT-PR ObjectTypeName"; Text[50])
         {
             Caption = 'Object Type Name';
             DataClassification = CustomerContent;
         }
-        field(6; "TTTPR ObjectSubType"; Text[50])
+        field(6; "TTT-PR ObjectSubType"; Text[50])
         {
             Caption = 'Object Sub Type';
             DataClassification = CustomerContent;
@@ -39,7 +39,7 @@ table 50000 "TTTPR ObjectRunner"
 
     keys
     {
-        key(PK; "TTTPR ObjectType", "TTTPR ObjectID")
+        key(PK; "TTT-PR ObjectType", "TTT-PR ObjectID")
         {
             Clustered = true;
         }
@@ -64,30 +64,30 @@ table 50000 "TTTPR ObjectRunner"
     begin
     end;
 
-    procedure FillTable(var parvarrecObject: Record "TTTPR ObjectRunner");
+    procedure FillTable(var parvarrecObject: Record "TTT-PR ObjectRunner");
     var
         locrecAllObjWithCaption: Record AllObjWithCaption;
     begin
-        if parvarrecObject.GetFilter("TTTPR ObjectType") <> '' then
-            locrecAllObjWithCaption.SetFilter("Object Type", parvarrecObject.GetFilter("TTTPR ObjectType"));
-        if parvarrecObject.GetFilter("TTTPR ObjectID") <> '' then
-            locrecAllObjWithCaption.SetFilter("Object ID", parvarrecObject.GetFilter("TTTPR ObjectID"));
+        if parvarrecObject.GetFilter("TTT-PR ObjectType") <> '' then
+            locrecAllObjWithCaption.SetFilter("Object Type", parvarrecObject.GetFilter("TTT-PR ObjectType"));
+        if parvarrecObject.GetFilter("TTT-PR ObjectID") <> '' then
+            locrecAllObjWithCaption.SetFilter("Object ID", parvarrecObject.GetFilter("TTT-PR ObjectID"));
         clear(parvarrecObject);
         parvarrecObject.DeleteAll(false);
 
         locrecAllObjWithCaption.FindSet();
         repeat
-            parvarrecObject."TTTPR ObjectType" := locrecAllObjWithCaption."Object Type";
-            parvarrecObject."TTTPR ObjectID" := locrecAllObjWithCaption."Object ID";
-            parvarrecObject."TTTPR ObjectName" := locrecAllObjWithCaption."Object Name";
-            parvarrecObject."TTTPR ObjectCaption" := locrecAllObjWithCaption."Object Caption";
-            parvarrecObject."TTTPR ObjectTypeName" := CopyStr(Format(locrecAllObjWithCaption."Object Type"), 1, MaxStrLen(parvarrecObject."TTTPR ObjectTypeName"));
-            parvarrecObject."TTTPR ObjectSubType" := locrecAllObjWithCaption."Object Subtype";
+            parvarrecObject."TTT-PR ObjectType" := locrecAllObjWithCaption."Object Type";
+            parvarrecObject."TTT-PR ObjectID" := locrecAllObjWithCaption."Object ID";
+            parvarrecObject."TTT-PR ObjectName" := locrecAllObjWithCaption."Object Name";
+            parvarrecObject."TTT-PR ObjectCaption" := locrecAllObjWithCaption."Object Caption";
+            parvarrecObject."TTT-PR ObjectTypeName" := CopyStr(Format(locrecAllObjWithCaption."Object Type"), 1, MaxStrLen(parvarrecObject."TTT-PR ObjectTypeName"));
+            parvarrecObject."TTT-PR ObjectSubType" := locrecAllObjWithCaption."Object Subtype";
             parvarrecObject.Insert(false);
         until locrecAllObjWithCaption.Next() = 0;
         clear(parvarrecObject);
-        parvarrecObject."TTTPR ObjectType" := locrecAllObjWithCaption."Object Type"::Table;
-        parvarrecObject."TTTPR ObjectID" := 2000000000;
+        parvarrecObject."TTT-PR ObjectType" := locrecAllObjWithCaption."Object Type"::Table;
+        parvarrecObject."TTT-PR ObjectID" := 2000000000;
         if parvarrecobject.find('=>') then;
     end;
 
@@ -96,25 +96,25 @@ table 50000 "TTTPR ObjectRunner"
         locrecAllObjWithCaption: Record AllObjWithCaption;
         loctmprecAllObjWithCaption: Record AllObjWithCaption temporary;
         locrecPageMetaData: Record "Page Metadata";
-        locpagInspector: Page "TTTPR SysVirtTblInspector";
+        locpagInspector: Page "TTT-PR SysVirtTblInspector";
     begin
-        case "TTTPR ObjectType" of
+        case "TTT-PR ObjectType" of
             locrecAllObjWithCaption."Object Type"::Codeunit:
-                codeunit.Run("TTTPR ObjectID");
+                codeunit.Run("TTT-PR ObjectID");
             locrecAllObjWithCaption."Object Type"::Page:
-                page.Run("TTTPR ObjectID");
+                page.Run("TTT-PR ObjectID");
             locrecAllObjWithCaption."Object Type"::Report:
-                Report.Run("TTTPR ObjectID");
+                Report.Run("TTT-PR ObjectID");
             locrecAllObjWithCaption."Object Type"::XMLport:
-                Xmlport.Run("TTTPR ObjectID");
+                Xmlport.Run("TTT-PR ObjectID");
             locrecAllObjWithCaption."Object Type"::Table,
             locrecAllObjWithCaption."Object Type"::TableData:
                 begin
                     // Find pages using Object ID as SourceTable
-                    locrecPageMetaData.SetRange(SourceTable, "TTTPR ObjectID");
+                    locrecPageMetaData.SetRange(SourceTable, "TTT-PR ObjectID");
                     if locrecPageMetaData.IsEmpty then begin
                         loctmprecAllObjWithCaption."Object Type" := loctmprecAllObjWithCaption."Object Type"::Page;
-                        loctmprecAllObjWithCaption."Object ID" := page::"TTTPR SysVirtTblInspector";
+                        loctmprecAllObjWithCaption."Object ID" := page::"TTT-PR SysVirtTblInspector";
                     end else begin
                         locrecPageMetaData.findset;
                         repeat
@@ -124,8 +124,8 @@ table 50000 "TTTPR ObjectRunner"
                             end;
                         until locrecPageMetaData.Next = 0;
                         loctmprecAllObjWithCaption."Object Type" := loctmprecAllObjWithCaption."Object Type"::Page;
-                        loctmprecAllObjWithCaption."Object ID" := page::"TTTPR SysVirtTblInspector";
-                        loctmprecAllObjWithCaption."Object Name" := 'TTTPR Table Inspector';
+                        loctmprecAllObjWithCaption."Object ID" := page::"TTT-PR SysVirtTblInspector";
+                        loctmprecAllObjWithCaption."Object Name" := 'TTT-PR Table Inspector';
                         loctmprecAllObjWithCaption."Object Caption" := loctmprecAllObjWithCaption."Object Name";
                         if loctmprecAllObjWithCaption.Insert(false) then;
 
@@ -133,8 +133,8 @@ table 50000 "TTTPR ObjectRunner"
                         if loctmprecAllObjWithCaption.count > 1 then
                             if page.RunModal(page::Objects, loctmprecAllObjWithCaption) = "Action"::LookupOK then;
                     end;
-                    if loctmprecAllObjWithCaption."Object ID" = page::"TTTPR SysVirtTblInspector" then begin
-                        locpagInspector.PrepareTable("TTTPR ObjectID");
+                    if loctmprecAllObjWithCaption."Object ID" = page::"TTT-PR SysVirtTblInspector" then begin
+                        locpagInspector.PrepareTable("TTT-PR ObjectID");
                         locpagInspector.Run();
                     end else
                         page.Run(loctmprecAllObjWithCaption."Object ID");
@@ -149,25 +149,25 @@ table 50000 "TTTPR ObjectRunner"
         locrecAllObj: Record AllObj;
         locrecField: Record Field;
     begin
-        if not ("TTTPR ObjectType" in [locrecAllObj."Object Type"::Table, locrecAllObj."Object Type"::TableData]) then
+        if not ("TTT-PR ObjectType" in [locrecAllObj."Object Type"::Table, locrecAllObj."Object Type"::TableData]) then
             exit;
-        locrecField.SetRange(TableNo, "TTTPR ObjectID");
+        locrecField.SetRange(TableNo, "TTT-PR ObjectID");
         page.run(page::fields, locrecField);
     end;
 
     procedure SetFilterNormal();
     begin
-        rec.SetFilter("TTTPR ObjectID", '%1..%2|%3..%4', 1, 49999, 10000, 1999999999);
+        rec.SetFilter("TTT-PR ObjectID", '%1..%2|%3..%4', 1, 49999, 10000, 1999999999);
     end;
 
     procedure SetFilterDev();
     begin
-        rec.SetRange("TTTPR ObjectID", 50000, 99999);
+        rec.SetRange("TTT-PR ObjectID", 50000, 99999);
     end;
 
     procedure SetFilterSysVirt();
     begin
-        rec.SetFilter("TTTPR ObjectID", '%1..', 2000000000);
+        rec.SetFilter("TTT-PR ObjectID", '%1..', 2000000000);
     end;
 
 }

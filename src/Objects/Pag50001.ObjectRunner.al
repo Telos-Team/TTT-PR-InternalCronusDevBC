@@ -1,8 +1,8 @@
-page 50001 "TTTPRObjectRunnerList"
+page 50001 "TTT-PR ObjectRunnerList"
 {
-    Caption = 'Object Runner';
+    Caption = 'TTTPR Object Runner';
     PageType = List;
-    SourceTable = "TTTPR ObjectRunner";
+    SourceTable = "TTT-PR ObjectRunner";
     SourceTableTemporary = true;
     Editable = true;
     UsageCategory = Administration;
@@ -13,9 +13,9 @@ page 50001 "TTTPRObjectRunnerList"
     {
         area(content)
         {
-            group("TTTPR General")
+            group("TTT-PR General")
             {
-                field("TTTPR ObjectTypeSelector"; optObjectTypeSelector)
+                field("TTT-PR ObjectTypeSelector"; optObjectTypeSelector)
                 {
                     ApplicationArea = All;
                     AssistEdit = true;
@@ -26,25 +26,25 @@ page 50001 "TTTPRObjectRunnerList"
                     end;
                 }
             }
-            repeater("TTTPR Group")
+            repeater("TTT-PR Group")
             {
-                field("TTTPR ObjectTypeName"; "TTTPR ObjectTypeName")
+                field("TTT-PR ObjectTypeName"; "TTT-PR ObjectTypeName")
                 {
                     ApplicationArea = All;
                 }
-                field("TTTPR ObjectID"; "TTTPR ObjectID")
+                field("TTT-PR ObjectID"; "TTT-PR ObjectID")
                 {
                     ApplicationArea = All;
                 }
-                field("TTTPR ObjectName"; "TTTPR ObjectName")
+                field("TTT-PR ObjectName"; "TTT-PR ObjectName")
                 {
                     ApplicationArea = All;
                 }
-                field("TTTPR ObjectCaption"; "TTTPR ObjectCaption")
+                field("TTT-PR ObjectCaption"; "TTT-PR ObjectCaption")
                 {
                     ApplicationArea = All;
                 }
-                field("TTTPR ObjectSubType"; "TTTPR ObjectSubType")
+                field("TTT-PR ObjectSubType"; "TTT-PR ObjectSubType")
                 {
                     ApplicationArea = All;
                 }
@@ -59,7 +59,7 @@ page 50001 "TTTPRObjectRunnerList"
     {
         area(processing)
         {
-            action("TTTPR RunObject")
+            action("TTT-PR RunObject")
             {
                 Caption = 'Run Object';
                 ToolTip = 'Run the selected object';
@@ -73,7 +73,7 @@ page 50001 "TTTPRObjectRunnerList"
                     RunObject();
                 end;
             }
-            action("TTTPR ShowFieldList")
+            action("TTT-PR ShowFieldList")
             {
                 Caption = 'Show Field List';
                 ToolTip = 'Show the Field List for selected table';
@@ -87,11 +87,11 @@ page 50001 "TTTPRObjectRunnerList"
                     ShowFieldList();
                 end;
             }
-            group("TTTPR FilterActions")
+            group("TTT-PR FilterActions")
             {
                 Caption = 'Filter Objects';
                 ToolTip = 'Set filters on objects';
-                action("TTTPR SetFilterNormal")
+                action("TTT-PR SetFilterNormal")
                 {
                     Caption = 'Normal Objects';
                     ToolTip = 'Show only normal objects';
@@ -105,7 +105,7 @@ page 50001 "TTTPRObjectRunnerList"
                         SetFilterNormal();
                     end;
                 }
-                action("TTTPR SetFilterDev")
+                action("TTT-PR SetFilterDev")
                 {
                     Caption = 'Dev Objects';
                     ToolTip = 'Show only dev objects';
@@ -119,7 +119,7 @@ page 50001 "TTTPRObjectRunnerList"
                         SetFilterDev();
                     end;
                 }
-                action("TTTPR SetFilterSysVirt")
+                action("TTT-PR SetFilterSysVirt")
                 {
                     Caption = 'System/Virtual Objects';
                     ToolTip = 'Show only system/virtual objects';
@@ -133,7 +133,7 @@ page 50001 "TTTPRObjectRunnerList"
                         SetFilterSysVirt();
                     end;
                 }
-                action("TTTPR actConstructGetSystemVirtualTableVariantAL")
+                action("TTT-PR actConstructGetSystemVirtualTableVariantAL")
                 {
                     Caption = 'Create GetSystemVirtualTableVariant AL';
                     ToolTip = 'Create AL for GetSystemVirtualTableVariant()';
@@ -144,13 +144,13 @@ page 50001 "TTTPRObjectRunnerList"
                     Image = ShowSelected;
                     trigger OnAction();
                     var
-                        loccuObjMgt: Codeunit "TTTPR ObjectManagement";
+                        loccuObjMgt: Codeunit "TTT-PR ObjectManagement";
                     begin
                         loccuObjMgt.ConstructGetSystemVirtualTableVariantAL();
                     end;
                 }
 
-                action("TTTPR actConstructRepeaterFieldListAL")
+                action("TTT-PR actConstructRepeaterFieldListAL")
                 {
                     Caption = 'Create Repeater Field list AL';
                     ToolTip = 'Create AL for Repeater Field list';
@@ -161,9 +161,9 @@ page 50001 "TTTPRObjectRunnerList"
                     Image = ShowSelected;
                     trigger OnAction();
                     var
-                        loccuObjMgt: Codeunit "TTTPR ObjectManagement";
+                        loccuObjMgt: Codeunit "TTT-PR ObjectManagement";
                     begin
-                        loccuObjMgt.ConstructRepeaterFieldListAL(rec."TTTPR ObjectID");
+                        loccuObjMgt.ConstructRepeaterFieldListAL(rec."TTT-PR ObjectID");
                     end;
                 }
             }
@@ -183,9 +183,9 @@ page 50001 "TTTPRObjectRunnerList"
     var
     begin
         if optObjectTypeSelector <> optObjectTypeSelector::" " then
-            rec.SetRange("TTTPR ObjectType", optObjectTypeSelector - 1)
+            rec.SetRange("TTT-PR ObjectType", optObjectTypeSelector - 1)
         else
-            rec.setrange("TTTPR ObjectType");
+            rec.setrange("TTT-PR ObjectType");
         FillTable(rec);
     end;
 }

@@ -1,4 +1,4 @@
-report 50000 "TTTPR FieldChange"
+report 50000 "TTT-PR FieldChange"
 {
     Caption = 'Field Change';
     UsageCategory = Administration;

@@ -1,4 +1,4 @@
-codeunit 50004 "TTTPR FileMgtTest"
+codeunit 50004 "TTT-PR FileMgtTest"
 {
     Description = 'TTTPR File Management Test';
     Subtype = Normal;

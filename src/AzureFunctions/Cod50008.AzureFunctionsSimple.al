@@ -1,4 +1,4 @@
-codeunit 50008 "TTTPR AzureFunctionsSimple"
+codeunit 50008 "TTT-PR AzureFunctionsSimple"
 {
     Description = 'TTTPR Azure Functions Simple';
     Subtype = Normal;

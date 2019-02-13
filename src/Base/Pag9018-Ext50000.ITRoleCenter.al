@@ -1,4 +1,4 @@
-pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
+pageextension 50000 "TTT-PR IT Role Center" extends "Administrator Role Center"
 {
     layout
     {
@@ -9,91 +9,91 @@ pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
     {
         addlast(Embedding)
         {
-            action("TTTPR ObjectRunnerEmbedding")
+            action("TTT-PR ObjectRunnerEmbedding")
             {
                 ApplicationArea = All;
                 Caption = 'Show Object Runner';
                 ToolTip = 'Show the Object Runner List';
                 Image = SuggestNumber;
-                RunObject = Page "TTTPRObjectRunnerList";
+                RunObject = Page "TTT-PR ObjectRunnerList";
             }
         }
 
         addfirst(Processing)
         {
-            action("TTTPR Testor")
+            action("TTT-PR Testor")
             {
                 Caption = 'TTTPR Testor';
                 ToolTip = 'TTTPR Testor';
                 ApplicationArea = All;
                 Image = "Table";
-                RunObject = codeunit "TTTPR GraphTests";
+                RunObject = codeunit "TTT-PR GraphTests";
             }
-            group("TTTPR MainGroupProcessing")
+            group("TTT-PR MainGroupProcessing")
             {
                 Caption = 'TTTPR', Comment = 'Dont translate this!', Locked = true;
                 ToolTip = 'TTTPR functionality';
 
-                group("TTTPR GroupProcessing")
+                group("TTT-PR GroupProcessing")
                 {
                     Caption = 'TTTPR', Comment = 'Dont translate this!', Locked = true;
                     ToolTip = 'TTTPR functionality';
                     Image = WorkCenter;
 
-                    group("TTTPR ObjectsGroupProcessing")
+                    group("TTT-PR ObjectsGroupProcessing")
                     {
                         Caption = 'Objects';
                         ToolTip = 'Object functionality';
                         Image = SuggestTables;
 
-                        action("TTTPR ObjectRunnerProcessing")
+                        action("TTT-PR ObjectRunnerProcessing")
                         {
                             Caption = 'Show Object Runner';
                             ToolTip = 'Show the Object Runner List';
                             ApplicationArea = All;
                             Image = "Table";
-                            RunObject = page "TTTPRObjectRunnerList";
+                            RunObject = page "TTT-PR ObjectRunnerList";
                         }
                     }
-                    group("TTTPR TableFilterGroupProcessing")
+                    group("TTT-PR TableFilterGroupProcessing")
                     {
                         Caption = 'Table Filter';
                         ToolTip = 'Table Filter functionality';
                         Image = SuggestTables;
 
-                        action("TTTPR TableFilterSimpleProcessing")
+                        action("TTT-PR TableFilterSimpleProcessing")
                         {
                             Caption = 'Table Filter Simple';
                             ToolTip = 'Show Simple Table Filter';
                             ApplicationArea = All;
                             Image = "Table";
-                            RunObject = page "TTTPR TableFilterExampleSimple";
+                            RunObject = page "TTT-PR TableFilterExSimple";
                             RunPageMode = Edit;
                         }
-                        action("TTTPR TableFilterRecRefProcessing")
+                        action("TTT-PR TableFilterRecRefProcessing")
                         {
                             Caption = 'Table Filter RecRef';
                             ToolTip = 'Show RecRef Table Filter';
                             ApplicationArea = All;
                             Image = "Table";
-                            RunObject = page "TTTPR TableFilterExampleRecRef";
+                            RunObject = page "TTT-PR TableFilterExRecRef";
                             RunPageMode = Edit;
                         }
                     }
 
-                    group("TTTPR Translation")
+                    group("TTT-PR Translation")
                     {
                         Caption = 'Translation';
                         ToolTip = 'Translation functionality';
                         Image = SuggestTables;
 
-                        action("TTTPR TranslationWorksheetProcessing")
+                        action("TTT-PR TranslationWorksheetProcessing")
                         {
                             Caption = 'Show Translation Worksheet';
                             ToolTip = 'Show the Translation Worksheet';
                             ApplicationArea = All;
                             Image = "Table";
-                            RunObject = page "TTTPR TranslationWorksheet";
+                            RunObject = page "TTT-PR TranslationWorksheet";
                             RunPageMode = Edit;
                         }
                     }
@@ -103,46 +103,46 @@ pageextension 50000 "TTTPR IT Role Center" extends "Administrator Role Center"
 
         addfirst(Sections)
         {
-            group("TTTPR GroupSections")
+            group("TTT-PR GroupSections")
             {
                 Caption = 'TTTPR';
                 ToolTip = 'TTTPR Elements';
                 Image = Dimensions;
-                action("TTTPR ObjectRunnerSections")
+                action("TTT-PR ObjectRunnerSections")
                 {
                     Caption = 'Show Object Runner';
                     ToolTip = 'Show the Object Runner List';
                     ApplicationArea = All;
                     Image = "Table";
-                    RunObject = page "TTTPRObjectRunnerList";
+                    RunObject = page "TTT-PR ObjectRunnerList";
                 }
 
-                action("TTTPR TableFilterExampleSimpleSections")
+                action("TTT-PR TableFilterExampleSimpleSections")
                 {
                     Caption = 'Show Table Filter (Simple)';
                     ToolTip = 'Show the simple Table Filter example';
                     ApplicationArea = All;
                     Image = "Table";
-                    RunObject = page "TTTPR TableFilterExampleSimple";
+                    RunObject = page "TTT-PR TableFilterExSimple";
                     RunPageMode = Edit;
                 }
-                action("TTTPR TableFilterExampleRecRefSections")
+                action("TTT-PR TableFilterExampleRecRefSections")
                 {
                     Caption = 'Show Table Filter (RecRef)';
                     ToolTip = 'Show the RecordRef Table Filter example';
                     ApplicationArea = All;
                     Image = "Table";
-                    RunObject = page "TTTPR TableFilterExampleRecRef";
+                    RunObject = page "TTT-PR TableFilterExRecRef";
                     RunPageMode = Edit;
                 }
 
-                action("TTTPR TranslationSections")
+                action("TTT-PR TranslationSections")
                 {
                     Caption = 'Show Translation Worksheet';
                     ToolTip = 'Show the Translation Worksheet';
                     ApplicationArea = All;
                     Image = "Table";
-                    RunObject = page "TTTPR TranslationWorksheet";
+                    RunObject = page "TTT-PR TranslationWorksheet";
                     RunPageMode = Edit;
                 }
 

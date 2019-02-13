@@ -1,27 +1,27 @@
-page 50007 "TTTPR Nav2BcTemplates"
+page 50007 "TTT-PR Nav2BcTemplates"
 {
     Description = 'TTTPR Nav2Bc Templates';
     Caption = 'Nav2Bc Templates';
     PageType = List;
     UsageCategory = Administration;
     ApplicationArea = All;
-    SourceTable = "TTTPR Nav2BcTemplate";
+    SourceTable = "TTT-PR Nav2BcTemplate";
 
     layout
     {
         area(Content)
         {
-            repeater("TTTPR Group")
+            repeater("TTT-PR Group")
             {
-                field("TTTPR Code"; "TTTPR Code")
+                field("TTT-PR Code"; "TTT-PR Code")
                 {
                     ApplicationArea = All;
                 }
-                field("TTTPR Description"; "TTTPR Description")
+                field("TTT-PR Description"; "TTT-PR Description")
                 {
                     ApplicationArea = All;
                 }
-                field("TTTPR DataLines"; "TTTPR DataLines")
+                field("TTT-PR DataLines"; "TTT-PR DataLines")
                 {
                     ApplicationArea = All;
                 }
@@ -37,7 +37,7 @@ page 50007 "TTTPR Nav2BcTemplates"
     {
         area(Processing)
         {
-            action("TTTPR ImportData")
+            action("TTT-PR ImportData")
             {
                 Caption = 'Import Data';
                 ApplicationArea = All;
@@ -52,7 +52,7 @@ page 50007 "TTTPR Nav2BcTemplates"
                     ImportData();
                 end;
             }
-            action("TTTPR SplitData")
+            action("TTT-PR SplitData")
             {
                 Caption = 'Split Data';
                 ApplicationArea = All;
@@ -67,7 +67,7 @@ page 50007 "TTTPR Nav2BcTemplates"
                     SplitData();
                 end;
             }
-            action("TTTPR InsertData")
+            action("TTT-PR InsertData")
             {
                 Caption = 'Insert Data';
                 ApplicationArea = All;
@@ -85,7 +85,7 @@ page 50007 "TTTPR Nav2BcTemplates"
         }
         area(Navigation)
         {
-            action("TTTPR ShowData")
+            action("TTT-PR ShowData")
             {
                 Caption = 'Show Data';
                 ApplicationArea = All;
@@ -94,10 +94,10 @@ page 50007 "TTTPR Nav2BcTemplates"
                 PromotedOnly = True;
                 PromotedCategory = Process;
                 Image = ShowList;
-                RunObject = page "TTTPR Nav2BcData";
-                RunPageLink = "TTTPR TemplateCode" = FIELD ("TTTPR Code");
+                RunObject = page "TTT-PR Nav2BcData";
+                RunPageLink = "TTT-PR TemplateCode" = FIELD ("TTT-PR Code");
             }
-            action("TTTPR ShowRecords")
+            action("TTT-PR ShowRecords")
             {
                 Caption = 'Show Records';
                 ApplicationArea = All;

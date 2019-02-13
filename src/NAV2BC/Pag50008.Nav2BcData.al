@@ -1,47 +1,47 @@
-page 50008 "TTTPR Nav2BcData"
+page 50008 "TTT-PR Nav2BcData"
 {
     Description = 'TTTPR Nav2Bc Data';
     Caption = 'Nav2Bc Data';
     PageType = List;
     UsageCategory = Administration;
     ApplicationArea = All;
-    SourceTable = "TTTPR Nav2BcData";
+    SourceTable = "TTT-PR Nav2BcData";
 
     layout
     {
         area(Content)
         {
-            repeater("TTTPR Group")
+            repeater("TTT-PR Group")
             {
-                field("TTTPR Template Code"; "TTTPR TemplateCode")
+                field("TTT-PR Template Code"; "TTT-PR TemplateCode")
                 {
                     ApplicationArea = All;
                 }
-                field("TTTPR Company"; "TTTPR Company")
+                field("TTT-PR Company"; "TTT-PR Company")
                 {
                     ApplicationArea = All;
                 }
-                field("TTTPR TableNo"; "TTTPR TableNo")
+                field("TTT-PR TableNo"; "TTT-PR TableNo")
                 {
                     ApplicationArea = All;
                 }
-                field("TTTPR RecordNo"; "TTTPR RecordNo")
+                field("TTT-PR RecordNo"; "TTT-PR RecordNo")
                 {
                     ApplicationArea = All;
                 }
-                field("TTTPR FieldNo"; "TTTPR FieldNo")
+                field("TTT-PR FieldNo"; "TTT-PR FieldNo")
                 {
                     ApplicationArea = All;
                 }
-                field("TTTPR FieldType"; "TTTPR FieldType")
+                field("TTT-PR FieldType"; "TTT-PR FieldType")
                 {
                     ApplicationArea = All;
                 }
-                field("TTTPR FieldLength"; "TTTPR FieldLength")
+                field("TTT-PR FieldLength"; "TTT-PR FieldLength")
                 {
                     ApplicationArea = All;
                 }
-                field("TTTPR FieldValue"; "TTTPR FieldValue")
+                field("TTT-PR FieldValue"; "TTT-PR FieldValue")
                 {
                     ApplicationArea = All;
                 }

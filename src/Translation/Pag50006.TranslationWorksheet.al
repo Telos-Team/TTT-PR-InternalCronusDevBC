@@ -1,11 +1,11 @@
-page 50006 "TTTPR TranslationWorksheet"
+page 50006 "TTT-PR TranslationWorksheet"
 {
     Caption = 'TTTPR Translation Worksheet';
     PageType = List;
-    SourceTable = "TTTPR TranslationLine";
+    SourceTable = "TTT-PR TranslationLine";
     UsageCategory = Administration;
     ApplicationArea = All;
-    DataCaptionFields = "TTTPR TranslationCode", "TTTPR SourceContent";
+    DataCaptionFields = "TTT-PR TranslationCode", "TTT-PR SourceContent";
     InsertAllowed = false;
     DeleteAllowed = false;
     Editable = true;
@@ -14,29 +14,29 @@ page 50006 "TTTPR TranslationWorksheet"
     {
         area(content)
         {
-            group("TTTPR General")
+            group("TTT-PR General")
             {
-                field("TTTPR TargetLanguageFilter"; "TTTPR TargetLanguageFilter")
+                field("TTT-PR TargetLanguageFilter"; "TTT-PR TargetLanguageFilter")
                 {
                     ApplicationArea = All;
                 }
             }
-            repeater("TTTPR Group")
+            repeater("TTT-PR Group")
             {
-                field("TTTPR TranslationCode"; "TTTPR TranslationCode")
+                field("TTT-PR TranslationCode"; "TTT-PR TranslationCode")
                 {
                     Visible = false;
                     ApplicationArea = All;
                 }
-                field("TTTPR SourceContentString"; txtSourceContentString)
+                field("TTT-PR SourceContentString"; txtSourceContentString)
                 {
                     ApplicationArea = All;
                 }
-                field("TTTPR TargetContentString"; txtTargetContentString)
+                field("TTT-PR TargetContentString"; txtTargetContentString)
                 {
                     ApplicationArea = All;
                 }
-                field("TTTPR TargetTranslationFound"; "TTTPR TargetTranslationFound")
+                field("TTT-PR TargetTranslationFound"; "TTT-PR TargetTranslationFound")
                 {
                     ApplicationArea = All;
                 }
@@ -52,7 +52,7 @@ page 50006 "TTTPR TranslationWorksheet"
     {
         area(processing)
         {
-            action("TTTPR ActionName")
+            action("TTT-PR ActionName")
             {
                 Image = SuggestNumber;
                 trigger OnAction();

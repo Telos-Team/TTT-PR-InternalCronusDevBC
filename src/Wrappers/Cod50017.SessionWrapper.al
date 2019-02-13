@@ -1,4 +1,4 @@
-codeunit 50017 "TTTPR CoreSessionWrapper"
+codeunit 50017 "TTT-PR CoreSessionWrapper"
 {
     trigger OnRun()
     begin

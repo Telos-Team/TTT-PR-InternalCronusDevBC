@@ -1,4 +1,4 @@
-codeunit 50016 "TTTPR AzureStorageDownload"
+codeunit 50016 "TTT-PR AzureStorageDownload"
 {
     trigger OnRun()
     begin

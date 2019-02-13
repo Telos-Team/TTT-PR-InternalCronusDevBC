@@ -1,75 +1,75 @@
-table 50003 "TTTPR TranslationLine"
+table 50003 "TTT-PR TranslationLine"
 {
     Caption = 'TTTPR Translation Line';
     DataClassification = CustomerContent;
 
     fields
     {
-        field(1; "TTTPR TranslationCode"; Code[20])
+        field(1; "TTT-PR TranslationCode"; Code[20])
         {
             Caption = 'Translation Code';
             DataClassification = CustomerContent;
-            TableRelation = "TTTPR TranslationProject";
+            TableRelation = "TTT-PR TranslationProject";
         }
-        field(2; "TTTPR LineNo"; Integer)
+        field(2; "TTT-PR LineNo"; Integer)
         {
             Caption = 'Line No.';
             DataClassification = CustomerContent;
         }
-        field(3; "TTTPR SourceContent"; Blob)
+        field(3; "TTT-PR SourceContent"; Blob)
         {
             Caption = 'Source Content';
             DataClassification = CustomerContent;
         }
-        field(4; "TTTPR SourceText"; Text[250])
+        field(4; "TTT-PR SourceText"; Text[250])
         {
             Caption = 'Source Text';
             DataClassification = CustomerContent;
         }
-        field(5; "TTTPR TransUnitId"; Text[250])
+        field(5; "TTT-PR TransUnitId"; Text[250])
         {
             Caption = 'Trans Unit ID';
             DataClassification = CustomerContent;
         }
-        field(6; "TTTPR Translate"; Boolean)
+        field(6; "TTT-PR Translate"; Boolean)
         {
             Caption = 'Translate';
             DataClassification = CustomerContent;
         }
-        field(7; "TTTPR MaxLength"; Integer)
+        field(7; "TTT-PR MaxLength"; Integer)
         {
             Caption = 'Max Length';
             BlankZero = true;
             DataClassification = CustomerContent;
         }
-        field(8; "TTTPR DeveloperNote"; Text[250])
+        field(8; "TTT-PR DeveloperNote"; Text[250])
         {
             Caption = 'Developer Note';
             DataClassification = CustomerContent;
         }
-        field(9; "TTTPR XliffGeneratorNote"; Text[250])
+        field(9; "TTT-PR XliffGeneratorNote"; Text[250])
         {
             Caption = 'Xliff Generator Note';
             DataClassification = CustomerContent;
         }
-        field(10; "TTTPR TargetLanguageFilter"; Text[10])
+        field(10; "TTT-PR TargetLanguageFilter"; Text[10])
         {
             Caption = 'Target Language Filter';
             FieldClass = FlowFilter;
         }
-        field(11; "TTTPR TargetTranslationFound"; Boolean)
+        field(11; "TTT-PR TargetTranslationFound"; Boolean)
         {
             Caption = 'Target Translation Found';
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = exist ("TTTPR TranslatedLine" where ("TTTPR TranslationCode" = field ("TTTPR TranslationCode"), "TTTPR TranslationLineNo" = field ("TTTPR LineNo")));
+            CalcFormula = exist ("TTT-PR TranslatedLine" where ("TTT-PR TranslationCode" = field ("TTT-PR TranslationCode"), "TTT-PR TranslationLineNo" = field ("TTT-PR LineNo")));
         }
 
     }
 
     keys
     {
-        key(PK; "TTTPR TranslationCode", "TTTPR LineNo")
+        key(PK; "TTT-PR TranslationCode", "TTT-PR LineNo")
         {
             Clustered = true;
         }

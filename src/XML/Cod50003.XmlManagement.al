@@ -1,4 +1,4 @@
-codeunit 50003 "TTTPR XmlManagement"
+codeunit 50003 "TTT-PR XmlManagement"
 {
     trigger OnRun();
     begin

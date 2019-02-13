@@ -1,4 +1,4 @@
-codeunit 50015 "TTTPR Nav2BcManagement"
+codeunit 50015 "TTT-PR Nav2BcManagement"
 {
     Description = 'TTTPR Nav2Bc Management';
     Subtype = Normal;
@@ -7,9 +7,9 @@ codeunit 50015 "TTTPR Nav2BcManagement"
     begin
     end;
 
-    procedure ImportData(parrecTempl: Record "TTTPR Nav2BcTemplate")
+    procedure ImportData(parrecTempl: Record "TTT-PR Nav2BcTemplate")
     var
-        locxmlImport: XmlPort "TTTPR Nav2BcImportData";
+        locxmlImport: XmlPort "TTT-PR Nav2BcImportData";
         locstrmIn: InStream;
         locbooOK: Boolean;
         locdlgWindow: Dialog;
@@ -32,7 +32,7 @@ codeunit 50015 "TTTPR Nav2BcManagement"
                 locdlgWindow.Update(2, loctxtClientFilename);
                 locdlgWindow.Update(3, loclblImportingLbl);
             end;
-            locxmlImport.SetTemplateCode(parrecTempl."TTTPR Code");
+            locxmlImport.SetTemplateCode(parrecTempl."TTT-PR Code");
             locxmlImport.TextEncoding(TextEncoding::MSDos);
             locxmlImport.SetSource(locstrmIn);
             locbooOK := locxmlImport.Import();
@@ -47,38 +47,38 @@ codeunit 50015 "TTTPR Nav2BcManagement"
         locdlgWindow.Close();
     end;
 
-    procedure SplitData(parrecTempl: Record "TTTPR Nav2BcTemplate")
+    procedure SplitData(parrecTempl: Record "TTT-PR Nav2BcTemplate")
     var
-        locrecTempl: Record "TTTPR Nav2BcTemplate";
-        locrecData: Record "TTTPR Nav2BcData";
-        locrecData2: Record "TTTPR Nav2BcData";
+        locrecTempl: Record "TTT-PR Nav2BcTemplate";
+        locrecData: Record "TTT-PR Nav2BcData";
+        locrecData2: Record "TTT-PR Nav2BcData";
         locrecAllObj: Record AllObjWithCaption;
-        loccuTiming: Codeunit "TTTPR Nav2BcTiming";
+        loccuTiming: Codeunit "TTT-PR Nav2BcTiming";
         locdlgWindow: Dialog;
         loclblActionLbl: Label 'Action: #1############################\Company: #2############################\Table: #3############################';
         loclblSplittingLbl: Label 'Splitting data...';
     begin
         loccuTiming.StartTimer();
-        locrecData.SetRange("TTTPR TemplateCode", parrecTempl."TTTPR Code");
+        locrecData.SetRange("TTT-PR TemplateCode", parrecTempl."TTT-PR Code");
         locrecData.FindSet();
         if GuiAllowed() then begin
             locdlgWindow.Open(loclblActionLbl);
             locdlgWindow.Update(1, loclblSplittingLbl);
         end;
         repeat
-            if not locrecTempl.Get(StrSubstNo('%1%2', locrecData."TTTPR TemplateCode", locrecData."TTTPR TableNo")) then begin
+            if not locrecTempl.Get(StrSubstNo('%1%2', locrecData."TTT-PR TemplateCode", locrecData."TTT-PR TableNo")) then begin
                 if GuiAllowed() then begin
-                    locdlgWindow.Update(2, locrecData."TTTPR Company");
-                    locdlgWindow.Update(3, locrecData."TTTPR TableNo");
+                    locdlgWindow.Update(2, locrecData."TTT-PR Company");
+                    locdlgWindow.Update(3, locrecData."TTT-PR TableNo");
                 end;
                 locrecTempl.Init();
-                locrecTempl.Validate("TTTPR Code", StrSubstNo('%1%2', locrecData."TTTPR TemplateCode", locrecData."TTTPR TableNo"));
-                if locrecAllObj.Get(locrecAllObj."Object Type"::Table, locrecData."TTTPR TableNo") then
-                    locrectempl."TTTPR Description" := locrecAllObj."Object Name";
+                locrecTempl.Validate("TTT-PR Code", StrSubstNo('%1%2', locrecData."TTT-PR TemplateCode", locrecData."TTT-PR TableNo"));
+                if locrecAllObj.Get(locrecAllObj."Object Type"::Table, locrecData."TTT-PR TableNo") then
+                    locrectempl."TTT-PR Description" := locrecAllObj."Object Name";
                 locrecTempl.Insert(true);
             end;
             locrecData2 := locrecData;
-            locrecData2."TTTPR TemplateCode" := locrectempl."TTTPR Code";
+            locrecData2."TTT-PR TemplateCode" := locrectempl."TTT-PR Code";
             locrecData2.Insert();
         until locrecData.Next() = 0;
         if GuiAllowed() then
@@ -86,9 +86,9 @@ codeunit 50015 "TTTPR Nav2BcManagement"
         loccuTiming.ShowDuration();
     end;
 
-    procedure InsertData(var parvarrecTempl: Record "TTTPR Nav2BcTemplate")
+    procedure InsertData(var parvarrecTempl: Record "TTT-PR Nav2BcTemplate")
     var
-        locrecData: Record "TTTPR Nav2BcData";
+        locrecData: Record "TTT-PR Nav2BcData";
         locrecAllObj: Record AllObjWithCaption;
         locrrTable: RecordRef;
         locfrField: FieldRef;
@@ -102,66 +102,66 @@ codeunit 50015 "TTTPR Nav2BcManagement"
         loctimEmpty: Time;
         locdtEmpty: DateTime;
     begin
-        locrecData.SetRange("TTTPR TemplateCode", parvarrecTempl."TTTPR Code");
-        if parvarrecTempl.GetFilter("TTTPR CompanyFilter") <> '' then
-            locrecData.SetFilter("TTTPR Company", parvarrecTempl.GetFilter("TTTPR CompanyFilter"));
-        locrecData.SetFilter("TTTPR RecordNo", '>%1', 0);
+        locrecData.SetRange("TTT-PR TemplateCode", parvarrecTempl."TTT-PR Code");
+        if parvarrecTempl.GetFilter("TTT-PR CompanyFilter") <> '' then
+            locrecData.SetFilter("TTT-PR Company", parvarrecTempl.GetFilter("TTT-PR CompanyFilter"));
+        locrecData.SetFilter("TTT-PR RecordNo", '>%1', 0);
         locrecData.FindSet();
         repeat
-            if locrecAllObj.Get(locrecAllObj."Object Type"::Table, locrecData."TTTPR TableNo") then begin
-                if (locrecData."TTTPR TableNo" <> locintLastTableNo) or (locrecData."TTTPR RecordNo" <> locintLastRecordNo) then begin
+            if locrecAllObj.Get(locrecAllObj."Object Type"::Table, locrecData."TTT-PR TableNo") then begin
+                if (locrecData."TTT-PR TableNo" <> locintLastTableNo) or (locrecData."TTT-PR RecordNo" <> locintLastRecordNo) then begin
                     if locintLastRecordNo <> 0 then
                         if locrrTable.Insert(false) then;
-                    locintLastTableNo := locrecData."TTTPR TableNo";
-                    locintLastRecordNo := locrecData."TTTPR RecordNo";
+                    locintLastTableNo := locrecData."TTT-PR TableNo";
+                    locintLastRecordNo := locrecData."TTT-PR RecordNo";
                     locrrTable.Close();
-                    locrrTable.Open(locrecData."TTTPR TableNo");
+                    locrrTable.Open(locrecData."TTT-PR TableNo");
                 end;
-                if locrrTable.FieldExist(locrecData."TTTPR FieldNo") then begin
-                    locfrField := locrrTable.Field(locrecData."TTTPR FieldNo");
+                if locrrTable.FieldExist(locrecData."TTT-PR FieldNo") then begin
+                    locfrField := locrrTable.Field(locrecData."TTT-PR FieldNo");
                     case locfrField.Type() of
                         fieldtype::Code:
-                            locfrField.Value := locrecData."TTTPR FieldValue";
+                            locfrField.Value := locrecData."TTT-PR FieldValue";
                         fieldtype::Text:
-                            locfrField.Value := locrecData."TTTPR FieldValue";
+                            locfrField.Value := locrecData."TTT-PR FieldValue";
                         fieldtype::Integer,
                         fieldtype::Option:
                             begin
-                                evaluate(locintEmpty, locrecData."TTTPR FieldValue");
+                                evaluate(locintEmpty, locrecData."TTT-PR FieldValue");
                                 locfrField.Value := locintEmpty;
                             end;
                         fieldtype::Decimal:
                             begin
-                                evaluate(locdecEmpty, locrecData."TTTPR FieldValue");
+                                evaluate(locdecEmpty, locrecData."TTT-PR FieldValue");
                                 locfrField.Value := locdecEmpty;
                             end;
                         fieldtype::Date:
                             begin
-                                evaluate(locdatEmpty, locrecData."TTTPR FieldValue");
+                                evaluate(locdatEmpty, locrecData."TTT-PR FieldValue");
                                 locfrField.Value := locdatEmpty;
                             end;
                         fieldtype::Time:
                             begin
-                                evaluate(loctimEmpty, locrecData."TTTPR FieldValue");
+                                evaluate(loctimEmpty, locrecData."TTT-PR FieldValue");
                                 locfrField.Value := loctimEmpty;
                             end;
                         fieldtype::DateTime:
                             begin
-                                evaluate(locdtEmpty, locrecData."TTTPR FieldValue");
+                                evaluate(locdtEmpty, locrecData."TTT-PR FieldValue");
                                 locfrField.Value := locdtEmpty;
                             end;
                         fieldtype::DateFormula:
                             begin
-                                evaluate(locdfEmpty, locrecData."TTTPR FieldValue");
+                                evaluate(locdfEmpty, locrecData."TTT-PR FieldValue");
                                 locfrField.Value := locdfEmpty;
                             end;
                         fieldtype::Boolean:
                             begin
-                                evaluate(locbooEmpty, locrecData."TTTPR FieldValue");
+                                evaluate(locbooEmpty, locrecData."TTT-PR FieldValue");
                                 locfrField.Value := locbooEmpty;
                             end;
                         else
-                            Error('Unmanaged field type: %1 %2 %3 %4 %5', locrecData."TTTPR TableNo", locrecdata."TTTPR RecordNo", locrecData."TTTPR FieldNo", locfrField.Type());
+                            Error('Unmanaged field type: %1 %2 %3 %4 %5', locrecData."TTT-PR TableNo", locrecdata."TTT-PR RecordNo", locrecData."TTT-PR FieldNo", locfrField.Type());
                     end;
                 end;
             end;
@@ -169,23 +169,23 @@ codeunit 50015 "TTTPR Nav2BcManagement"
         if locrrTable.Insert(false) then;
     end;
 
-    procedure ShowData(parrecTempl: Record "TTTPR Nav2BcTemplate")
+    procedure ShowData(parrecTempl: Record "TTT-PR Nav2BcTemplate")
     var
-        locrecData: Record "TTTPR Nav2BcData";
-        loctmprecRecords: Record "TTTPR Nav2BcRecord" temporary;
+        locrecData: Record "TTT-PR Nav2BcData";
+        loctmprecRecords: Record "TTT-PR Nav2BcRecord" temporary;
         locintRecCount: Integer;
         i: Integer;
     begin
-        locrecData.SetRange("TTTPR TemplateCode", parrecTempl."TTTPR Code");
+        locrecData.SetRange("TTT-PR TemplateCode", parrecTempl."TTT-PR Code");
         if not locrecData.FindLast() then
             exit;
-        locintRecCount := locrecData."TTTPR RecordNo";
+        locintRecCount := locrecData."TTT-PR RecordNo";
         for i := 1 to locintRecCount do begin
             loctmprecRecords.Init();
-            loctmprecRecords."TTTPR TemplateCode" := locrecData."TTTPR TemplateCode";
-            loctmprecRecords."TTTPR Company" := locrecData."TTTPR Company";
-            loctmprecRecords."TTTPR TableNo" := locrecData."TTTPR TableNo";
-            loctmprecRecords."TTTPR RecordNo" := i;
+            loctmprecRecords."TTT-PR TemplateCode" := locrecData."TTT-PR TemplateCode";
+            loctmprecRecords."TTT-PR Company" := locrecData."TTT-PR Company";
+            loctmprecRecords."TTT-PR TableNo" := locrecData."TTT-PR TableNo";
+            loctmprecRecords."TTT-PR RecordNo" := i;
             loctmprecRecords.Insert(false);
         end;
         loctmprecRecords.FindSet();

@@ -1,29 +1,29 @@
-table 50001 "TTTPR TableFilterExample1"
+table 50001 "TTT-PR TableFilterExample1"
 {
     Caption = 'Table Filter Example 1';
     DataClassification = ToBeClassified;
 
     fields
     {
-        field(1; "TTTPR LineNo"; Integer)
+        field(1; "TTT-PR LineNo"; Integer)
         {
             Caption = 'Line No.';
             DataClassification = CustomerContent;
         }
-        field(2; "TTTPR ObjectID"; Integer)
+        field(2; "TTT-PR ObjectID"; Integer)
         {
             Caption = 'Object ID';
             DataClassification = CustomerContent;
             TableRelation = AllObjWithCaption."Object ID" where ("Object Type" = const (Table));
         }
-        field(3; "TTTPR ObjectName"; Text[30])
+        field(3; "TTT-PR ObjectName"; Text[30])
         {
             Caption = 'Object Name';
             FieldClass = FlowField;
-            CalcFormula = lookup (AllObjWithCaption."Object Name" where ("Object ID" = field ("TTTPR ObjectID")));
+            CalcFormula = lookup (AllObjWithCaption."Object Name" where ("Object ID" = field ("TTT-PR ObjectID")));
             Editable = false;
         }
-        field(4; "TTTPR FilterString"; TableFilter)
+        field(4; "TTT-PR FilterString"; TableFilter)
         {
             Caption = 'Table Filter';
             DataClassification = CustomerContent;
@@ -32,7 +32,7 @@ table 50001 "TTTPR TableFilterExample1"
 
     keys
     {
-        key(PK; "TTTPR LineNo")
+        key(PK; "TTT-PR LineNo")
         {
             Clustered = true;
         }

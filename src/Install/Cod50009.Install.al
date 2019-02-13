@@ -1,4 +1,4 @@
-codeunit 50009 "TTTPR CoreInstall"
+codeunit 50009 "TTT-PR CoreInstall"
 {
     // <TTT001>
     //   Created.
@@ -8,7 +8,7 @@ codeunit 50009 "TTTPR CoreInstall"
     Subtype = Install;
 
     var
-        cuModuleInfoWrapper: Codeunit "TTTPR CoreModuleInfoWrapper";
+        cuModuleInfoWrapper: Codeunit "TTT-PR CoreModuleInfoWrapper";
 
     trigger OnInstallAppPerDatabase();
     begin

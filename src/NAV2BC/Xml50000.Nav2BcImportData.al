@@ -1,4 +1,4 @@
-xmlport 50000 "TTTPR Nav2BcImportData"
+xmlport 50000 "TTT-PR Nav2BcImportData"
 {
     Description = 'TTTPR Nav2Bc Import Data';
     Caption = 'Nav2Bc Import Data';
@@ -11,29 +11,29 @@ xmlport 50000 "TTTPR Nav2BcImportData"
     {
         textelement(Root)
         {
-            tableelement("TTTPR Nav2BcData"; "TTTPR Nav2BcData")
+            tableelement("TTT-PR Nav2BcData"; "TTT-PR Nav2BcData")
             {
                 XmlName = 'Import';
-                fieldelement(Company; "TTTPR Nav2BcData"."TTTPR Company")
+                fieldelement(Company; "TTT-PR Nav2BcData"."TTT-PR Company")
                 {
                 }
-                fieldelement(TableNo; "TTTPR Nav2BcData"."TTTPR TableNo")
-                {
-                    MinOccurs = Zero;
-                }
-                fieldelement(RecordNo; "TTTPR Nav2BcData"."TTTPR RecordNo")
+                fieldelement(TableNo; "TTT-PR Nav2BcData"."TTT-PR TableNo")
                 {
                     MinOccurs = Zero;
                 }
-                fieldelement(FieldNo; "TTTPR Nav2BcData"."TTTPR FieldNo")
+                fieldelement(RecordNo; "TTT-PR Nav2BcData"."TTT-PR RecordNo")
                 {
                     MinOccurs = Zero;
                 }
-                fieldelement(FieldType; "TTTPR Nav2BcData"."TTTPR FieldType")
+                fieldelement(FieldNo; "TTT-PR Nav2BcData"."TTT-PR FieldNo")
                 {
                     MinOccurs = Zero;
                 }
-                fieldelement(FieldLength; "TTTPR Nav2BcData"."TTTPR FieldLength")
+                fieldelement(FieldType; "TTT-PR Nav2BcData"."TTT-PR FieldType")
+                {
+                    MinOccurs = Zero;
+                }
+                fieldelement(FieldLength; "TTT-PR Nav2BcData"."TTT-PR FieldLength")
                 {
                     MinOccurs = Zero;
                 }
@@ -45,10 +45,10 @@ xmlport 50000 "TTTPR Nav2BcImportData"
                     var
                         locstrmOut: OutStream;
                     begin
-                        IF STRLEN(FieldValue) <= MAXSTRLEN("TTTPR Nav2BcData"."TTTPR FieldValue") THEN
-                            "TTTPR Nav2BcData"."TTTPR FieldValue" := FieldValue
+                        IF STRLEN(FieldValue) <= MAXSTRLEN("TTT-PR Nav2BcData"."TTT-PR FieldValue") THEN
+                            "TTT-PR Nav2BcData"."TTT-PR FieldValue" := FieldValue
                         ELSE BEGIN
-                            "TTTPR Nav2BcData"."TTTPR BlobValue".CREATEOUTSTREAM(locstrmOut);
+                            "TTT-PR Nav2BcData"."TTT-PR BlobValue".CREATEOUTSTREAM(locstrmOut);
                             locstrmOut.WRITE(FieldValue);
                         END;
                     end;
@@ -61,7 +61,7 @@ xmlport 50000 "TTTPR Nav2BcImportData"
 
                 trigger OnBeforeInsertRecord()
                 begin
-                    "TTTPR Nav2BcData"."TTTPR TemplateCode" := codTemplate;
+                    "TTT-PR Nav2BcData"."TTT-PR TemplateCode" := codTemplate;
                 end;
             }
         }
