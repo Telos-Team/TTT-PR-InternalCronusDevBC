@@ -30,8 +30,6 @@ table 50002 "TTT-PR TranslationProject"
         }
     }
 
-    var
-        myInt: Integer;
 
     trigger OnInsert();
     begin

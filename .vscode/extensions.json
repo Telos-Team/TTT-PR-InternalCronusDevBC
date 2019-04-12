@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "Microsoft.al",
+        "slevesque.vscode-hexdump",
+        "ms-vscode.PowerShell",
+        "ms-mssql.mssql",
+        "ms-vscode.azure-account"
+    ]
+}

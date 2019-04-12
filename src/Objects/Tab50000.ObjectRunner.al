@@ -45,8 +45,6 @@ table 50000 "TTT-PR ObjectRunner"
         }
     }
 
-    var
-        myInt: Integer;
 
     trigger OnInsert();
     begin
@@ -112,17 +110,17 @@ table 50000 "TTT-PR ObjectRunner"
                 begin
                     // Find pages using Object ID as SourceTable
                     locrecPageMetaData.SetRange(SourceTable, "TTT-PR ObjectID");
-                    if locrecPageMetaData.IsEmpty then begin
+                    if locrecPageMetaData.IsEmpty() then begin
                         loctmprecAllObjWithCaption."Object Type" := loctmprecAllObjWithCaption."Object Type"::Page;
                         loctmprecAllObjWithCaption."Object ID" := page::"TTT-PR SysVirtTblInspector";
                     end else begin
-                        locrecPageMetaData.findset;
+                        locrecPageMetaData.findset();
                         repeat
                             if locrecAllObjWithCaption.get(locrecAllObjWithCaption."Object Type"::page, locrecPageMetaData.id) then begin
                                 loctmprecAllObjWithCaption := locrecAllObjWithCaption;
                                 loctmprecAllObjWithCaption.Insert(false);
                             end;
-                        until locrecPageMetaData.Next = 0;
+                        until locrecPageMetaData.Next() = 0;
                         loctmprecAllObjWithCaption."Object Type" := loctmprecAllObjWithCaption."Object Type"::Page;
                         loctmprecAllObjWithCaption."Object ID" := page::"TTT-PR SysVirtTblInspector";
                         loctmprecAllObjWithCaption."Object Name" := 'TTT-PR Table Inspector';
@@ -130,7 +128,7 @@ table 50000 "TTT-PR ObjectRunner"
                         if loctmprecAllObjWithCaption.Insert(false) then;
 
                         Clear(loctmprecAllObjWithCaption);
-                        if loctmprecAllObjWithCaption.count > 1 then
+                        if loctmprecAllObjWithCaption.count() > 1 then
                             if page.RunModal(page::Objects, loctmprecAllObjWithCaption) = "Action"::LookupOK then;
                     end;
                     if loctmprecAllObjWithCaption."Object ID" = page::"TTT-PR SysVirtTblInspector" then begin

@@ -97,6 +97,22 @@ pageextension 50000 "TTT-PR IT Role Center" extends "Administrator Role Center"
                             RunPageMode = Edit;
                         }
                     }
+
+                    group("TTT-PR Misc")
+                    {
+                        Caption = 'Misc.';
+                        ToolTip = 'Misc. functionality';
+                        Image = Action;
+
+                        action("TTT-PR HyperlinkWrapper")
+                        {
+                            Caption = 'Hyperlink Wrapper';
+                            ToolTip = 'Run the Hyperlink Wrapper';
+                            ApplicationArea = All;
+                            Image = "Table";
+                            RunObject = codeunit "TTT-PR HyperlinkWrapper";
+                        }
+                    }
                 }
             }
         }
@@ -150,6 +166,4 @@ pageextension 50000 "TTT-PR IT Role Center" extends "Administrator Role Center"
         }
     }
 
-    var
-        myInt: Integer;
 }

@@ -197,7 +197,7 @@ report 50000 "TTT-PR FieldChange"
                 locfrNew := locrrNew.Field(intFieldNo);
             optAction::InitValue:
                 begin
-                    locrrNew.INIT;
+                    locrrNew.INIT();
                     locfrNew := locrrNew.Field(intFieldNo);
                 end;
             optAction::SetValue:

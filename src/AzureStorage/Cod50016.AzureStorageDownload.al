@@ -7,9 +7,6 @@ codeunit 50016 "TTT-PR AzureStorageDownload"
         GetFileSize();
     end;
 
-    var
-        myInt: Integer;
-
     local procedure DownloadSimpleFile()
     var
         loctxtUrl: Text;

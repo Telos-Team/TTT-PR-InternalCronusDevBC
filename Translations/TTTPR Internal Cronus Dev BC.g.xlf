@@ -3,6 +3,26 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="TTTPR Internal Cronus Dev BC">
     <body>
       <group id="body">
+        <trans-unit id="Table 2036303844 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hyperlink Wrapper Test</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR HyperlinkWrapper Test - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2036303844 - Field 1379962128 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR HyperlinkWrapper Test - Field TTT-PR Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2036303844 - Field 2515856340 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR HyperlinkWrapper Test - Field TTT-PR Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2036303844 - Field 81990541 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR HyperlinkWrapper Test - Field TTT-PR Type - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3229673786 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>TTTPR Menu Suite</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -433,6 +453,51 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR AzureFunctionsSimple - Method TestSimpleHelloWorld - NamedType loclblUrlLbl</note>
         </trans-unit>
+        <trans-unit id="Codeunit 773023970 - NamedType 2685925152" maxwidth="999" size-unit="char" translate="no" xml:space="preserve">
+          <source>text/html</source>
+          <note from="Developer" annotates="general" priority="2">Used for ContentType.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR HyperlinkWrapper - NamedType lblMimeTextHtmlLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 773023970 - NamedType 3641639793" maxwidth="999" size-unit="char" translate="no" xml:space="preserve">
+          <source>application/xml</source>
+          <note from="Developer" annotates="general" priority="2">Used for ContentType.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR HyperlinkWrapper - NamedType lblMimeApplicationXmlLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 773023970 - NamedType 2426645825" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status: %1\Url: %2\%3</source>
+          <note from="Developer" annotates="general" priority="2">%1=StatusCode, %2=Store Url, %3=ReasonPhrase</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR HyperlinkWrapper - NamedType lblHttpErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 773023970 - NamedType 1038050006" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1?code=%2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR HyperlinkWrapper - NamedType lblStoreUrlMaskTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 773023970 - NamedType 36451522" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1?code=%2&amp;tenant=%3&amp;id=%4</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR HyperlinkWrapper - NamedType lblShowUrlMaskTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 773023970 - NamedType 1732253282" size-unit="char" translate="yes" xml:space="preserve">
+          <source>https://palette-hyperlink-app.azurewebsites.net/api/StoreContent</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR HyperlinkWrapper - NamedType lblStoreUrlTok</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 773023970 - NamedType 891028854" size-unit="char" translate="yes" xml:space="preserve">
+          <source>https://palette-hyperlink-app.azurewebsites.net/api/ShowContent</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR HyperlinkWrapper - NamedType lblShowUrlTok</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 773023970 - NamedType 2933564326" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NObaxZiQCUvWSDuDAxlZivpThpgwZeYxkKqo2XNGHeYwHineT4T41g==</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR HyperlinkWrapper - NamedType lblStoreKeyTok</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 773023970 - NamedType 4130991314" size-unit="char" translate="yes" xml:space="preserve">
+          <source>N06wn/1624tr0rCshKMNcS6iXCFTZnf1BYtMIeNxcP6cju9lRZwfQg==</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR HyperlinkWrapper - NamedType lblShowKeyTok</note>
+        </trans-unit>
         <trans-unit id="Codeunit 1621144804 - Method 453759119 - NamedType 751081105" size-unit="char" translate="yes" xml:space="preserve">
           <source>Select a file to upload</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -487,6 +552,31 @@
           <source></source>
           <note from="Developer" annotates="general" priority="2">This is the filter used when selecting file to upload</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR XmlManagement - Method LoadClientXml - NamedType loclblFromFilterLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 2481735628 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hyperlink Wrapper Test</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR HyperlinkWrapperTest - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2481735628 - Control 900488533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value (Blob)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR HyperlinkWrapperTest - Control TTT-PR Value3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2481735628 - Control 1538185150 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value (Url)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR HyperlinkWrapperTest - Control TTT-PR Value2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2481735628 - Action 1662831674 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use Hyperlink</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR HyperlinkWrapperTest - Action TTT-PR UseHyperlink - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2481735628 - Action 1240149237 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use Message</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR HyperlinkWrapperTest - Action TTT-PR UseMessage - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4094278366 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Nav2Bc Templates</source>
@@ -917,6 +1007,26 @@
           <source>Show the Translation Worksheet</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR TranslationWorksheetProcessing - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282177179 - Action 2448425473 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Misc.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR Misc - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282177179 - Action 2448425473 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Misc. functionality</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR Misc - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282177179 - Action 773023970 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hyperlink Wrapper</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR HyperlinkWrapper - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282177179 - Action 773023970 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Run the Hyperlink Wrapper</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR HyperlinkWrapper - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 1282177179 - Action 574240122 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>TTTPR</source>

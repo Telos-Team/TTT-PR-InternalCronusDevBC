@@ -64,7 +64,6 @@ page 50006 "TTT-PR TranslationWorksheet"
     }
 
     var
-        txtTargetLanguage: Text[10];
         txtSourceContentString: Text;
         txtTargetContentString: Text;
 

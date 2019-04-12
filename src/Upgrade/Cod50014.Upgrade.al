@@ -9,6 +9,4 @@ codeunit 50014 "TTT-PR CoreUpgrade"
 
     // CHECK -> UPGRADE -> VALIDATE
 
-    var
-        cuModuleInfoWrapper: Codeunit "TTT-PR CoreModuleInfoWrapper";
 }

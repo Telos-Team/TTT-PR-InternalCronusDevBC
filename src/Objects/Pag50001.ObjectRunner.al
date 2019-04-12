@@ -171,7 +171,6 @@ page 50001 "TTT-PR ObjectRunnerList"
     }
 
     var
-        recObjectTypeSelector: Record AllObjWithCaption;
         optObjectTypeSelector: Option " ",TableData,Table,,Report,,Codeunit,XmlPort,MenuSuite,Page,Query,System,FieldNumber;
 
     trigger OnOpenPage();

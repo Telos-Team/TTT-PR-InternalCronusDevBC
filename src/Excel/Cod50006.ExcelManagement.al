@@ -8,9 +8,6 @@ codeunit 50006 "TTT-PR ExcelManagement"
         TestorLoadClientExcel();
     end;
 
-    var
-        xmlDoc: XmlDocument;
-
     local procedure TestorLoadClientExcel();
     var
         locrecExcelBuffer: Record "Excel Buffer";
