@@ -789,7 +789,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PageTestWizard - Control Part1.3 - Property InstructionalText</note>
         </trans-unit>
         <trans-unit id="Page 244192919 - Control 1923177778 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Select this</source>
+          <source>Accept terms</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PageTestWizard - Control SelectThis - Property Caption</note>
         </trans-unit>
@@ -799,12 +799,12 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PageTestWizard - Control Part2 - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 244192919 - Control 3238981959 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Even more text...</source>
+          <source>More text...</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PageTestWizard - Control Part2 - Property InstructionalText</note>
         </trans-unit>
         <trans-unit id="Page 244192919 - Control 1662534334 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>SecondTerms1</source>
+          <source>Second terms</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PageTestWizard - Control Part2.1 - Property Caption</note>
         </trans-unit>
@@ -819,12 +819,12 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PageTestWizard - Control Part3 - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 244192919 - Control 3876678576 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
-          <source>More text...</source>
+          <source>Even more text...</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PageTestWizard - Control Part3 - Property InstructionalText</note>
         </trans-unit>
         <trans-unit id="Page 244192919 - Control 2323568757 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>ThirdTerms1</source>
+          <source>Third terms</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PageTestWizard - Control Part3.1 - Property Caption</note>
         </trans-unit>
@@ -839,9 +839,19 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PageTestWizard - Control Last - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 244192919 - Control 658771142 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Press finish...</source>
+          <source>That is it...</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PageTestWizard - Control Last - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 244192919 - Control 2147047816 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>and that is that!</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PageTestWizard - Control Part4.1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 244192919 - Control 2147047816 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Press finish to end wizard.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PageTestWizard - Control Part4.1 - Property InstructionalText</note>
         </trans-unit>
         <trans-unit id="Page 244192919 - Action 2438272767 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Back</source>
@@ -857,6 +867,16 @@
           <source>Finish</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PageTestWizard - Action ActionFinish - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 244192919 - NamedType 2378472317" size-unit="char" translate="no" xml:space="preserve">
+          <source>AssistedSetup-NoText-400px.png</source>
+          <note from="Developer" annotates="general" priority="2">Used for top banner image</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PageTestWizard - NamedType lblAssistedSetupTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 244192919 - NamedType 181697805" size-unit="char" translate="no" xml:space="preserve">
+          <source>AssistedSetupDone-NoText-400px.png</source>
+          <note from="Developer" annotates="general" priority="2">Used for top banner image</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PageTestWizard - NamedType lblAssistedSetupDoneTxt</note>
         </trans-unit>
         <trans-unit id="Page 2606489386 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Table Filter Example, Simple</source>

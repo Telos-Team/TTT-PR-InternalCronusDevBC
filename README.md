@@ -1,4 +1,4 @@
-# TTTPR-InternalCronusDev2018
+# TTTPR-InternalCronusDevBC
 ## TTTPR's own development database functionality
 
 ### Remark:
@@ -16,7 +16,6 @@
 | TableFilter using FilterPageBuilder | 1
 | Enumerate object numbers in VS Code | 3
 | Sign app file | 1
-| Translation | 1
 
 ### Notes / remember:
 | Note | Comment |
@@ -25,9 +24,7 @@
 | Extension/Internal | Switch using app.json
 | Role Center Page | Must restart service tier? or log out
 | ApplicationArea, UsageCategory, AccessByPermission, DataClassification | Mandatory for visibility and searchability
-| Translation | Crap...
 | Functions [External]
-| Labels ctr. TextContants
 | Dates: yyyymmddD
 | CodeAnalysis | Use either settings.json or workspace file
 

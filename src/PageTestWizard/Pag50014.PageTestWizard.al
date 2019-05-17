@@ -1,12 +1,9 @@
 page 50014 "TTT-PR PageTestWizard"
 {
-    // Todo: Convert media name to label
-
-    Description = '';
+    Description = 'This is a kind of template to easily create wizards';
     Caption = 'PageTestWizard';
     PageType = NavigatePage;
-    ApplicationArea = All;
-    UsageCategory = Lists;
+    UsageCategory = None;
 
     layout
     {
@@ -210,6 +207,8 @@ page 50014 "TTT-PR PageTestWizard"
         booNextEnabled: Boolean;
         booFinishEnabled: Boolean;
         enumStep: Enum "TTT-PR PageTestWizardStep";
+        lblAssistedSetupTxt: Label 'AssistedSetup-NoText-400px.png', Locked = true, Comment = 'Used for top banner image';
+        lblAssistedSetupDoneTxt: Label 'AssistedSetupDone-NoText-400px.png', Locked = true, Comment = 'Used for top banner image';
 
     local procedure InitializeControls()
     begin
@@ -231,9 +230,9 @@ page 50014 "TTT-PR PageTestWizard"
         locrecMediaRepoFinish: Record "Media Repository";
     begin
         booBannerVisible := true;
-        if locrecMediaRepoInProgress.Get('AssistedSetup-NoText-400px.png', Format(CurrentClientType())) then
+        if locrecMediaRepoInProgress.Get(lblAssistedSetupTxt, Format(CurrentClientType())) then
             if recMediaResourceInProgress.Get(locrecMediaRepoInProgress."Media Resources Ref") then;
-        if locrecMediaRepoFinish.Get('AssistedSetupDone-NoText-400px.png', Format(CurrentClientType())) then
+        if locrecMediaRepoFinish.Get(lblAssistedSetupDoneTxt, Format(CurrentClientType())) then
             if recMediaResourceFinish.Get(locrecMediaRepoFinish."Media Resources Ref") then;
     end;
 
