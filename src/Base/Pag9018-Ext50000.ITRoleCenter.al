@@ -81,23 +81,6 @@ pageextension 50000 "TTT-PR IT Role Center" extends "Administrator Role Center"
                         }
                     }
 
-                    group("TTT-PR Translation")
-                    {
-                        Caption = 'Translation';
-                        ToolTip = 'Translation functionality';
-                        Image = SuggestTables;
-
-                        action("TTT-PR TranslationWorksheetProcessing")
-                        {
-                            Caption = 'Show Translation Worksheet';
-                            ToolTip = 'Show the Translation Worksheet';
-                            ApplicationArea = All;
-                            Image = "Table";
-                            RunObject = page "TTT-PR TranslationWorksheet";
-                            RunPageMode = Edit;
-                        }
-                    }
-
                     group("TTT-PR Misc")
                     {
                         Caption = 'Misc.';
@@ -151,19 +134,7 @@ pageextension 50000 "TTT-PR IT Role Center" extends "Administrator Role Center"
                     RunObject = page "TTT-PR TableFilterExRecRef";
                     RunPageMode = Edit;
                 }
-
-                action("TTT-PR TranslationSections")
-                {
-                    Caption = 'Show Translation Worksheet';
-                    ToolTip = 'Show the Translation Worksheet';
-                    ApplicationArea = All;
-                    Image = "Table";
-                    RunObject = page "TTT-PR TranslationWorksheet";
-                    RunPageMode = Edit;
-                }
-
             }
         }
     }
-
 }

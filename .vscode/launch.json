@@ -9,10 +9,19 @@
             "serverInstance": "Cronus_Dev_BC",
             "port": 13004,
             "authentication": "Windows",
-            "startupObjectId": 50001,
+            "startupObjectId": 50014,
             "startupObjectType": "Page",
             "breakOnError": true,
             "schemaUpdateMode": "Synchronize"
+        },
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "Microsoft cloud sandbox",
+            "tenant": "TTRosenkilde.onmicrosoft.com",
+            "startupObjectId": 50014,
+            "startupObjectType": "Page",
+            "breakOnError": true
         }
     ]
 }

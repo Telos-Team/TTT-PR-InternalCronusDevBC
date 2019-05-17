@@ -109,7 +109,7 @@ codeunit 50021 "TTT-PR HyperlinkWrapper"
     end;
 
     var
-        lblMimeTextHtmlLbl: Label 'text/html', Comment = 'Used for ContentType.', MaxLength = 999, Locked = true;
+        //lblMimeTextHtmlLbl: Label 'text/html', Comment = 'Used for ContentType.', MaxLength = 999, Locked = true;
         lblMimeApplicationXmlLbl: Label 'application/xml', Comment = 'Used for ContentType.', MaxLength = 999, Locked = true;
         lblHttpErr: Label 'Status: %1\Url: %2\%3', Comment = '%1=StatusCode, %2=Store Url, %3=ReasonPhrase';
         lblStoreUrlMaskTxt: Label '%1?code=%2';
