@@ -1,4 +1,4 @@
-page 50016 "TTT-PR MediaResources"
+page 50019 "TTT-PR MediaResources"
 {
     PageType = List;
     ApplicationArea = All;

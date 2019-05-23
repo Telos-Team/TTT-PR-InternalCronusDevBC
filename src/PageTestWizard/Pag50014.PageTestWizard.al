@@ -100,6 +100,15 @@ page 50014 "TTT-PR PageTestWizard"
                         Caption = 'Second terms';
                         InstructionalText = 'do that...';
                     }
+                    group(PicturePart)
+                    {
+                        ShowCaption = false;
+                        part(PicPart; "TTT-PR ItemPictureCardPart")
+                        {
+                            Editable = false;
+                            SubPageLink = "No." = const ('1896-S');
+                        }
+                    }
                 }
             }
 
@@ -219,9 +228,15 @@ page 50014 "TTT-PR PageTestWizard"
 
     local procedure ResetControls()
     begin
-        booBackEnabled := enumStep > enumStep::First;
-        booNextEnabled := enumStep < enumStep::Finish;
-        booFinishEnabled := enumStep = enumStep::Finish;
+        booBackEnabled := GetEnumInteger(enumStep) > GetEnumInteger(enumStep::First);
+        booNextEnabled := GetEnumInteger(enumStep) < GetEnumInteger(enumStep::Finish);
+        booFinishEnabled := GetEnumInteger(enumStep) = GetEnumInteger(enumStep::Finish);
+    end;
+
+    local procedure GetEnumInteger(parenumStep: Enum "TTT-PR PageTestWizardStep") ReturnValue: Integer;
+    begin
+        // Later versions supports < and > integer operations on Enums 
+        Evaluate(ReturnValue, Format(parenumStep, 0, '<Number>'));
     end;
 
     local procedure UpdateBannerVisibility()
@@ -238,21 +253,35 @@ page 50014 "TTT-PR PageTestWizard"
 
     local procedure PerformBackStep()
     var
-        locintTestor: Integer;
+        locenumTestor: Enum "TTT-PR PageTestWizardStep";
+        locintStep: Integer;
+        locintLoop: Integer;
     begin
-        repeat
-            enumStep -= 1;
-        until not Evaluate(locintTestor, Format(enumStep));
+        // Later versions supports -= and += integer operations on Enums 
+        locintStep := GetEnumInteger(enumStep);
+        for locintLoop := locintStep - 1 DownTo 0 do
+            if Evaluate(locenumTestor, Format(locintStep)) then
+                if GetEnumInteger(locenumTestor) = locintLoop then begin
+                    enumStep := locenumTestor;
+                    breaK;
+                end;
         ResetControls();
     end;
 
     local procedure PerformNextStep()
     var
-        locintTestor: Integer;
+        locenumTestor: Enum "TTT-PR PageTestWizardStep";
+        locintStep: Integer;
+        locintLoop: Integer;
     begin
-        repeat
-            enumStep += 1;
-        until not Evaluate(locintTestor, Format(enumStep));
+        // Later versions supports -= and += integer operations on Enums 
+        locintStep := GetEnumInteger(enumStep);
+        for locintLoop := locintStep + 1 to GetEnumInteger(enumStep::Finish) do
+            if Evaluate(locenumTestor, Format(locintStep)) then
+                if GetEnumInteger(locenumTestor) = locintLoop then begin
+                    enumStep := locenumTestor;
+                    breaK;
+                end;
         ResetControls();
     end;
 

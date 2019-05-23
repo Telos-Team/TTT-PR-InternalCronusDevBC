@@ -1,10 +1,10 @@
-page 50015 "TTT-PR MediaRepos"
+page 50021 "TTT-PR TenantMediaSet"
 {
-    Caption = 'Media Repositories';
+    Caption = 'Tenant Media Set';
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = "Media Repository";
+    SourceTable = "Tenant Media Set";
 
     layout
     {
@@ -12,19 +12,19 @@ page 50015 "TTT-PR MediaRepos"
         {
             repeater(GroupName)
             {
-                field(FileName; "File Name")
+                field(ID; ID)
                 {
                     ApplicationArea = All;
                 }
-                field(DisplayTarget; "Display Target")
+                field(CompanyName; "Company Name")
                 {
                     ApplicationArea = All;
                 }
-                field(MediaResourceRef; "Media Resources Ref")
+                field(MediaID; "Media ID")
                 {
                     ApplicationArea = All;
                 }
-                field(ImageHasValue; Image.HasValue())
+                field(MediaIndex; "Media Index")
                 {
                     ApplicationArea = All;
                 }

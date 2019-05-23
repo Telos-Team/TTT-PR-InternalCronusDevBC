@@ -13,15 +13,16 @@
             "startupObjectType": "Page",
             "breakOnError": true,
             "schemaUpdateMode": "Synchronize"
-        },
-        {
-            "type": "al",
-            "request": "launch",
-            "name": "Microsoft cloud sandbox",
-            "tenant": "TTRosenkilde.onmicrosoft.com",
-            "startupObjectId": 50014,
-            "startupObjectType": "Page",
-            "breakOnError": true
         }
+        // ,
+        // {
+        //     "type": "al",
+        //     "request": "launch",
+        //     "name": "Microsoft cloud sandbox",
+        //     "tenant": "TTRosenkilde.onmicrosoft.com",
+        //     "startupObjectId": 50017,
+        //     "startupObjectType": "Page",
+        //     "breakOnError": true
+        // }
     ]
 }

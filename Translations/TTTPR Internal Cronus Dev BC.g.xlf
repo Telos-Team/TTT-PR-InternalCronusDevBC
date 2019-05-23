@@ -338,6 +338,46 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR TableFilterExample1 - Field TTT-PR FilterString - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3448070934 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>WsTest Credentials</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestCredential - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3448070934 - Field 884246714 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestCredential - Field TTT-PR Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3448070934 - Field 951933599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestCredential - Field TTT-PR Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3448070934 - Field 8318068 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Url</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestCredential - Field TTT-PR Url - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3448070934 - Field 2673224551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Username</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestCredential - Field TTT-PR Username - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3448070934 - Field 785760908 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Accesskey</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestCredential - Field TTT-PR AccessKey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3448070934 - Field 3479014368 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Domain name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestCredential - Field TTT-PR DomainName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3448070934 - Field 569041696 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Password</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestCredential - Field TTT-PR Password - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Codeunit 3425941135 - Method 775907828 - NamedType 2663951413" size-unit="char" translate="yes" xml:space="preserve">
           <source>https://tttpr-functionapp.azurewebsites.net/api/HelloWorld</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -463,10 +503,90 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR HyperlinkWrapperTest - Action TTT-PR UseMessage - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 3579455642 - Action 2186134561 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Media Repositories</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR MediaCockpit - Action MediaRepos - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3579455642 - Action 494150023 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Media Resources</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR MediaCockpit - Action MediaResources - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3579455642 - Action 2433990028 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tenant Media</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR MediaCockpit - Action TenantMedia - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3579455642 - Action 2456908014 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tenant Media Set</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR MediaCockpit - Action TenantMediaSet - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3579455642 - Action 3090979733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tenant Media Thumbnails</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR MediaCockpit - Action MediaTenantMediaThumbnails - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3579455642 - Action 72944844 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item List w/Pictures</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR MediaCockpit - Action ItemListPictures - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 1105651632 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Media Repositories</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR MediaRepos - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2146070741 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tenant Media</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR TenantMedia - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2146070741 - Control 2104346500 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Content HasValue</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR TenantMedia - Control ContentHasValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 503057595 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tenant Media Set</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR TenantMediaSet - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 244610944 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tenant Media Thumbnails</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR TenantMediaThumbnails - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 244610944 - Control 650359949 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Content HasValue</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR TenantMediaThumbnails - Control ContentField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2403080733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item List w/Pictures</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR ItemListPictures - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2403080733 - Control 201881077 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Picture field is type MediaSet, so the field is just added to the page. OnOpenPage: "SetFilter(Picture, "&lt;&gt;%1", locrecItem.Picture)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR ItemListPictures - Control Instructions - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 3013569994 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Card w/Picture</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR ItemCardPicture - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3013569994 - Control 2270354535 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Picture Media Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR ItemCardPicture - Control PictureMediaId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2547524019 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Picture</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR ItemPictureCardPart - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4094278366 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Nav2Bc Templates</source>
@@ -897,6 +1017,96 @@
           <source>Here I want to try to use a TableFilter field using RecRef - if possible!</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR TableFilterExRecRef - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>WsTest Cockpit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Control 2445482498 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start activating "Install Ws" which gives the Url, then select a "Call Ws" action.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Control General - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Control 529863810 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Codeunit Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Control CodeunitId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Control 529863810 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This is the codeunit id that you wish to publish</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Control CodeunitId - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Control 2187938695 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Service</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Control Service - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Control 2187938695 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This is the name of the service to publish using "Tenant Web Service" table</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Control Service - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Control 4132733409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Method</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Control Method - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Control 4132733409 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This is the name of the procedure that you wish to call from the published codeunit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Control Method - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Control 91240140 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Parameter Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Control ParamName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Control 91240140 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This is the name of the parameter in the procedure</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Control ParamName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Control 2196646888 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Parameter Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Control ParamValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Control 2196646888 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This is the value that you want to send in the parameter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Control ParamValue - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Control 3168444338 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Address</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Control Address - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Control 3168444338 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This is the address (url) of the service. The value is populated when installing the web service or when calling GetUrl(...)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Control Address - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Action 878452675 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Install Ws</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Action InstalWs - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Action 1533878466 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Call Ws</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Action CallWs - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2077977603 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>WsTest Credentials</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCredentials - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 2152017361 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Field Change</source>
