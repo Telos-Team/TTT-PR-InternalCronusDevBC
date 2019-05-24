@@ -9,10 +9,10 @@
             "serverInstance": "Cronus_Dev_BC",
             "port": 13004,
             "authentication": "Windows",
-            "startupObjectId": 50014,
+            "startupObjectId": 50017,
             "startupObjectType": "Page",
             "breakOnError": true,
-            "schemaUpdateMode": "Synchronize"
+            "schemaUpdateMode": "Synchronize" 
         }
         // ,
         // {

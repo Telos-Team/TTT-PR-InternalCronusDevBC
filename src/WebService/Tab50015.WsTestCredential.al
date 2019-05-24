@@ -18,7 +18,7 @@ table 50015 "TTT-PR WsTestCredential"
             Caption = 'Description';
             DataClassification = CustomerContent;
         }
-        field(3; "TTT-PR Url"; Code[250])
+        field(3; "TTT-PR Url"; Text[250])
         {
             Caption = 'Url';
             DataClassification = CustomerContent;
