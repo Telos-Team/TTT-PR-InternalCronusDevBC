@@ -5,7 +5,6 @@ codeunit 50024 "TTT-PR WsTestHttpWrapper"
     // https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/deployment/implement-security-certificates-production-environment
     // https://community.dynamics.com/nav/b/dynamicsnavcloudfronts/archive/2017/11/20/how-to-login-windows-client-and-web-client-using-navuserpassword-authentication-in-microsoft-dynamics-nav
 
-
     var
         hhContentHeaders: HttpHeaders;
         hhRequestHeaders: HttpHeaders;
@@ -26,6 +25,7 @@ codeunit 50024 "TTT-PR WsTestHttpWrapper"
         loctbTelegram: TextBuilder;
         loctxtInMessage: Text;
     begin
+        // This procedure shows how to use this codeunit as a wrapper for alle http variables.
         loctbTelegram.Append(StrSubstNo('<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:BC="urn:microsoft-dynamics-schemas/codeunit/%1">', partxtService));
         loctbTelegram.Append('<soap:Header/>');
         loctbTelegram.Append('<soap:Body>');
@@ -126,13 +126,6 @@ codeunit 50024 "TTT-PR WsTestHttpWrapper"
 
         loctmprecTempBlob.WriteAsText(loctxtAuthInfo, TextEncoding::Windows);
         txtAuthorization := StrSubstNo('%1 %2', loctxtAuthType, loctmprecTempBlob.ToBase64String());
-
-        // BASIC_DIGEST
-        // KERBEROS
-        // BEARER
-        // NTLMSSP
-        // Authorization: Negotiate
-        // Authorization: NTLM
     end;
 
     procedure SetAuthorizationInfo(partxtUsername: Text; partxtPassword: Text)
