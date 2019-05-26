@@ -463,6 +463,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR Nav2BcTiming - NamedType lblDurationMessageLbl</note>
         </trans-unit>
+        <trans-unit id="Codeunit 499040757 - NamedType 1406799063" size-unit="char" translate="yes" xml:space="preserve">
+          <source>true</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestXmlWrapper - NamedType lblXmlTrueTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 499040757 - NamedType 1905534314" size-unit="char" translate="yes" xml:space="preserve">
+          <source>false</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestXmlWrapper - NamedType lblXmlFalseTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1372765974 - NamedType 1738957032" size-unit="char" translate="yes" xml:space="preserve">
+          <source>http://schemas.xmlsoap.org/soap/envelope/</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestManagement - NamedType lblSoapNsUriTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1372765974 - NamedType 1927809572" size-unit="char" translate="yes" xml:space="preserve">
+          <source>urn:microsoft-dynamics-schemas/codeunit/%1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestManagement - NamedType lblBcNsUriTxt</note>
+        </trans-unit>
         <trans-unit id="Codeunit 1270240617 - Method 190711088 - NamedType 3268322187" size-unit="char" translate="yes" xml:space="preserve">
           <source>%1 (%2)</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1102,6 +1122,21 @@
           <source>Call Ws</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Action CallWs - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Action 2429361363 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Call Specific Simple Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Action CallSpecificSimpleText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Action 1258639296 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Call Specific Simple Text Var</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Action CallSpecificSimpleTextVar - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Action 3999470969 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Call Specific DateTime Diff</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Action CallSpecificDtDiff - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2077977603 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>WsTest Credentials</source>

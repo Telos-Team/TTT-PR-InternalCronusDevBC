@@ -1,4 +1,4 @@
-codeunit 50027 "TTT-PR WsTestInstaller"
+codeunit 50026 "TTT-PR WsTestInstaller"
 {
     procedure InstallWs(parintObjectType: Integer; parintObjectId: Integer; partxtServiceName: Text; parbooPublish: Boolean): Text
     var

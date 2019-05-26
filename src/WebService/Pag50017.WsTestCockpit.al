@@ -129,7 +129,57 @@ page 50017 "TTT-PR WsTestCockpit"
                     loccuHttp: Codeunit "TTT-PR WsTestHttpWrapper";
                 begin
                     loccuHttp.CallWsSimpleStringTestor("TTT-PR Url", txtService, txtMethod, txtParamName, txtParamValue, "TTT-PR Username", "TTT-PR AccessKey", "TTT-PR DomainName", "TTT-PR Password");
-                    Message('ACK');
+                end;
+            }
+            action(CallSpecificSimpleText)
+            {
+                Caption = 'Call Specific Simple Text';
+                ApplicationArea = All;
+                Image = "Action";
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                PromotedOnly = true;
+
+                trigger OnAction()
+                var
+                    loccuSpec: Codeunit "TTT-PR WsTestSpecifics";
+                begin
+                    loccuSpec.CallWsSimpleText("TTT-PR Url", "TTT-PR Username", "TTT-PR AccessKey");
+                end;
+            }
+            action(CallSpecificSimpleTextVar)
+            {
+                Caption = 'Call Specific Simple Text Var';
+                ApplicationArea = All;
+                Image = "Action";
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                PromotedOnly = true;
+
+                trigger OnAction()
+                var
+                    loccuSpec: Codeunit "TTT-PR WsTestSpecifics";
+                begin
+                    loccuSpec.CallWsSimpleTextVar("TTT-PR Url", "TTT-PR Username", "TTT-PR AccessKey");
+                end;
+            }
+            action(CallSpecificDtDiff)
+            {
+                Caption = 'Call Specific DateTime Diff';
+                ApplicationArea = All;
+                Image = "Action";
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                PromotedOnly = true;
+
+                trigger OnAction()
+                var
+                    loccuSpec: Codeunit "TTT-PR WsTestSpecifics";
+                begin
+                    loccuSpec.CallWsDateTimeDiff("TTT-PR Url", "TTT-PR Username", "TTT-PR AccessKey");
                 end;
             }
         }
