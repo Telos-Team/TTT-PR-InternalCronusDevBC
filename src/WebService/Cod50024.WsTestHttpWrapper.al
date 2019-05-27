@@ -35,6 +35,11 @@ codeunit 50024 "TTT-PR WsTestHttpWrapper"
         Message('Response:\%1', loctxtInMessage);
     end;
 
+    procedure CallWs(partxtAddress: Text; parbooFail: Boolean): Boolean
+    begin
+        exit(CallWs(partxtAddress, '', parbooFail));
+    end;
+
     procedure CallWs(partxtAddress: Text; partxtMethod: Text; parbooFail: Boolean): Boolean
     var
         loctxtInMessage: Text;
@@ -53,7 +58,8 @@ codeunit 50024 "TTT-PR WsTestHttpWrapper"
         if loctxtAuthorizationInfo <> '' then
             AddRequestHeader('Authorization', GetAuthorizationInfo());
         AddRequestHeader('Connection', 'keep-alive');
-        AddRequestHeader('SOAPAction', partxtMethod);
+        if partxtMethod <> '' then
+            AddRequestHeader('SOAPAction', partxtMethod);
 
         if intTimeout = 0 then
             intTimeout := hcClient.Timeout()

@@ -8,6 +8,8 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
         xnlClass: XmlNodeList;
         lblXmlTrueTxt: Label 'true';
         lblXmlFalseTxt: Label 'false';
+        lblXmlYesTxt: Label 'yes';
+        lblXmlNoTxt: Label 'no';
 
     procedure CreateDoc()
     begin
@@ -23,7 +25,7 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
 
     procedure CreateDoc(partxtVersion: Text; partxtEncoding: Text; parbooStandalone: Boolean): Boolean
     begin
-        exit(CreateDoc(partxtVersion, partxtEncoding, Boolean2XmlText(parbooStandalone)));
+        exit(CreateDoc(partxtVersion, partxtEncoding, Boolean2XmlYesNo(parbooStandalone)));
     end;
 
     procedure CreateDoc(partxtVersion: Text; partxtEncoding: Text; partxtStandalone: Text): Boolean
@@ -50,7 +52,7 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
 
     procedure AddDeclaration(partxtVersion: Text; partxtEncoding: Text; parbooStandalone: Boolean): Boolean
     begin
-        exit(AddDeclaration(partxtVersion, partxtEncoding, Boolean2XmlText(parbooStandalone)));
+        exit(AddDeclaration(partxtVersion, partxtEncoding, Boolean2XmlYesNo(parbooStandalone)));
     end;
 
     procedure AddDeclaration(partxtVersion: Text; partxtEncoding: Text; partxtStandalone: Text): Boolean
@@ -509,12 +511,20 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
 
 
 
-    local procedure Boolean2XmlText(parbooValue: Boolean): Text
+    procedure Boolean2XmlText(parbooValue: Boolean): Text
     begin
         if parbooValue then
             exit(lblXmlTrueTxt)
         else
             exit(lblXmlFalseTxt);
+    end;
+
+    procedure Boolean2XmlYesNo(parbooValue: Boolean): Text
+    begin
+        if parbooValue then
+            exit(lblXmlYesTxt)
+        else
+            exit(lblXmlNoTxt);
     end;
 
     local procedure Stream2Text(parstrmValue: InStream) ReturnValue: Text

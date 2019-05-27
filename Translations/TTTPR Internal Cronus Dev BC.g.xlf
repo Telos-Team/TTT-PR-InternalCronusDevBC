@@ -473,15 +473,55 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestXmlWrapper - NamedType lblXmlFalseTxt</note>
         </trans-unit>
-        <trans-unit id="Codeunit 1372765974 - NamedType 1738957032" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 499040757 - NamedType 2132978336" size-unit="char" translate="yes" xml:space="preserve">
+          <source>yes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestXmlWrapper - NamedType lblXmlYesTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 499040757 - NamedType 331426086" size-unit="char" translate="yes" xml:space="preserve">
+          <source>no</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestXmlWrapper - NamedType lblXmlNoTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1372765974 - NamedType 4019353999" size-unit="char" translate="yes" xml:space="preserve">
           <source>http://schemas.xmlsoap.org/soap/envelope/</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestManagement - NamedType lblSoapNsUriTxt</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestManagement - NamedType lblBcSoapNsUriTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1372765974 - NamedType 3878820203" size-unit="char" translate="yes" xml:space="preserve">
+          <source>http://www.w3.org/2003/05/soap-envelope</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestManagement - NamedType lblPalSoapNsUriTxt</note>
         </trans-unit>
         <trans-unit id="Codeunit 1372765974 - NamedType 1927809572" size-unit="char" translate="yes" xml:space="preserve">
           <source>urn:microsoft-dynamics-schemas/codeunit/%1</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestManagement - NamedType lblBcNsUriTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1372765974 - NamedType 64858024" size-unit="char" translate="yes" xml:space="preserve">
+          <source>http://palette.se/</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestManagement - NamedType lblPalNsUriTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 558740134 - Action 3040716699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Version</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WimWsTest - Action ShowVersion - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 558740134 - Action 2673584272 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Authenticate User</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WimWsTest - Action AuthenticateUser - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 558740134 - Action 3522764728 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>List Environments</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WimWsTest - Action ListEnvironments - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 558740134 - Action 2880234493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>List Companies</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WimWsTest - Action ListCompanies - Property Caption</note>
         </trans-unit>
         <trans-unit id="Codeunit 1270240617 - Method 190711088 - NamedType 3268322187" size-unit="char" translate="yes" xml:space="preserve">
           <source>%1 (%2)</source>
