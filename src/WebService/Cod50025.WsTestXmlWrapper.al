@@ -110,9 +110,19 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
 
 
 
+    procedure AddNode(partxtName: Text): Boolean
+    begin
+        exit(AddNode(partxtName, ''));
+    end;
+
     procedure AddNode(partxtName: Text; partxtValue: Text): Boolean
     begin
         exit(AddNode(partxtName, partxtValue, ''));
+    end;
+
+    procedure AddNodeNS(partxtName: Text; partxtNamespaceUri: Text): Boolean
+    begin
+        exit(AddNode(partxtName, '', partxtNamespaceUri));
     end;
 
     procedure AddNode(partxtName: Text; partxtValue: Text; partxtNamespaceUri: Text): Boolean
@@ -120,9 +130,22 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
         exit(AddNode(xnClassCurrent, partxtName, partxtValue, partxtNamespaceUri, xnClass));
     end;
 
+    procedure AddNodeFollow(partxtName: Text): Boolean
+    begin
+        exit(AddNodeFollowNS(partxtName, ''));
+    end;
+
     procedure AddNodeFollow(partxtName: Text; partxtValue: Text): Boolean
     begin
         exit(AddNodeFollow(partxtName, partxtValue, ''));
+    end;
+
+    procedure AddNodeFollowNS(partxtName: Text; partxtNamespaceUri: Text): Boolean
+    begin
+        if not AddNode(xnClassCurrent, partxtName, '', partxtNamespaceUri, xnClass) then
+            exit;
+        xnClassCurrent := xnClass;
+        exit(true);
     end;
 
     procedure AddNodeFollow(partxtName: Text; partxtValue: Text; partxtNamespaceUri: Text): Boolean
@@ -133,13 +156,6 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
         exit(true);
     end;
 
-    local procedure AddNode(var parvarxnClass: XmlNode; partxtName: Text; parstrmValue: InStream; partxtNamespaceUri: Text; var parvarxnCreated: XmlNode): Boolean
-    begin
-        if not CreateNode(partxtName, Stream2Text(parstrmValue), '', partxtNamespaceUri, parvarxnCreated) then
-            exit;
-        exit(parvarxnClass.AsXmlElement().Add(parvarxnCreated));
-    end;
-
     local procedure AddNode(var parvarxnClass: XmlNode; partxtName: Text; partxtValue: Text; partxtNamespaceUri: Text; var parvarxnCreated: XmlNode): Boolean
     begin
         if not CreateNode(partxtName, partxtValue, '', partxtNamespaceUri, parvarxnCreated) then
@@ -147,8 +163,24 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
         exit(parvarxnClass.AsXmlElement().Add(parvarxnCreated));
     end;
 
+    local procedure AddNode(var parvarxnClass: XmlNode; partxtName: Text; parstrmValue: InStream; partxtNamespaceUri: Text; var parvarxnCreated: XmlNode): Boolean
+    begin
+        if not CreateNode(partxtName, Stream2Text(parstrmValue), '', partxtNamespaceUri, parvarxnCreated) then
+            exit;
+        exit(parvarxnClass.AsXmlElement().Add(parvarxnCreated));
+    end;
 
 
+
+
+
+    procedure AddNodeAttribute(partxtName: Text; partxtAttributeName: Text; partxtAttributeValue: Text): Boolean
+    begin
+        if not AddNode(partxtName, '') then
+            exit;
+        AddAttribute(xnClass, partxtAttributeName, partxtAttributeValue, '');
+        exit(true);
+    end;
 
     procedure AddNodeAttribute(partxtName: Text; partxtValue: Text; partxtAttributeName: Text; partxtAttributeValue: Text): Boolean
     begin
@@ -218,6 +250,9 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
         exit(true);
     end;
 
+
+
+
     procedure AddAttribute(partxtName: Text; partxtValue: Text)
     begin
         AddAttribute(xnClassCurrent, partxtName, partxtValue, '');
@@ -270,7 +305,7 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
     var
         locxcdNewChild: XmlCData;
     begin
-        if not (CreateNode(partxtName, '', partxtNamespaceUri, parvarxnCreated)) then
+        if not (CreateNode(partxtName, '', '', partxtNamespaceUri, parvarxnCreated)) then
             exit;
         locxcdNewChild := XmlCData.Create(partxtValue);
         if not (parvarxnCreated.AsXmlElement().Add(locxcdNewChild)) then
@@ -281,19 +316,9 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
 
 
 
-    local procedure CreateNode(partxtName: Text; var parvarxnCreated: XmlNode): Boolean
-    begin
-        exit(CreateNode(partxtName, '', parvarxnCreated));
-    end;
-
     local procedure CreateNode(partxtName: Text; partxtValue: Text; var parvarxnCreated: XmlNode): Boolean
     begin
         exit(CreateNode(partxtName, partxtValue, '', '', parvarxnCreated));
-    end;
-
-    local procedure CreateNode(partxtName: Text; partxtPrefix: Text; partxtNamespaceUri: Text; var parvarxnCreated: XmlNode): Boolean
-    begin
-        exit(CreateNode(partxtName, '', partxtPrefix, partxtNamespaceUri, parvarxnCreated));
     end;
 
     local procedure CreateNode(partxtName: Text; partxtValue: Text; partxtPrefix: Text; partxtNamespaceUri: Text; var parvarxnCreated: XmlNode): Boolean
@@ -302,7 +327,10 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
         locxaCreated: XmlAttribute;
     begin
         Clear(parvarxnCreated);
-        locxeCreated := XmlElement.Create(partxtName, partxtNameSpaceUri, partxtValue);
+        if partxtValue <> '' then
+            locxeCreated := XmlElement.Create(partxtName, partxtNameSpaceUri, partxtValue)
+        else
+            locxeCreated := XmlElement.Create(partxtName, partxtNameSpaceUri);
         parvarxnCreated := locxeCreated.AsXmlNode();
         if partxtPrefix <> '' then begin
             locxaCreated := XmlAttribute.CreateNamespaceDeclaration(partxtPrefix, partxtNameSpaceUri);

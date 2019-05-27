@@ -21,7 +21,6 @@ codeunit 50024 "TTT-PR WsTestHttpWrapper"
         loccuHttp: Codeunit "TTT-PR WsTestHttpWrapper";
         loctxtInMessage: Text;
     begin
-        // This procedure shows how to use this codeunit as a wrapper for all http variables.
         loccuMgt.Initalize4Bc(partxtService, partxtMethod);
         loccuMgt.AddParameter4Bc(partxtParamName, partxtParamValue);
         Message('Request:\%1', loccuMgt.GetOuterXml());
