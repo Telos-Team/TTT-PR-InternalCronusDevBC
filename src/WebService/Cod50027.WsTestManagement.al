@@ -104,6 +104,11 @@ codeunit 50027 "TTT-PR WsTestManagement"
         cuXml.AddNode(partxtName, partxtValue, txtNsUriTxt);
     end;
 
+    procedure AddRecord(var parvarcuXmlRecord: Codeunit "TTT-PR WsTestXmlWrapper")
+    begin
+        cuXml.ImportDocumentNode(parvarcuXmlRecord);
+    end;
+
     procedure GetOuterXml(): Text
     begin
         exit(cuXml.GetOuterXml());

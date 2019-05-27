@@ -503,25 +503,30 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestManagement - NamedType lblPalNsUriTxt</note>
         </trans-unit>
-        <trans-unit id="Page 558740134 - Action 3040716699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 1401123176 - Action 3040716699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Show Version</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WimWsTest - Action ShowVersion - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PalWsTest - Action ShowVersion - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 558740134 - Action 2673584272 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 1401123176 - Action 2673584272 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Authenticate User</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WimWsTest - Action AuthenticateUser - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PalWsTest - Action AuthenticateUser - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 558740134 - Action 3522764728 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 1401123176 - Action 3522764728 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>List Environments</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WimWsTest - Action ListEnvironments - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PalWsTest - Action ListEnvironments - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 558740134 - Action 2880234493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 1401123176 - Action 2880234493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>List Companies</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WimWsTest - Action ListCompanies - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PalWsTest - Action ListCompanies - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1401123176 - Action 1322595558 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Insert Record</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR PalWsTest - Action InsertRecord - Property Caption</note>
         </trans-unit>
         <trans-unit id="Codeunit 1270240617 - Method 190711088 - NamedType 3268322187" size-unit="char" translate="yes" xml:space="preserve">
           <source>%1 (%2)</source>

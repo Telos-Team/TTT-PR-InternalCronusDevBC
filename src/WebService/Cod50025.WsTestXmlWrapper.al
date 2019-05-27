@@ -6,21 +6,27 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
         xnClass: XmlNode;
         xnClassCurrent: XmlNode;
         xnlClass: XmlNodeList;
+        xnsmClass: XmlNamespaceManager;
+        intCurrentNodeInList: Integer;
         lblXmlTrueTxt: Label 'true';
         lblXmlFalseTxt: Label 'false';
         lblXmlYesTxt: Label 'yes';
         lblXmlNoTxt: Label 'no';
 
+    local procedure Initialize()
+    begin
+        Clear(xdocClass);
+        Clear(xnRoot);
+        Clear(xnClass);
+        Clear(xnClassCurrent);
+        Clear(xnlClass);
+        Clear(xnsmClass);
+        Clear(intCurrentNodeInList);
+    end;
+
     procedure CreateDoc()
     begin
         CreateDoc(xdocClass);
-    end;
-
-    local procedure CreateDoc(var parvarxdocClass: XmlDocument)
-    begin
-        Clear(xdocClass);
-        xdocClass := XmlDocument.Create();
-        xnClassCurrent := xdocClass.AsXmlNode();
     end;
 
     procedure CreateDoc(partxtVersion: Text; partxtEncoding: Text; parbooStandalone: Boolean): Boolean
@@ -34,16 +40,25 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
         exit(AddDeclaration(partxtVersion, partxtEncoding, partxtStandalone));
     end;
 
+    local procedure CreateDoc(var parvarxdocClass: XmlDocument)
+    begin
+        Initialize();
+        xdocClass := XmlDocument.Create();
+        xnClassCurrent := xdocClass.AsXmlNode();
+    end;
+
 
 
 
     procedure Load(paristrmContent: InStream): Boolean
     begin
+        Initialize();
         exit(XmlDocument.ReadFrom(paristrmContent, xdocClass));
     end;
 
     procedure Load(partxtContent: Text): Boolean
     begin
+        Initialize();
         exit(XmlDocument.ReadFrom(partxtContent, xdocClass));
     end;
 
@@ -412,14 +427,15 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
         ImportDocumentNode(xnClassCurrent, locxdocClass);
     end;
 
-    local procedure ImportDocumentNode(var parvarxnClass: XmlNode; parxdocClass: XmlDocument)
+    local procedure ImportDocumentNode(var parvarxnClass: XmlNode; parxdocClass: XmlDocument): Boolean
     var
-        locxnDoc: XmlNode;
+        locxeDoc: XmlElement;
     begin
-        // Convert the document to a node
-        locxnDoc := parxdocClass.AsXmlNode();
-        // Add the node to the requested node
-        parvarxnClass.AsXmlDocument().Add(locxnDoc);
+        // Convert the document to an element
+        if not parxdocClass.GetRoot(locxeDoc) then
+            exit;
+        // Add the converted element to the requested node
+        exit(parvarxnClass.AsXmlElement().Add(locxeDoc));
     end;
 
 
@@ -506,6 +522,162 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
     begin
         xnClassCurrent := xnClass;
         Clear(xnClass);
+    end;
+
+
+
+
+    procedure HasChildNodes(): Boolean
+    begin
+        exit(xnClassCurrent.AsXmlElement().HasElements());
+    end;
+
+    procedure Class_GoToFirstChild(): Boolean
+    begin
+        Clear(intCurrentNodeInList);
+        if not HasChildNodes() then
+            exit;
+
+        xnlClass := xnClassCurrent.AsXmlElement().GetChildNodes();
+        intCurrentNodeInList := 1;
+        exit(GetNodeListItem(intCurrentNodeInList));
+    end;
+
+    procedure Class_GoToNextSibling(): Boolean
+    begin
+        intCurrentNodeInList += 1;
+        exit(GetNodeListItem(intCurrentNodeInList));
+    end;
+
+    procedure GetNodeListItem(parintItemIndex: Integer): Boolean
+    begin
+        if parintItemIndex < 0 then
+            exit(false);
+        exit(xnlClass.Get(parintItemIndex, xnClassCurrent));
+    end;
+
+
+
+
+    procedure CreateNamespaceManager()
+    begin
+        xnsmClass.NameTable(xdocClass.NameTable());
+    end;
+
+    procedure AddNamespace(partxtPrefix: Text; partxtUri: Text)
+    begin
+        if xnsmClass.HasNamespace(partxtPrefix) then
+            exit;
+        xnsmClass.AddNamespace(partxtPrefix, partxtUri);
+    end;
+
+
+
+
+    procedure FindNodes(partxtNodePath: Text): Integer
+    begin
+        Clear(xnlClass);
+        if not xdClass.SelectNodes(partxtNodePath, xnlClass) then
+            exit;
+        exit(xnlClass.Count());
+    end;
+
+    procedure GetNodeName(): Text
+    begin
+        exit(xnClassCurrent.AsXmlElement().Name());
+    end;
+
+    procedure GetNodeText() ReturnValue: Text
+    begin
+        exit(xnClassCurrent.AsXmlElement().InnerXml());
+    end;
+
+    procedure GetNodeCDataTxtFieldRef(var parvarfrBlob: FieldRef): Boolean
+    var
+        locxcdClass: XmlCData;
+    begin
+        if not GetCDataChild(xnClassCurrent, locxcdClass) then
+            exit;
+        exit(GetCDataTxtFieldRef(locxcdClass, parvarfrBlob));
+    end;
+
+    procedure GetNodeAttributeText(partxtName: Text): Text
+    var
+        locxaClass: XmlAttribute;
+    begin
+        if not GetAttributeNode(xnClassCurrent, partxtName, locxaClass) then
+            exit;
+        exit(locxaClass.Value());
+    end;
+
+    local procedure GetAttributeNode(parxnIn: XmlNode; partxtName: Text; var parvarxaOut: XmlAttribute): Boolean
+    var
+        locxacClass: XmlAttributeCollection;
+        locxeClass: XmlElement;
+    begin
+        Clear(parvarxaOut);
+        locxeClass := parxnIn.AsXmlElement();
+        if not locxeClass.HasAttributes() then
+            exit;
+        locxacClass := locxeClass.Attributes();
+        exit(locxacClass.Get(partxtName, parvarxaOut));
+    end;
+
+    local procedure GetCDataChild(parxnClass: XmlNode; var parvarxcdResult: XmlCData): Boolean
+    var
+        locxnlClass: XmlNodeList;
+        locxnClass: XmlNode;
+        locxeClass: XmlElement;
+    begin
+        Clear(parvarxcdResult);
+        locxeClass := parxnClass.AsXmlElement();
+        if not locxeClass.HasElements() then
+            exit;
+        locxnlClass := locxeClass.GetChildNodes();
+        if locxnlClass.Count() = 0 then
+            exit;
+        locxnlClass.Get(1, locxnClass);
+        if not locxnClass.IsXmlCData() then
+            exit;
+        parvarxcdResult := locxnClass.AsXmlCData();
+        exit(true);
+    end;
+
+    local procedure GetCDataTxtFieldRef(parxcdClass: XmlCData; var parvarfrBlob: FieldRef): Boolean
+    var
+        loctmprecBlob: Record "PAL Setup" temporary;
+        locrrBlob: RecordRef;
+        locfrBlob: FieldRef;
+        locstrmBlob: OutStream;
+        loctxtBlob: Text;
+    begin
+        loctxtBlob := parxcdClass.Value();
+        loctmprecBlob."PAL PurchLineDescTemplBlob".CreateOutStream(locstrmBlob);
+        locstrmBlob.Write(loctxtBlob);
+        locrrBlob.GetTable(loctmprecBlob);
+        locfrBlob := locrrBlob.Field(loctmprecBlob.FieldNo("PAL PurchLineDescTemplBlob"));
+        parvarfrBlob.Value := locfrBlob.Value();
+        exit(true);
+    end;
+
+
+
+
+    procedure Class_GetCRC() ReturnValue: Integer
+    var
+        loctmprecSetup: Record "PAL Setup" temporary;
+        loccuCrc: Codeunit "PAL CrcManagement";
+        locstrmIn: InStream;
+        locstrmOut: OutStream;
+        loctxtContent: Text;
+    begin
+        loctmprecSetup."PAL TempBlob".CreateOutStream(locstrmOut);
+        xdClass.WriteTo(locstrmOut);
+
+        loctmprecSetup."PAL TempBlob".CreateInStream(locstrmIn);
+        if locstrmIn.Read(loctxtContent) = 0 then
+            exit;
+        loccuCrc.GetCRC(loctxtContent, ReturnValue);
     end;
 
 

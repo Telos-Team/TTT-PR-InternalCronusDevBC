@@ -1,4 +1,4 @@
-page 50026 "TTT-PR WimWsTest"
+page 50026 "TTT-PR PalWsTest"
 {
     PageType = Card;
     ApplicationArea = All;
@@ -26,7 +26,7 @@ page 50026 "TTT-PR WimWsTest"
 
                 trigger OnAction()
                 var
-                    loccuTest: Codeunit "TTT-PR WimWsTest";
+                    loccuTest: Codeunit "TTT-PR PalWsTest";
                 begin
                     loccuTest.ShowVersion();
                 end;
@@ -39,7 +39,7 @@ page 50026 "TTT-PR WimWsTest"
 
                 trigger OnAction()
                 var
-                    loccuTest: Codeunit "TTT-PR WimWsTest";
+                    loccuTest: Codeunit "TTT-PR PalWsTest";
                 begin
                     loccuTest.AuthenticateUser();
                 end;
@@ -52,7 +52,7 @@ page 50026 "TTT-PR WimWsTest"
 
                 trigger OnAction()
                 var
-                    loccuTest: Codeunit "TTT-PR WimWsTest";
+                    loccuTest: Codeunit "TTT-PR PalWsTest";
                 begin
                     loccuTest.ListEnvironments();
                 end;
@@ -65,9 +65,22 @@ page 50026 "TTT-PR WimWsTest"
 
                 trigger OnAction()
                 var
-                    loccuTest: Codeunit "TTT-PR WimWsTest";
+                    loccuTest: Codeunit "TTT-PR PalWsTest";
                 begin
                     loccuTest.ListCompanies();
+                end;
+            }
+            action(InsertRecord)
+            {
+                Caption = 'Insert Record';
+                ApplicationArea = All;
+                Image = Action;
+
+                trigger OnAction()
+                var
+                    loccuTest: Codeunit "TTT-PR PalWsTest";
+                begin
+                    loccuTest.InsertRecord();
                 end;
             }
         }

@@ -1,4 +1,4 @@
-codeunit 50029 "TTT-PR WimWsTest"
+codeunit 50029 "TTT-PR PalWsTest"
 {
     procedure ShowVersion()
     var
@@ -67,11 +67,20 @@ codeunit 50029 "TTT-PR WimWsTest"
     var
         loccuMgt: Codeunit "TTT-PR WsTestManagement";
         loccuHttp: Codeunit "TTT-PR WsTestHttpWrapper";
+        loccuXmlRecord: Codeunit "TTT-PR WsTestXmlWrapper";
         loctxtInMessage: Text;
     begin
+        loccuXmlRecord.CreateDoc();
+        loccuXmlRecord.AddRootElement('Account', 'pal', 'http://palette.se/');
+        loccuXmlRecord.AddNode('Company', 'DAT');
+        loccuXmlRecord.AddNode('Account', '4711');
+        loccuXmlRecord.AddNode('Name', Format(CurrentDateTime()));
+        loccuXmlRecord.AddNode('KeyType', '1');
+
         loccuMgt.Initalize4Pal('InsertAccount');
         loccuMgt.AddAuthentication4Pal('TelosTeamTest', 'palette@telosteam.dk', 'NavisionMagician');
-        loccuMgt.ImportRecord(blablabla);
+        loccuMgt.AddRecord(loccuXmlRecord);
+        loccuMgt.AddTag('TransferFromQueue', 'true', 'http://palette.se/');
         Message('Request:\%1', loccuMgt.GetOuterXml());
         loccuHttp.SetRequestContent(loccuMgt.GetOuterXml());
 
