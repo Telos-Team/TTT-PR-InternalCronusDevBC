@@ -7,31 +7,65 @@ pageextension 50000 "TTT-PR IT Role Center" extends "Administrator Role Center"
 
     actions
     {
-        addlast(Embedding)
+        addfirst(Embedding)
         {
             action("TTT-PR ObjectRunnerEmbedding")
             {
                 ApplicationArea = All;
-                Caption = 'Show Object Runner';
-                ToolTip = 'Show the Object Runner List';
+                Caption = 'TTTPR Object Runner(emb)';
+                ToolTip = 'TTTPR Object Runner Embedding';
                 Image = SuggestNumber;
+                RunObject = Page "TTT-PR ObjectRunnerList";
+            }
+        }
+
+        addfirst(Creation)
+        {
+            action("TTT-PR ObjectRunnerCreationSingle")
+            {
+                Caption = 'TTTPR Object Runner(crt)';
+                ToolTip = 'TTTPR Object Runner Creation';
+                ApplicationArea = All;
+                Image = "Table";
+                RunObject = Page "TTT-PR ObjectRunnerList";
+            }
+        }
+        addfirst(Navigation)
+        {
+            action("TTT-PR ObjectRunnerNavigationSingle")
+            {
+                Caption = 'TTTPR Object Runner(nav)';
+                ToolTip = 'TTTPR Object Runner Navigation';
+                ApplicationArea = All;
+                Image = "Table";
+                RunObject = Page "TTT-PR ObjectRunnerList";
+            }
+        }
+        addfirst(Reporting)
+        {
+            action("TTT-PR ObjectRunnerReportingSingle")
+            {
+                Caption = 'TTTPR Object Runner(rep)';
+                ToolTip = 'TTTPR Object Runner Reporting';
+                ApplicationArea = All;
+                Image = "Table";
                 RunObject = Page "TTT-PR ObjectRunnerList";
             }
         }
 
         addfirst(Processing)
         {
-            action("TTT-PR Testor")
+            action("TTT-PR ObjectRunnerProcessingSingle")
             {
-                Caption = 'TTTPR Testor';
-                ToolTip = 'TTTPR Testor';
+                Caption = 'TTTPR Object Runner(prc)';
+                ToolTip = 'TTTPR Object Runner';
                 ApplicationArea = All;
                 Image = "Table";
-                RunObject = codeunit "TTT-PR GraphTests";
+                RunObject = Page "TTT-PR ObjectRunnerList";
             }
             group("TTT-PR MainGroupProcessing")
             {
-                Caption = 'TTTPR', Comment = 'Dont translate this!', Locked = true;
+                Caption = 'TTTPR Menu(prc)', Comment = 'Dont translate this!', Locked = true;
                 ToolTip = 'TTTPR functionality';
 
                 group("TTT-PR GroupProcessing")
@@ -70,15 +104,6 @@ pageextension 50000 "TTT-PR IT Role Center" extends "Administrator Role Center"
                             RunObject = page "TTT-PR TableFilterExSimple";
                             RunPageMode = Edit;
                         }
-                        action("TTT-PR TableFilterRecRefProcessing")
-                        {
-                            Caption = 'Table Filter RecRef';
-                            ToolTip = 'Show RecRef Table Filter';
-                            ApplicationArea = All;
-                            Image = "Table";
-                            RunObject = page "TTT-PR TableFilterExRecRef";
-                            RunPageMode = Edit;
-                        }
                     }
 
                     group("TTT-PR Misc")
@@ -104,7 +129,7 @@ pageextension 50000 "TTT-PR IT Role Center" extends "Administrator Role Center"
         {
             group("TTT-PR GroupSections")
             {
-                Caption = 'TTTPR';
+                Caption = 'TTTPR(sect)';
                 ToolTip = 'TTTPR Elements';
                 Image = Dimensions;
                 action("TTT-PR ObjectRunnerSections")
@@ -123,15 +148,6 @@ pageextension 50000 "TTT-PR IT Role Center" extends "Administrator Role Center"
                     ApplicationArea = All;
                     Image = "Table";
                     RunObject = page "TTT-PR TableFilterExSimple";
-                    RunPageMode = Edit;
-                }
-                action("TTT-PR TableFilterExampleRecRefSections")
-                {
-                    Caption = 'Show Table Filter (RecRef)';
-                    ToolTip = 'Show the RecordRef Table Filter example';
-                    ApplicationArea = All;
-                    Image = "Table";
-                    RunObject = page "TTT-PR TableFilterExRecRef";
                     RunPageMode = Edit;
                 }
             }

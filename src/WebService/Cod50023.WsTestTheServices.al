@@ -7,6 +7,14 @@ codeunit 50023 "TTT-PR WsTestTheServices"
 
     procedure SimpleTextVar(var parvartxtInput: Text)
     begin
+        parvartxtInput := 'ACK-' + parvartxtInput;
+    end;
+
+    procedure SimpleTextVars(partxtInput: Text; var parvartxtOutput1: Text; var parvartxtOutput2: Text): Text
+    begin
+        parvartxtOutput1 := '1' + parvartxtOutput1;
+        parvartxtOutput2 := '2' + parvartxtOutput2;
+        exit(partxtInput);
     end;
 
     procedure DateTimeDiff(pardtInput: DateTime; var parvardtOutput: DateTime) Diff: Integer
@@ -14,4 +22,5 @@ codeunit 50023 "TTT-PR WsTestTheServices"
         parvardtOutput := CurrentDateTime();
         Diff := parvardtOutput - pardtInput;
     end;
+
 }

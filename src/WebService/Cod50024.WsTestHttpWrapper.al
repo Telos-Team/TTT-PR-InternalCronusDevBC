@@ -8,6 +8,7 @@ codeunit 50024 "TTT-PR WsTestHttpWrapper"
         hcRequestContent: HttpContent;
         hrmRequestMessage: HttpRequestMessage;
         hrmResponseMessage: HttpResponseMessage;
+        [NonDebuggable]
         hcClient: HttpClient;
         txtAuthorization: Text;
         txtUsername: Text;
@@ -40,6 +41,7 @@ codeunit 50024 "TTT-PR WsTestHttpWrapper"
         exit(CallWs(partxtAddress, '', parbooFail));
     end;
 
+    [NonDebuggable]
     procedure CallWs(partxtAddress: Text; partxtMethod: Text; parbooFail: Boolean): Boolean
     var
         loctxtInMessage: Text;
@@ -101,6 +103,11 @@ codeunit 50024 "TTT-PR WsTestHttpWrapper"
             Error('Unable to add content header\Name: %1\Value: %2', partxtName, partxtValue);
     end;
 
+    procedure SetAuthorizationInfo(partxtUsername: Text; partxtPassword: Text)
+    begin
+        SetAuthorizationInfo(partxtUsername, partxtPassword, '');
+    end;
+
     procedure SetAuthorizationInfo(partxtUsername: Text; partxtPassword: Text; partxtDomain: Text)
     var
         loctmprecTempBlob: Record TempBlob temporary;
@@ -114,16 +121,18 @@ codeunit 50024 "TTT-PR WsTestHttpWrapper"
         if partxtDomain = '' then begin
             loctxtAuthInfo := StrSubstNo('%1:%2', partxtUsername, partxtPassword);
             loctxtAuthType := 'Basic';
+            loctmprecTempBlob.WriteAsText(loctxtAuthInfo, TextEncoding::Windows);
+            txtAuthorization := StrSubstNo('%1 %2', loctxtAuthType, loctmprecTempBlob.ToBase64String());
         end else
-            Error('Windows credentials are not supported by Extension');
-
-        loctmprecTempBlob.WriteAsText(loctxtAuthInfo, TextEncoding::Windows);
-        txtAuthorization := StrSubstNo('%1 %2', loctxtAuthType, loctmprecTempBlob.ToBase64String());
+            OnSetDomainAutorizationInfo(partxtUsername, partxtPassword, partxtDomain, hcClient, txtAuthorization);
     end;
 
-    procedure SetAuthorizationInfo(partxtUsername: Text; partxtPassword: Text)
+    [IntegrationEvent(false, false)]
+    local procedure OnSetDomainAutorizationInfo(partxtUsername: Text; partxtPassword: Text; partxtDomain: Text; var parvarxcClient: HttpClient; var parvartxtAuthorization: Text)
     begin
-        SetAuthorizationInfo(partxtUsername, partxtPassword, '');
+        // Use one of these in the internal event subscriber to set windows authentication:
+        // parvarxcClient.UseDefaultNetworkWindowsAuthentication(): Boolean
+        // parvarxcClient.UseWindowsAuthentication(partxtUsername, partxtPassword, partxtDomain): Boolean
     end;
 
     procedure SetTimeout(parintMilliseconds: Integer)

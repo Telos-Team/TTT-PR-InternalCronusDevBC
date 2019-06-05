@@ -338,6 +338,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR TableFilterExample1 - Field TTT-PR FilterString - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3316348560 - Field 2667884476 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Object Caption</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR TableFilterExample1 - Field TTT-PR ObjectCaption - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3448070934 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>WsTest Credentials</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -463,45 +468,65 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR Nav2BcTiming - NamedType lblDurationMessageLbl</note>
         </trans-unit>
-        <trans-unit id="Codeunit 499040757 - NamedType 1406799063" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 499040757 - NamedType 1406799063" size-unit="char" translate="no" xml:space="preserve">
           <source>true</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Developer" annotates="general" priority="2">Xml boolean must always be true/false in lowercase</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestXmlWrapper - NamedType lblXmlTrueTxt</note>
         </trans-unit>
-        <trans-unit id="Codeunit 499040757 - NamedType 1905534314" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 499040757 - NamedType 1905534314" size-unit="char" translate="no" xml:space="preserve">
           <source>false</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Developer" annotates="general" priority="2">Xml boolean must always be true/false in lowercase</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestXmlWrapper - NamedType lblXmlFalseTxt</note>
         </trans-unit>
-        <trans-unit id="Codeunit 499040757 - NamedType 2132978336" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 499040757 - NamedType 2132978336" size-unit="char" translate="no" xml:space="preserve">
           <source>yes</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Developer" annotates="general" priority="2">The yes/no is used in xml declaration for standalone to ignore DTD</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestXmlWrapper - NamedType lblXmlYesTxt</note>
         </trans-unit>
-        <trans-unit id="Codeunit 499040757 - NamedType 331426086" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 499040757 - NamedType 331426086" size-unit="char" translate="no" xml:space="preserve">
           <source>no</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Developer" annotates="general" priority="2">The yes/no is used in xml declaration for standalone to ignore DTD</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestXmlWrapper - NamedType lblXmlNoTxt</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1372765974 - NamedType 4019353999" size-unit="char" translate="yes" xml:space="preserve">
-          <source>http://schemas.xmlsoap.org/soap/envelope/</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestManagement - NamedType lblBcSoapNsUriTxt</note>
         </trans-unit>
         <trans-unit id="Codeunit 1372765974 - NamedType 3878820203" size-unit="char" translate="yes" xml:space="preserve">
           <source>http://www.w3.org/2003/05/soap-envelope</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestManagement - NamedType lblPalSoapNsUriTxt</note>
         </trans-unit>
-        <trans-unit id="Codeunit 1372765974 - NamedType 1927809572" size-unit="char" translate="yes" xml:space="preserve">
-          <source>urn:microsoft-dynamics-schemas/codeunit/%1</source>
+        <trans-unit id="Codeunit 1372765974 - NamedType 2219494498" size-unit="char" translate="yes" xml:space="preserve">
+          <source>http://www.w3.org/2001/XMLSchema-instance</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestManagement - NamedType lblBcNsUriTxt</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestManagement - NamedType lblPalXsiNsUriTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1372765974 - NamedType 1537789957" size-unit="char" translate="yes" xml:space="preserve">
+          <source>http://www.w3.org/2001/XMLSchema</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestManagement - NamedType lblPalXsdNsUriTxt</note>
         </trans-unit>
         <trans-unit id="Codeunit 1372765974 - NamedType 64858024" size-unit="char" translate="yes" xml:space="preserve">
           <source>http://palette.se/</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestManagement - NamedType lblPalNsUriTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1372765974 - NamedType 4019353999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>http://schemas.xmlsoap.org/soap/envelope/</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestManagement - NamedType lblBcSoapNsUriTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1372765974 - NamedType 1927809572" size-unit="char" translate="yes" xml:space="preserve">
+          <source>urn:microsoft-dynamics-schemas/codeunit/%1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestManagement - NamedType lblBcNsUriTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1401123176 - Method 2880234493 - NamedType 4197956223" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ListCompanies</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR PalWsTest - Method ListCompanies - NamedType loclblMethodTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1401123176 - Method 1322595558 - NamedType 4197956223" size-unit="char" translate="yes" xml:space="preserve">
+          <source>InsertAccount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR PalWsTest - Method InsertRecord - NamedType loclblMethodTxt</note>
         </trans-unit>
         <trans-unit id="Page 1401123176 - Action 3040716699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Show Version</source>
@@ -533,15 +558,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR CoreLicenseStateWrapper - Method GetLicenseStateDescription - NamedType loclblDescLbl</note>
         </trans-unit>
-        <trans-unit id="Codeunit 2400126715 - Method 2756137458 - NamedType 2245926172" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 1389057791 - Method 2756137458 - NamedType 2245926172" size-unit="char" translate="yes" xml:space="preserve">
           <source>Please select XML file</source>
           <note from="Developer" annotates="general" priority="2">This is the title shown on the upload dialog</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR XmlManagement - Method LoadClientXml - NamedType loclblDialogTitleLbl</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR XmlTest1 - Method LoadClientXml - NamedType loclblDialogTitleLbl</note>
         </trans-unit>
-        <trans-unit id="Codeunit 2400126715 - Method 2756137458 - NamedType 4238599010" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 1389057791 - Method 2756137458 - NamedType 4238599010" size-unit="char" translate="yes" xml:space="preserve">
           <source></source>
           <note from="Developer" annotates="general" priority="2">This is the filter used when selecting file to upload</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR XmlManagement - Method LoadClientXml - NamedType loclblFromFilterLbl</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR XmlTest1 - Method LoadClientXml - NamedType loclblFromFilterLbl</note>
         </trans-unit>
         <trans-unit id="Page 2481735628 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Hyperlink Wrapper Test</source>
@@ -1073,15 +1098,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR TableFilterExSimple - Property InstructionalText</note>
         </trans-unit>
-        <trans-unit id="Page 1315399687 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Table Filter Example, RecRef</source>
+        <trans-unit id="Page 2606489386 - Action 3756072698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Table Filter</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR TableFilterExRecRef - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR TableFilterExSimple - Action TTT-PR ShowTableFilter - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1315399687 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Here I want to try to use a TableFilter field using RecRef - if possible!</source>
+        <trans-unit id="Page 1620771204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table Filters</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR TableFilterExRecRef - Property InstructionalText</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR TableFilterFactBox - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 463888748 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>WsTest Cockpit</source>
@@ -1178,6 +1203,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Action CallSpecificSimpleTextVar - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 463888748 - Action 1485603841 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Call Specific Simple Text Vars</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Action CallSpecificSimpleTextVars - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 463888748 - Action 3999470969 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Call Specific DateTime Diff</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1187,6 +1217,16 @@
           <source>WsTest Credentials</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCredentials - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 166621830 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Xml Buffer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR XmlBuffer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 166621830 - Control 4011286646 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Xml Buffer Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR XmlBuffer - Control TTT-PR XmlBufferRepeater - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 2152017361 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Field Change</source>
@@ -1294,27 +1334,57 @@
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort TTT-PR Nav2BcImportData - NamedType lblPostMessageLbl</note>
         </trans-unit>
         <trans-unit id="PageExtension 1282177179 - Action 1403386779 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Show Object Runner</source>
+          <source>TTTPR Object Runner(emb)</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerEmbedding - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1282177179 - Action 1403386779 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Show the Object Runner List</source>
+          <source>TTTPR Object Runner Embedding</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerEmbedding - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 2457948804 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>TTTPR Testor</source>
+        <trans-unit id="PageExtension 1282177179 - Action 878912455 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TTTPR Object Runner(crt)</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR Testor - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerCreationSingle - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 2457948804 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>TTTPR Testor</source>
+        <trans-unit id="PageExtension 1282177179 - Action 878912455 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TTTPR Object Runner Creation</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR Testor - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerCreationSingle - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282177179 - Action 3948940218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TTTPR Object Runner(nav)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerNavigationSingle - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282177179 - Action 3948940218 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TTTPR Object Runner Navigation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerNavigationSingle - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282177179 - Action 4268563846 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TTTPR Object Runner(rep)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerReportingSingle - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282177179 - Action 4268563846 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TTTPR Object Runner Reporting</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerReportingSingle - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282177179 - Action 224859881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TTTPR Object Runner(prc)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerProcessingSingle - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282177179 - Action 224859881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TTTPR Object Runner</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerProcessingSingle - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 1282177179 - Action 1123561704 - Property 2879900210" size-unit="char" translate="no" xml:space="preserve">
-          <source>TTTPR</source>
+          <source>TTTPR Menu(prc)</source>
           <note from="Developer" annotates="general" priority="2">Dont translate this!</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR MainGroupProcessing - Property Caption</note>
         </trans-unit>
@@ -1373,16 +1443,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR TableFilterSimpleProcessing - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 2883757229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Table Filter RecRef</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR TableFilterRecRefProcessing - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 2883757229 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Show RecRef Table Filter</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR TableFilterRecRefProcessing - Property ToolTip</note>
-        </trans-unit>
         <trans-unit id="PageExtension 1282177179 - Action 2448425473 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Misc.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1404,7 +1464,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR HyperlinkWrapper - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 1282177179 - Action 574240122 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>TTTPR</source>
+          <source>TTTPR(sect)</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR GroupSections - Property Caption</note>
         </trans-unit>
@@ -1432,16 +1492,6 @@
           <source>Show the simple Table Filter example</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR TableFilterExampleSimpleSections - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 3988208950 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Show Table Filter (RecRef)</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR TableFilterExampleRecRefSections - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 3988208950 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Show the RecordRef Table Filter example</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR TableFilterExampleRecRefSections - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Enum 122585753 - EnumValue 139100102 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>First</source>

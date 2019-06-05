@@ -8,10 +8,11 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
         xnlClass: XmlNodeList;
         xnsmClass: XmlNamespaceManager;
         intCurrentNodeInList: Integer;
-        lblXmlTrueTxt: Label 'true';
-        lblXmlFalseTxt: Label 'false';
-        lblXmlYesTxt: Label 'yes';
-        lblXmlNoTxt: Label 'no';
+        lblXmlTrueTxt: Label 'true', Locked = true, Comment = 'Xml boolean must always be true/false in lowercase';
+        lblXmlFalseTxt: Label 'false', Locked = true, Comment = 'Xml boolean must always be true/false in lowercase';
+        lblXmlYesTxt: Label 'yes', Locked = true, Comment = 'The yes/no is used in xml declaration for standalone to ignore DTD';
+        lblXmlNoTxt: Label 'no', Locked = true, Comment = 'The yes/no is used in xml declaration for standalone to ignore DTD';
+
 
     local procedure Initialize()
     begin
@@ -506,10 +507,15 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
         Message('%1:\%2', GetOuterXml());
     end;
 
+    procedure ShowCurrentNode()
+    begin
+        Message('%1', Format(xnClassCurrent));
+    end;
 
 
 
-    procedure Class_GoToParentLevel()
+
+    procedure GoToParentLevel()
     var
         locxe: XmlElement;
     begin
@@ -518,7 +524,7 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
         Clear(xnClass);
     end;
 
-    procedure Class_GoToLowerLevel()
+    procedure GoToLowerLevel()
     begin
         xnClassCurrent := xnClass;
         Clear(xnClass);
@@ -532,7 +538,7 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
         exit(xnClassCurrent.AsXmlElement().HasElements());
     end;
 
-    procedure Class_GoToFirstChild(): Boolean
+    procedure GoToFirstChild(): Boolean
     begin
         Clear(intCurrentNodeInList);
         if not HasChildNodes() then
@@ -543,7 +549,7 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
         exit(GetNodeListItem(intCurrentNodeInList));
     end;
 
-    procedure Class_GoToNextSibling(): Boolean
+    procedure GoToNextSibling(): Boolean
     begin
         intCurrentNodeInList += 1;
         exit(GetNodeListItem(intCurrentNodeInList));
@@ -577,9 +583,54 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
     procedure FindNodes(partxtNodePath: Text): Integer
     begin
         Clear(xnlClass);
-        if not xdClass.SelectNodes(partxtNodePath, xnlClass) then
+        if not xdocClass.SelectNodes(partxtNodePath, xnsmClass, xnlClass) then
             exit;
         exit(xnlClass.Count());
+    end;
+
+    procedure FindNode(partxtNodePath: Text): Boolean
+    begin
+        Clear(xnClassCurrent);
+        exit(xdocClass.SelectSingleNode(partxtNodePath, xnsmClass, xnClassCurrent));
+    end;
+
+    procedure FindChildsOfNode(partxtNodePath: Text): Integer
+    begin
+        if not FindNode(partxtNodePath) then
+            exit;
+        if not HasChildNodes() then
+            exit;
+        xnlClass := xnClassCurrent.AsXmlElement().GetChildNodes();
+        intCurrentNodeInList := 1;
+        if not GetNodeListItem(intCurrentNodeInList) then
+            exit;
+        exit(xnlClass.Count());
+    end;
+
+    procedure FindChildsOfNode(partxtNodePath: Text; var parvardictValues: Dictionary of [text, text]): Boolean
+    begin
+        Clear(parvardictValues);
+        if FindChildsOfNode(partxtNodePath) = 0 then
+            exit;
+        repeat
+            parvardictValues.Add(GetNodeName(), GetNodeText());
+        until not GoToNextSibling();
+        exit(true);
+    end;
+
+    procedure FindChildsOfNode(partxtNodePath: Text; var parvarlstValues: List of [text]): Boolean
+    var
+        loctxtValue: Text;
+    begin
+        Clear(parvarlstValues);
+        if FindChildsOfNode(partxtNodePath) = 0 then
+            exit;
+        repeat
+            loctxtValue := GetNodeText();
+            if not parvarlstValues.Contains(loctxtValue) then
+                parvarlstValues.Add(loctxtValue);
+        until not GoToNextSibling();
+        exit(true);
     end;
 
     procedure GetNodeName(): Text
@@ -645,17 +696,17 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
 
     local procedure GetCDataTxtFieldRef(parxcdClass: XmlCData; var parvarfrBlob: FieldRef): Boolean
     var
-        loctmprecBlob: Record "PAL Setup" temporary;
+        loctmprecBlob: Record "TempBlob" temporary;
         locrrBlob: RecordRef;
         locfrBlob: FieldRef;
         locstrmBlob: OutStream;
         loctxtBlob: Text;
     begin
         loctxtBlob := parxcdClass.Value();
-        loctmprecBlob."PAL PurchLineDescTemplBlob".CreateOutStream(locstrmBlob);
+        loctmprecBlob.Blob.CreateOutStream(locstrmBlob);
         locstrmBlob.Write(loctxtBlob);
         locrrBlob.GetTable(loctmprecBlob);
-        locfrBlob := locrrBlob.Field(loctmprecBlob.FieldNo("PAL PurchLineDescTemplBlob"));
+        locfrBlob := locrrBlob.Field(loctmprecBlob.FieldNo(Blob));
         parvarfrBlob.Value := locfrBlob.Value();
         exit(true);
     end;
@@ -663,27 +714,28 @@ codeunit 50025 "TTT-PR WsTestXmlWrapper"
 
 
 
-    procedure Class_GetCRC() ReturnValue: Integer
+    procedure GetCRC() ReturnValue: Integer
     var
-        loctmprecSetup: Record "PAL Setup" temporary;
-        loccuCrc: Codeunit "PAL CrcManagement";
-        locstrmIn: InStream;
-        locstrmOut: OutStream;
-        loctxtContent: Text;
+    // loctmprecSetup: Record "PAL Setup" temporary;
+    // loccuCrc: Codeunit "PAL CrcManagement";
+    // locstrmIn: InStream;
+    // locstrmOut: OutStream;
+    // loctxtContent: Text;
     begin
-        loctmprecSetup."PAL TempBlob".CreateOutStream(locstrmOut);
-        xdClass.WriteTo(locstrmOut);
+        Error('GetCRC() not handled in this extension')
+        // loctmprecSetup."PAL TempBlob".CreateOutStream(locstrmOut);
+        // xdClass.WriteTo(locstrmOut);
 
-        loctmprecSetup."PAL TempBlob".CreateInStream(locstrmIn);
-        if locstrmIn.Read(loctxtContent) = 0 then
-            exit;
-        loccuCrc.GetCRC(loctxtContent, ReturnValue);
+        // loctmprecSetup."PAL TempBlob".CreateInStream(locstrmIn);
+        // if locstrmIn.Read(loctxtContent) = 0 then
+        //     exit;
+        // loccuCrc.GetCRC(loctxtContent, ReturnValue);
     end;
 
 
 
 
-    procedure Boolean2XmlText(parbooValue: Boolean): Text
+    procedure Boolean2XmlString(parbooValue: Boolean): Text
     begin
         if parbooValue then
             exit(lblXmlTrueTxt)

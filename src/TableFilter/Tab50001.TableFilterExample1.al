@@ -1,7 +1,7 @@
 table 50001 "TTT-PR TableFilterExample1"
 {
     Caption = 'Table Filter Example 1';
-    DataClassification = ToBeClassified;
+    DataClassification = CustomerContent;
 
     fields
     {
@@ -15,6 +15,11 @@ table 50001 "TTT-PR TableFilterExample1"
             Caption = 'Object ID';
             DataClassification = CustomerContent;
             TableRelation = AllObjWithCaption."Object ID" where ("Object Type" = const (Table));
+            trigger OnValidate();
+            begin
+                CalcFields("TTT-PR ObjectName", "TTT-PR ObjectCaption");
+            end;
+
         }
         field(3; "TTT-PR ObjectName"; Text[30])
         {
@@ -28,6 +33,13 @@ table 50001 "TTT-PR TableFilterExample1"
             Caption = 'Table Filter';
             DataClassification = CustomerContent;
         }
+        field(5; "TTT-PR ObjectCaption"; Text[50])
+        {
+            Caption = 'Object Caption';
+            FieldClass = FlowField;
+            CalcFormula = lookup (AllObjWithCaption."Object Caption" where ("Object ID" = field ("TTT-PR ObjectID")));
+            Editable = false;
+        }
     }
 
     keys
@@ -38,22 +50,30 @@ table 50001 "TTT-PR TableFilterExample1"
         }
     }
 
+    procedure FilterStringOnAssistEdit(): Boolean
+    begin
+        TestField("TTT-PR ObjectID");
+        exit(EditTableFilter(FieldNo("TTT-PR ObjectID"), FieldNo("TTT-PR FilterString")));
+    end;
+
+    procedure EditTableFilter(parintTableNoFieldNo: Integer; parintFilterStringFieldNo: Integer): Boolean
     var
-
-    trigger OnInsert();
+        loccuTableFilterMgt: Codeunit "TTT-PR TableFilterMgt";
+        locrrTable: RecordRef;
     begin
+        locrrTable.GetTable(rec);
+        if not loccuTableFilterMgt.EditTableFilterByFieldNos(parintTableNoFieldNo, parintFilterStringFieldNo, locrrTable) then
+            exit;
+        locrrTable.SetTable(rec);
+        exit(true);
     end;
 
-    trigger OnModify();
+    procedure ShowTableFilter(parintTableNo: Integer; parintFilterStringFieldNo: Integer)
+    var
+        loccuTableFilterMgt: Codeunit "TTT-PR TableFilterMgt";
+        locrrTable: RecordRef;
     begin
+        locrrTable.GetTable(rec);
+        loccuTableFilterMgt.ShowTableFilter(parintTableNo, parintFilterStringFieldNo, locrrTable);
     end;
-
-    trigger OnDelete();
-    begin
-    end;
-
-    trigger OnRename();
-    begin
-    end;
-
 }

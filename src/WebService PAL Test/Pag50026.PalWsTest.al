@@ -4,15 +4,15 @@ page 50026 "TTT-PR PalWsTest"
     ApplicationArea = All;
     UsageCategory = Administration;
 
-    layout
-    {
-        area(Content)
-        {
-            group(GroupName)
-            {
-            }
-        }
-    }
+    // layout
+    // {
+    //     area(Content)
+    //     {
+    //         group(GroupName)
+    //         {
+    //         }
+    //     }
+    // }
 
     actions
     {

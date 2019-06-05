@@ -5,6 +5,8 @@ page 50002 "TTT-PR SysVirtTblInspector"
     Editable = false;
     SourceTableView = where (Number = filter (1 ..));
     Caption = 'System/Virtual Table Inspector';
+    UsageCategory = Administration;
+    ApplicationArea = All;
 
     layout
     {

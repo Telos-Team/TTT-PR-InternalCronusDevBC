@@ -84,9 +84,9 @@ table 50000 "TTT-PR ObjectRunner"
             parvarrecObject.Insert(false);
         until locrecAllObjWithCaption.Next() = 0;
         clear(parvarrecObject);
-        parvarrecObject."TTT-PR ObjectType" := locrecAllObjWithCaption."Object Type"::Table;
-        parvarrecObject."TTT-PR ObjectID" := 2000000000;
-        if parvarrecobject.find('=>') then;
+        parvarrecObject."TTT-PR ObjectType" := locrecAllObjWithCaption."Object Type"::Page;
+        parvarrecObject."TTT-PR ObjectID" := 99999;
+        if parvarrecobject.find('=<') then;
     end;
 
     procedure RunObject();

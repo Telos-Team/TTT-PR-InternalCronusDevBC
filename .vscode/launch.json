@@ -4,13 +4,13 @@
         {
             "type": "al",
             "request": "launch",
-            "name": "Your own server",
+            "name": "Cronus_Dev_BC",
             "server": "http://localhost",
             "serverInstance": "Cronus_Dev_BC",
             "port": 13004,
             "authentication": "Windows",
-            "startupObjectId": 50026,
-            "startupObjectType": "Page",
+            // "startupObjectId": 50026,
+            // "startupObjectType": "Page",
             "breakOnError": true,
             "schemaUpdateMode": "Synchronize" 
         }

@@ -165,6 +165,23 @@ page 50017 "TTT-PR WsTestCockpit"
                     loccuSpec.CallWsSimpleTextVar("TTT-PR Url", "TTT-PR Username", "TTT-PR AccessKey");
                 end;
             }
+            action(CallSpecificSimpleTextVars)
+            {
+                Caption = 'Call Specific Simple Text Vars';
+                ApplicationArea = All;
+                Image = "Action";
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                PromotedOnly = true;
+
+                trigger OnAction()
+                var
+                    loccuSpec: Codeunit "TTT-PR WsTestSpecifics";
+                begin
+                    loccuSpec.CallWsSimpleTextVars("TTT-PR Url", "TTT-PR Username", "TTT-PR AccessKey");
+                end;
+            }
             action(CallSpecificDtDiff)
             {
                 Caption = 'Call Specific DateTime Diff';
