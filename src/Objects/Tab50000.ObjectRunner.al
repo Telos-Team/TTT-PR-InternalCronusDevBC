@@ -150,7 +150,7 @@ table 50000 "TTT-PR ObjectRunner"
         if not ("TTT-PR ObjectType" in [locrecAllObj."Object Type"::Table, locrecAllObj."Object Type"::TableData]) then
             exit;
         locrecField.SetRange(TableNo, "TTT-PR ObjectID");
-        page.run(page::fields, locrecField);
+        page.run(page::"Fields Lookup", locrecField);
     end;
 
     procedure SetFilterNormal();

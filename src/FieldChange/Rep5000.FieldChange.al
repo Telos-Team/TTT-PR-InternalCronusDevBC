@@ -9,7 +9,7 @@ report 50000 "TTT-PR FieldChange"
     {
         dataitem(Integer; Integer)
         {
-            DataItemTableView = where (Number = const (1));
+            DataItemTableView = where(Number = const(1));
             MaxIteration = 1;
         }
     }
@@ -197,7 +197,7 @@ report 50000 "TTT-PR FieldChange"
                 locfrNew := locrrNew.Field(intFieldNo);
             optAction::InitValue:
                 begin
-                    locrrNew.INIT();
+                    locrrNew.Init();
                     locfrNew := locrrNew.Field(intFieldNo);
                 end;
             optAction::SetValue:

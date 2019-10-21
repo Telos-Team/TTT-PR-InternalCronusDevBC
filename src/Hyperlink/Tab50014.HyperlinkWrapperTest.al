@@ -1,4 +1,4 @@
-table 50014 "TTT-PR HyperlinkWrapper Test"
+table 50014 "TTT-PR HyperlinkWrapperTest"
 {
     Caption = 'Hyperlink Wrapper Test';
     DataClassification = CustomerContent;

@@ -10,7 +10,6 @@
   "help": "http://telosteam.dk/TTTPR",
   "url": "http://telosteam.dk/TTTPR",
   "logo": "./res/logo.png",
-  "capabilities": [],
   "dependencies": [],
   "screenshots": [],
   "platform": "13.0.0.0",
@@ -19,7 +18,7 @@
     "from": 50000,
     "to": 59999
   },
-  "runtime": "2.1",
+  "runtime": "2.0",
   "target": "Extension",
   "features": [
     "TranslationFile"

@@ -106,7 +106,8 @@ page 50014 "TTT-PR PageTestWizard"
                         part(PicPart; "TTT-PR ItemPictureCardPart")
                         {
                             Editable = false;
-                            SubPageLink = "No." = const ('1896-S');
+                            SubPageLink = "No." = const('1896-S');
+                            ApplicationArea = All;
                         }
                     }
                 }

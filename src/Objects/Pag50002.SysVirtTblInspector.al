@@ -3,7 +3,7 @@ page 50002 "TTT-PR SysVirtTblInspector"
     PageType = List;
     SourceTable = Integer;
     Editable = false;
-    SourceTableView = where (Number = filter (1 ..));
+    SourceTableView = where(Number = filter(1 ..));
     Caption = 'System/Virtual Table Inspector';
     UsageCategory = Administration;
     ApplicationArea = All;
@@ -258,6 +258,7 @@ page 50002 "TTT-PR SysVirtTblInspector"
                 PromotedOnly = true;
                 PromotedCategory = Process;
                 Image = SuggestNumber;
+                ApplicationArea = All;
                 trigger OnAction();
                 begin
                     SelectTable();
@@ -272,6 +273,7 @@ page 50002 "TTT-PR SysVirtTblInspector"
                 PromotedOnly = true;
                 PromotedCategory = Process;
                 Image = ShowSelected;
+                ApplicationArea = All;
                 trigger OnAction();
                 begin
                     ChangeCaptionName();

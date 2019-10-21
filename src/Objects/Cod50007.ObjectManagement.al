@@ -82,9 +82,9 @@ codeunit 50007 "TTT-PR ObjectManagement"
                 Database::"Web Service",
                 2000000081, // "Upgrade Blob Storage"
                 2000000082, // Report Layout"
-                Database::"Debugger Breakpoint",
-                Database::"Debugger Call Stack",
-                Database::"Debugger Variable",
+                            // Database::"Debugger Breakpoint",
+                            // Database::"Debugger Call Stack",
+                            // Database::"Debugger Variable",
                 Database::"Debugger Watch Value",
                 Database::"Server Instance",
                 Database::"Document Service",
@@ -212,14 +212,14 @@ codeunit 50007 "TTT-PR ObjectManagement"
         loctmprecRecordLink: Record "Record Link" temporary;
         locrecAddin: Record "Add-in";
         loctmprecAddin: Record "Add-in" temporary;
-        locrecProfile: Record "Profile";
-        loctmprecProfile: Record "Profile" temporary;
+        // locrecProfile: Record "Profile";
+        // loctmprecProfile: Record "Profile" temporary;
         locrecUserPersonalization: Record "User Personalization";
         loctmprecUserPersonalization: Record "User Personalization" temporary;
-        locrecProfileMetadata: Record "Profile Metadata";
-        loctmprecProfileMetadata: Record "Profile Metadata" temporary;
-        locrecUserMetadata: Record "User Metadata";
-        loctmprecUserMetadata: Record "User Metadata" temporary;
+        // locrecProfileMetadata: Record "Profile Metadata";
+        // loctmprecProfileMetadata: Record "Profile Metadata" temporary;
+        // locrecUserMetadata: Record "User Metadata";
+        // loctmprecUserMetadata: Record "User Metadata" temporary;
         locrecChart: Record "Chart";
         loctmprecChart: Record "Chart" temporary;
         locrecPageDataPersonalization: Record "Page Data Personalization";
@@ -364,26 +364,26 @@ codeunit 50007 "TTT-PR ObjectManagement"
                     parvarvarTable := loctmprecAddin
                 else
                     parvarvarTable := locrecAddin;
-            database::"Profile":
-                if parbooTemporay then
-                    parvarvarTable := loctmprecProfile
-                else
-                    parvarvarTable := locrecProfile;
+            // database::"Profile":
+            // if parbooTemporay then
+            // parvarvarTable := loctmprecProfile
+            // else
+            // parvarvarTable := locrecProfile;
             database::"User Personalization":
                 if parbooTemporay then
                     parvarvarTable := loctmprecUserPersonalization
                 else
                     parvarvarTable := locrecUserPersonalization;
-            database::"Profile Metadata":
-                if parbooTemporay then
-                    parvarvarTable := loctmprecProfileMetadata
-                else
-                    parvarvarTable := locrecProfileMetadata;
-            database::"User Metadata":
-                if parbooTemporay then
-                    parvarvarTable := loctmprecUserMetadata
-                else
-                    parvarvarTable := locrecUserMetadata;
+            // database::"Profile Metadata":
+            //     if parbooTemporay then
+            //         parvarvarTable := loctmprecProfileMetadata
+            //     else
+            //         parvarvarTable := locrecProfileMetadata;
+            // database::"User Metadata":
+            //     if parbooTemporay then
+            //         parvarvarTable := loctmprecUserMetadata
+            //     else
+            //         parvarvarTable := locrecUserMetadata;
             database::"Chart":
                 if parbooTemporay then
                     parvarvarTable := loctmprecChart

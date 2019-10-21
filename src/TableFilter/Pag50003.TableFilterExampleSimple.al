@@ -50,6 +50,7 @@ page 50003 "TTT-PR TableFilterExSimple"
             part(FieldFilterFactBox; "TTT-PR TableFilterFactBox")
             {
                 Visible = true;
+                ApplicationArea = All;
             }
         }
     }
@@ -66,6 +67,7 @@ page 50003 "TTT-PR TableFilterExSimple"
                 PromotedCategory = Process;
                 PromotedIsBig = true;
                 PromotedOnly = true;
+                ApplicationArea = All;
 
                 trigger OnAction();
                 begin

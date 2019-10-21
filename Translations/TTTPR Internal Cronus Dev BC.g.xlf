@@ -3,25 +3,50 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="TTTPR Internal Cronus Dev BC">
     <body>
       <group id="body">
-        <trans-unit id="Table 2036303844 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2481735628 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Hyperlink Wrapper Test</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR HyperlinkWrapper Test - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR HyperlinkWrapperTest - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2036303844 - Field 1379962128 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2481735628 - Field 1379962128 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Key</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR HyperlinkWrapper Test - Field TTT-PR Key - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR HyperlinkWrapperTest - Field TTT-PR Key - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2036303844 - Field 2515856340 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2481735628 - Field 2515856340 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Value</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR HyperlinkWrapper Test - Field TTT-PR Value - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR HyperlinkWrapperTest - Field TTT-PR Value - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2036303844 - Field 81990541 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2481735628 - Field 81990541 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR HyperlinkWrapper Test - Field TTT-PR Type - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR HyperlinkWrapperTest - Field TTT-PR Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2481735628 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hyperlink Wrapper Test</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR HyperlinkWrapperTest - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2481735628 - Control 900488533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value (Blob)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR HyperlinkWrapperTest - Control TTT-PR Value3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2481735628 - Control 1538185150 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value (Url)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR HyperlinkWrapperTest - Control TTT-PR Value2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2481735628 - Action 1662831674 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use Hyperlink</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR HyperlinkWrapperTest - Action TTT-PR UseHyperlink - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2481735628 - Action 1240149237 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use Message</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR HyperlinkWrapperTest - Action TTT-PR UseMessage - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3229673786 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>TTTPR Menu Suite</source>
@@ -343,8 +368,43 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR TableFilterExample1 - Field TTT-PR ObjectCaption - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3095865769 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>WsTest Web Connection</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestConnection - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3095865769 - Field 884246714 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestConnection - Field TTT-PR Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3095865769 - Field 951933599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestConnection - Field TTT-PR Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3095865769 - Field 3036458431 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Endpoint Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestConnection - Field TTT-PR EndpointCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3095865769 - Field 4286485991 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credential Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestConnection - Field TTT-PR CredentialCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3095865769 - Field 747507549 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Authentication Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestConnection - Field TTT-PR AuthenticationType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3095865769 - Field 1679792809 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>OK</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestConnection - Field TTT-PR OK - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3448070934 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>WsTest Credentials</source>
+          <source>WsTest Credential</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestCredential - Property Caption</note>
         </trans-unit>
@@ -358,30 +418,45 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestCredential - Field TTT-PR Description - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 3448070934 - Field 8318068 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Url</source>
+        <trans-unit id="Table 3448070934 - Field 3479014368 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Domain name</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestCredential - Field TTT-PR Url - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestCredential - Field TTT-PR DomainName - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3448070934 - Field 2673224551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Username</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestCredential - Field TTT-PR Username - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 3448070934 - Field 785760908 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Accesskey</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestCredential - Field TTT-PR AccessKey - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3448070934 - Field 3479014368 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Domain name</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestCredential - Field TTT-PR DomainName - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Table 3448070934 - Field 569041696 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Password</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestCredential - Field TTT-PR Password - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2016602270 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>WsTest Endpoint</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestEndpoint - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2016602270 - Field 884246714 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestEndpoint - Field TTT-PR Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2016602270 - Field 951933599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestEndpoint - Field TTT-PR Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2016602270 - Field 8318068 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Url</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestEndpoint - Field TTT-PR Url - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2016602270 - Field 3913041298 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Environment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTT-PR WsTestEndpoint - Field TTT-PR Environment - Property Caption</note>
         </trans-unit>
         <trans-unit id="Codeunit 3425941135 - Method 775907828 - NamedType 2663951413" size-unit="char" translate="yes" xml:space="preserve">
           <source>https://tttpr-functionapp.azurewebsites.net/api/HelloWorld</source>
@@ -468,26 +543,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR Nav2BcTiming - NamedType lblDurationMessageLbl</note>
         </trans-unit>
-        <trans-unit id="Codeunit 499040757 - NamedType 1406799063" size-unit="char" translate="no" xml:space="preserve">
-          <source>true</source>
-          <note from="Developer" annotates="general" priority="2">Xml boolean must always be true/false in lowercase</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestXmlWrapper - NamedType lblXmlTrueTxt</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 499040757 - NamedType 1905534314" size-unit="char" translate="no" xml:space="preserve">
-          <source>false</source>
-          <note from="Developer" annotates="general" priority="2">Xml boolean must always be true/false in lowercase</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestXmlWrapper - NamedType lblXmlFalseTxt</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 499040757 - NamedType 2132978336" size-unit="char" translate="no" xml:space="preserve">
-          <source>yes</source>
-          <note from="Developer" annotates="general" priority="2">The yes/no is used in xml declaration for standalone to ignore DTD</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestXmlWrapper - NamedType lblXmlYesTxt</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 499040757 - NamedType 331426086" size-unit="char" translate="no" xml:space="preserve">
-          <source>no</source>
-          <note from="Developer" annotates="general" priority="2">The yes/no is used in xml declaration for standalone to ignore DTD</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestXmlWrapper - NamedType lblXmlNoTxt</note>
-        </trans-unit>
         <trans-unit id="Codeunit 1372765974 - NamedType 3878820203" size-unit="char" translate="yes" xml:space="preserve">
           <source>http://www.w3.org/2003/05/soap-envelope</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -517,6 +572,41 @@
           <source>urn:microsoft-dynamics-schemas/codeunit/%1</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestManagement - NamedType lblBcNsUriTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 499040757 - NamedType 1406799063" size-unit="char" translate="no" xml:space="preserve">
+          <source>true</source>
+          <note from="Developer" annotates="general" priority="2">Xml boolean must always be true/false in lowercase</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestXmlWrapper - NamedType lblXmlTrueTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 499040757 - NamedType 1905534314" size-unit="char" translate="no" xml:space="preserve">
+          <source>false</source>
+          <note from="Developer" annotates="general" priority="2">Xml boolean must always be true/false in lowercase</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestXmlWrapper - NamedType lblXmlFalseTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 499040757 - NamedType 2132978336" size-unit="char" translate="no" xml:space="preserve">
+          <source>yes</source>
+          <note from="Developer" annotates="general" priority="2">The yes/no is used in xml declaration for standalone to ignore DTD</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestXmlWrapper - NamedType lblXmlYesTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 499040757 - NamedType 331426086" size-unit="char" translate="no" xml:space="preserve">
+          <source>no</source>
+          <note from="Developer" annotates="general" priority="2">The yes/no is used in xml declaration for standalone to ignore DTD</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR WsTestXmlWrapper - NamedType lblXmlNoTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1401123176 - Method 3040716699 - NamedType 4197956223" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GetVersion</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR PalWsTest - Method ShowVersion - NamedType loclblMethodTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1401123176 - Method 2673584272 - NamedType 4197956223" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AuthenticateUser</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR PalWsTest - Method AuthenticateUser - NamedType loclblMethodTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1401123176 - Method 3522764728 - NamedType 4197956223" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ListEnvironments</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR PalWsTest - Method ListEnvironments - NamedType loclblMethodTxt</note>
         </trans-unit>
         <trans-unit id="Codeunit 1401123176 - Method 2880234493 - NamedType 4197956223" size-unit="char" translate="yes" xml:space="preserve">
           <source>ListCompanies</source>
@@ -568,30 +658,30 @@
           <note from="Developer" annotates="general" priority="2">This is the filter used when selecting file to upload</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTT-PR XmlTest1 - Method LoadClientXml - NamedType loclblFromFilterLbl</note>
         </trans-unit>
-        <trans-unit id="Page 2481735628 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Hyperlink Wrapper Test</source>
+        <trans-unit id="Page 2724770725 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filter Page Builder Customer List</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR HyperlinkWrapperTest - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR FPB_CustList - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2481735628 - Control 900488533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Value (Blob)</source>
+        <trans-unit id="Page 2724770725 - Action 211393987 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filter Page Builder</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR HyperlinkWrapperTest - Control TTT-PR Value3 - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR FPB_CustList - Action ShowFilterPageBuilder - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2481735628 - Control 1538185150 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Value (Url)</source>
+        <trans-unit id="Page 2724770725 - Action 211393987 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shows the filter page using the current view and specific fields and filters (No. = ..30000). Try to set other filters before calling the filter page.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR HyperlinkWrapperTest - Control TTT-PR Value2 - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR FPB_CustList - Action ShowFilterPageBuilder - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 2481735628 - Action 1662831674 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Use Hyperlink</source>
+        <trans-unit id="Page 2724770725 - Action 472170390 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filter Page Builder (PK)</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR HyperlinkWrapperTest - Action TTT-PR UseHyperlink - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR FPB_CustList - Action ShowFilterPageBuilderPK - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2481735628 - Action 1240149237 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Use Message</source>
+        <trans-unit id="Page 2724770725 - Action 472170390 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shows the filter page using only fields in the primary key.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR HyperlinkWrapperTest - Action TTT-PR UseMessage - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR FPB_CustList - Action ShowFilterPageBuilderPK - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3579455642 - Action 2186134561 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Media Repositories</source>
@@ -1188,10 +1278,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Action InstalWs - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 463888748 - Action 1533878466 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Call Ws</source>
+        <trans-unit id="Page 463888748 - Action 2968083586 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SetupDemoData (PR)</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Action CallWs - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Action SetupDemoDataPR - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 463888748 - Action 1181914399 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Call Ws Testor</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Action CallWsTestor - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 463888748 - Action 2429361363 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Call Specific Simple Text</source>
@@ -1213,10 +1308,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCockpit - Action CallSpecificDtDiff - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2735969280 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Connections</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestConnections - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2077977603 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>WsTest Credentials</source>
+          <source>Credentials</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestCredentials - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1773797579 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Endpoints</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTT-PR WsTestEndpoints - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 166621830 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Xml Buffer</source>
@@ -1333,165 +1438,190 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort TTT-PR Nav2BcImportData - NamedType lblPostMessageLbl</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 1403386779 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 1403386779 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>TTTPR Object Runner(emb)</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerEmbedding - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 1403386779 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 1403386779 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>TTTPR Object Runner Embedding</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerEmbedding - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 878912455 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 878912455 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>TTTPR Object Runner(crt)</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerCreationSingle - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 878912455 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 878912455 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>TTTPR Object Runner Creation</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerCreationSingle - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 3948940218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 3948940218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>TTTPR Object Runner(nav)</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerNavigationSingle - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 3948940218 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 3948940218 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>TTTPR Object Runner Navigation</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerNavigationSingle - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 4268563846 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 4268563846 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>TTTPR Object Runner(rep)</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerReportingSingle - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 4268563846 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 4268563846 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>TTTPR Object Runner Reporting</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerReportingSingle - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 224859881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 224859881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>TTTPR Object Runner(prc)</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerProcessingSingle - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 224859881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 224859881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>TTTPR Object Runner</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerProcessingSingle - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 1123561704 - Property 2879900210" size-unit="char" translate="no" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 1123561704 - Property 2879900210" size-unit="char" translate="no" xml:space="preserve" al-object-target="Page 3513039640">
           <source>TTTPR Menu(prc)</source>
           <note from="Developer" annotates="general" priority="2">Dont translate this!</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR MainGroupProcessing - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 1123561704 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 1123561704 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>TTTPR functionality</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR MainGroupProcessing - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 2326206593 - Property 2879900210" size-unit="char" translate="no" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 2326206593 - Property 2879900210" size-unit="char" translate="no" xml:space="preserve" al-object-target="Page 3513039640">
           <source>TTTPR</source>
           <note from="Developer" annotates="general" priority="2">Dont translate this!</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR GroupProcessing - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 2326206593 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 2326206593 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>TTTPR functionality</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR GroupProcessing - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 3282430667 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 3282430667 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>Objects</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectsGroupProcessing - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 3282430667 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 3282430667 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>Object functionality</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectsGroupProcessing - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 2008731863 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 2008731863 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>Show Object Runner</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerProcessing - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 2008731863 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 2008731863 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>Show the Object Runner List</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerProcessing - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 4077752251 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 4077752251 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>Table Filter</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR TableFilterGroupProcessing - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 4077752251 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 4077752251 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>Table Filter functionality</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR TableFilterGroupProcessing - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 4179067772 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 4179067772 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>Table Filter Simple</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR TableFilterSimpleProcessing - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 4179067772 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 4179067772 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>Show Simple Table Filter</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR TableFilterSimpleProcessing - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 2448425473 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 2448425473 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>Misc.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR Misc - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 2448425473 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 2448425473 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>Misc. functionality</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR Misc - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 773023970 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 773023970 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>Hyperlink Wrapper</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR HyperlinkWrapper - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 773023970 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 773023970 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>Run the Hyperlink Wrapper</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR HyperlinkWrapper - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 574240122 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 574240122 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>TTTPR(sect)</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR GroupSections - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 574240122 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 574240122 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>TTTPR Elements</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR GroupSections - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 1669754224 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 1669754224 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>Show Object Runner</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerSections - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 1669754224 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 1669754224 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>Show the Object Runner List</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR ObjectRunnerSections - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 880266531 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 880266531 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>Show Table Filter (Simple)</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR TableFilterExampleSimpleSections - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1282177179 - Action 880266531 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1282177179 - Action 880266531 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
           <source>Show the simple Table Filter example</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR TableFilterExampleSimpleSections - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282177179 - Action 1643302026 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
+          <source>Web Service</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR WebService - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282177179 - Action 3034255955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
+          <source>Web Service testing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR WsTest - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282177179 - Action 3034255955 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
+          <source>Show the cockpit for Web Service testing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR WsTest - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282177179 - Action 2609851366 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
+          <source>Palette Web Service testing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR Palette Ws - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1282177179 - Action 2609851366 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3513039640">
+          <source>Show the cockpit for Palette Web Service testing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTT-PR IT Role Center - Action TTT-PR Palette Ws - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Enum 122585753 - EnumValue 139100102 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>First</source>
@@ -1512,6 +1642,31 @@
           <source>Finish</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum TTT-PR PageTestWizardStep - EnumValue Finish - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1267064907 - EnumValue 3227672870 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Basic</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum TTT-PR WsTestAuthenticationType - EnumValue Basic - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1267064907 - EnumValue 1898259689 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>OAuth</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum TTT-PR WsTestAuthenticationType - EnumValue OAuth - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1267064907 - EnumValue 2571292921 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Windows</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum TTT-PR WsTestAuthenticationType - EnumValue Windows - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1267064907 - EnumValue 1383905037 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Default</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum TTT-PR WsTestAuthenticationType - EnumValue Default - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1267064907 - EnumValue 2413119109 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Anonymous</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum TTT-PR WsTestAuthenticationType - EnumValue Anonymous - Property Caption</note>
         </trans-unit>
       </group>
     </body>

@@ -39,8 +39,9 @@ page 50024 "TTT-PR ItemCardPicture"
                     ShowCaption = false;
                     part(PicPart; "TTT-PR ItemPictureCardPart")
                     {
+                        ApplicationArea = All;
                         Editable = false;
-                        SubPageLink = "No." = field ("No.");
+                        SubPageLink = "No." = field("No.");
                     }
                 }
             }

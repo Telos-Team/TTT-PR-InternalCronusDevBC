@@ -150,6 +150,28 @@ pageextension 50000 "TTT-PR IT Role Center" extends "Administrator Role Center"
                     RunObject = page "TTT-PR TableFilterExSimple";
                     RunPageMode = Edit;
                 }
+                group("TTT-PR WebService")
+                {
+                    Caption = 'Web Service';
+                    action("TTT-PR WsTest")
+                    {
+                        Caption = 'Web Service testing';
+                        ToolTip = 'Show the cockpit for Web Service testing';
+                        ApplicationArea = All;
+                        Image = "Table";
+                        RunObject = page "TTT-PR WsTestCockpit";
+                        RunPageMode = Edit;
+                    }
+                    action("TTT-PR Palette Ws")
+                    {
+                        Caption = 'Palette Web Service testing';
+                        ToolTip = 'Show the cockpit for Palette Web Service testing';
+                        ApplicationArea = All;
+                        Image = "Table";
+                        RunObject = page "TTT-PR PalWsTest";
+                        RunPageMode = Edit;
+                    }
+                }
             }
         }
     }

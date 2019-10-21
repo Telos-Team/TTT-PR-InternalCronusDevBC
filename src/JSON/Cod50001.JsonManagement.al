@@ -9,8 +9,6 @@ codeunit 50002 "TTT-PR JsonManagement"
         TestSimpleJsonArray();
     end;
 
-    var
-
     local procedure TestSimpleJsonObject();
     var
         locjsonObject: JsonObject;

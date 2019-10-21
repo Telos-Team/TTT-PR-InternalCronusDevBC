@@ -161,7 +161,7 @@ codeunit 50015 "TTT-PR Nav2BcManagement"
                                 locfrField.Value := locbooEmpty;
                             end;
                         else
-                            Error('Unmanaged field type: %1 %2 %3 %4 %5', locrecData."TTT-PR TableNo", locrecdata."TTT-PR RecordNo", locrecData."TTT-PR FieldNo", locfrField.Type());
+                            Error('Unmanaged field type: %1 %2 %3 %4 %5', locrecData."TTT-PR TableNo", locrecdata."TTT-PR RecordNo", locrecData."TTT-PR FieldNo", locfrField.Type(), locfrField.Value());
                     end;
                 end;
             end;

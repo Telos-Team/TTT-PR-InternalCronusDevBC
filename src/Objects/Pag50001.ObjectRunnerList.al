@@ -142,6 +142,7 @@ page 50001 "TTT-PR ObjectRunnerList"
                     PromotedOnly = true;
                     PromotedCategory = Process;
                     Image = ShowSelected;
+                    ApplicationArea = All;
                     trigger OnAction();
                     var
                         loccuObjMgt: Codeunit "TTT-PR ObjectManagement";
@@ -159,6 +160,7 @@ page 50001 "TTT-PR ObjectRunnerList"
                     PromotedOnly = true;
                     PromotedCategory = Process;
                     Image = ShowSelected;
+                    ApplicationArea = All;
                     trigger OnAction();
                     var
                         loccuObjMgt: Codeunit "TTT-PR ObjectManagement";

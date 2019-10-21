@@ -4,7 +4,7 @@ page 50010 "TTT-PR HyperlinkWrapperTest"
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = "TTT-PR HyperlinkWrapper Test";
+    SourceTable = "TTT-PR HyperlinkWrapperTest";
 
     layout
     {
